@@ -3,9 +3,6 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent } from "@/components/ui/card"
 import {
   ChevronDown,
   Heart,
@@ -81,7 +78,9 @@ export default function NourishResilienceLanding() {
                 </button>
               ))}
             </div>
-            <Button className="bg-purple-600 hover:bg-purple-700">Shop Now</Button>
+            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+              Shop Now
+            </button>
           </div>
         </div>
       </nav>
@@ -101,20 +100,15 @@ export default function NourishResilienceLanding() {
             <h1 className="text-5xl md:text-7xl font-bold text-purple-800 mb-4 leading-tight">Fuel Your Recovery</h1>
             <h2 className="text-3xl md:text-5xl font-light text-orange-600 mb-8">Nourish Resilience™</h2>
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-              <Button
-                size="lg"
-                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg"
+              <button
                 onClick={() => scrollToSection("introduction")}
+                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg rounded-lg font-medium transition-colors"
               >
                 Learn More
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-4 text-lg"
-              >
+              </button>
+              <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-4 text-lg rounded-lg font-medium transition-colors">
                 Shop Now
-              </Button>
+              </button>
             </div>
           </div>
         </div>
@@ -472,8 +466,8 @@ export default function NourishResilienceLanding() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-gradient-to-br from-purple-50 to-orange-50 border-purple-200">
-              <CardContent className="p-8">
+            <div className="bg-gradient-to-br from-purple-50 to-orange-50 border border-purple-200 rounded-xl overflow-hidden shadow-lg">
+              <div className="p-8">
                 <Image
                   src="/placeholder.svg?height=300&width=400"
                   alt="Nourish Chai Smoothie"
@@ -501,11 +495,11 @@ export default function NourishResilienceLanding() {
                     and nutrition.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="bg-gradient-to-br from-orange-50 to-purple-50 border-orange-200">
-              <CardContent className="p-8">
+            <div className="bg-gradient-to-br from-orange-50 to-purple-50 border border-orange-200 rounded-xl overflow-hidden shadow-lg">
+              <div className="p-8">
                 <Image
                   src="/placeholder.svg?height=300&width=400"
                   alt="Warming Resilience Latte"
@@ -533,8 +527,8 @@ export default function NourishResilienceLanding() {
                     favorite mug and savor the moment.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -619,10 +613,14 @@ export default function NourishResilienceLanding() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Stay Connected</h4>
               <div className="flex space-x-2">
-                <Input type="email" placeholder="Your email" className="bg-gray-800 border-gray-700 text-white" />
-                <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded-lg flex-1 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                />
+                <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors">
                   <Mail className="w-4 h-4" />
-                </Button>
+                </button>
               </div>
               <div className="flex space-x-4">
                 <Instagram className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
