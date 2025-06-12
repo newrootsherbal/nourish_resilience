@@ -1,0 +1,7 @@
+green 119669
+dark pink d81177
+vitazan green leaf 8bc345
+light pink in label d3a1ca
+yellow label f7ead6
+
+purple d0a2c9

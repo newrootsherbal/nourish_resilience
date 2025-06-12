@@ -1,21 +1,17 @@
 import type { Config } from "tailwindcss"
-import defaultConfig from "shadcn/ui/tailwind.config"
+import animatePlugin from "tailwindcss-animate"
 
 const config: Config = {
-  ...defaultConfig,
+  darkMode: "class",
   content: [
-    ...defaultConfig.content,
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@shadcn/ui/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    ...defaultConfig.theme,
     extend: {
-      ...defaultConfig.theme.extend,
       colors: {
-        ...defaultConfig.theme.extend.colors,
         purple: {
           50: "#faf5ff",
           100: "#f3e8ff",
@@ -55,7 +51,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [...defaultConfig.plugins, require("tailwindcss-animate")],
+  plugins: [animatePlugin],
 }
 
 export default config
