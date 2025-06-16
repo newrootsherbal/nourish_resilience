@@ -480,7 +480,7 @@ export default function NourishResilienceLanding() {
               {/* TOGGLE BUTTON */}
               <button
                 onClick={() => setShowMoreRecovery(!showMoreRecovery)}
-                className="inline-flex items-center gap-2 text-[#d81177] hover:text-[#d81177] font-medium transition-colors group"
+                className="inline-flex items-center gap-2 text-[#d3a1ca] hover:text-[#d81177] font-medium transition-colors group"
               >
                 {showMoreRecovery ? "Read Less" : "Read More"}
                 <ChevronRight
@@ -548,13 +548,13 @@ export default function NourishResilienceLanding() {
 
           <IngredientsTabSection />
 
-          <div className="text-center bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-purple-200 mt-12">
+          {/* <div className="text-center bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-purple-200 mt-12">
             <p className="text-sm text-gray-600">
               <strong>Quality Assurance:</strong> Certified organic, non-GMO,
               and crafted in a third-party cGMP facility to ensure the highest
               standards of purity and potency.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -649,12 +649,11 @@ export default function NourishResilienceLanding() {
       <section id="recipes" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-purple-800 mb-4">
+            <h2 className="text-4xl font-bold text-[#d81177] mb-4">
               Simple Ways to Nourish Daily
             </h2>
             <p className="text-lg text-gray-600">
-              Delicious recipes to incorporate Nourish Resilience™ into your
-              routine
+              Every step you take toward wellness matters. Nourish Resilience brings you clean, organic ingredients designed to strengthen your body and spirit. These simple, nourishing recipes fit effortlessly into your new wellness routine — helping you rise stronger, every day.
             </p>
           </div>
 
@@ -662,13 +661,13 @@ export default function NourishResilienceLanding() {
             <div className="bg-gradient-to-br from-purple-50 to-orange-50 border border-purple-200 rounded-xl overflow-hidden shadow-lg">
               <div className="p-8">
                 <Image
-                  src="/placeholder.svg?height=300&width=400"
+                  src="/chai.png?height=300&width=400"
                   alt="Nourish Chai Smoothie"
                   width={400}
                   height={300}
                   className="w-full h-48 object-cover rounded-lg mb-6"
                 />
-                <h3 className="text-2xl font-bold text-purple-800 mb-4">
+                <h3 className="text-2xl font-bold text-[#8bc345] mb-4">
                   Nourish Chai Smoothie
                 </h3>
                 <div className="space-y-3 text-gray-700">
@@ -679,15 +678,15 @@ export default function NourishResilienceLanding() {
                     <strong>Ingredients:</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
                       <li>1 scoop Nourish Resilience™</li>
-                      <li>1 cup almond milk</li>
+                      <li>1 cup unsweetened coconut milk</li>
                       <li>1/2 frozen banana</li>
-                      <li>1 tsp vanilla extract</li>
-                      <li>Ice cubes</li>
+                      <li>1/4 cup frozen berries</li>
+                      <li>1 tablespoon ground flaxseed</li>
+                      <li>1/2 teaspoon honey</li>
                     </ul>
                   </div>
                   <p>
-                    <strong>Instructions:</strong> Blend all ingredients until
-                    smooth. Enjoy immediately for best taste and nutrition.
+                    <strong>Instructions:</strong> Blend until creamy. Serve chilled
                   </p>
                 </div>
               </div>
@@ -696,13 +695,13 @@ export default function NourishResilienceLanding() {
             <div className="bg-gradient-to-br from-orange-50 to-purple-50 border border-orange-200 rounded-xl overflow-hidden shadow-lg">
               <div className="p-8">
                 <Image
-                  src="/placeholder.svg?height=300&width=400"
+                  src="/latte.png?height=300&width=400"
                   alt="Warming Resilience Latte"
                   width={400}
                   height={300}
                   className="w-full h-48 object-cover rounded-lg mb-6"
                 />
-                <h3 className="text-2xl font-bold text-purple-800 mb-4">
+                <h3 className="text-2xl font-bold text-[#8bc345] mb-4">
                   Warming Resilience Latte
                 </h3>
                 <div className="space-y-3 text-gray-700">
@@ -712,17 +711,13 @@ export default function NourishResilienceLanding() {
                   <div>
                     <strong>Ingredients:</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1 scoop Nourish Resilience™</li>
-                      <li>1 cup warm oat milk</li>
-                      <li>1 tsp coconut oil</li>
-                      <li>Pinch of cinnamon</li>
-                      <li>Honey to taste</li>
+                      <li>1 scoop Nourish Resilience</li>
+                      <li>1 cup heated oat milk or almond milk</li>
+                      <li>1/2 teaspoon honey (optional)</li>
                     </ul>
                   </div>
                   <p>
-                    <strong>Instructions:</strong> Whisk all ingredients in warm
-                    milk until frothy. Serve in your favorite mug and savor the
-                    moment.
+                    <strong>Instructions:</strong> Stir or froth well. Sprinkle with cinnamon or cocoa powder before serving.
                   </p>
                 </div>
               </div>
@@ -748,9 +743,27 @@ export default function NourishResilienceLanding() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="text-2xl font-bold text-purple-400">Vitazan</div>
+             
+
+<a
+  href="https://vitazan.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block w-40"
+  aria-label="Visit Vitazan website"
+>
+  <Image
+    src="/vitazan.png" // Ensure this is inside /public
+    alt="Vitazan Logo"
+    width={160}
+    height={40}
+    priority
+    className="object-contain w-full h-auto"
+  />
+</a>
+
               <p className="text-gray-400">
                 Supporting women's health through science-backed nutrition and
                 compassionate care.
@@ -809,7 +822,7 @@ export default function NourishResilienceLanding() {
               </ul>
             </div>
 
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h4 className="text-lg font-semibold">Stay Connected</h4>
               <div className="flex space-x-2">
                 <input
@@ -826,7 +839,7 @@ export default function NourishResilienceLanding() {
                 <Facebook className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
                 <Twitter className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
@@ -846,49 +859,50 @@ function IngredientsTabSection() {
 
   const ingredientCategories = [
     {
-      category: "Vegan Proteins",
+      category: "Organic Vegan Protein",
       icon: <Leaf className="w-6 h-6 text-green-600" />,
       description:
-        "Plant-based proteins to support tissue repair and muscle maintenance",
+        "Supports muscle maintenance, metabolism, and recovery",
       ingredients: [
         {
-          name: "Organic Pea Protein",
+          name: "Mung Bean",
           benefit: "Complete amino acid profile for muscle recovery",
-          image: "/placeholder.svg?height=150&width=150&text=Pea+Protein",
+          image: "/mugbeans.png?height=250&width=250&text=Mung+Bean",
         },
         {
-          name: "Hemp Protein",
+          name: "Almond",
           benefit: "Rich in omega fatty acids and easily digestible",
-          image: "/placeholder.svg?height=150&width=150&text=Hemp+Protein",
+          image: "/almond.png?height=150&width=150&text=Hemp+Protein",
         },
         {
-          name: "Brown Rice Protein",
+          name: "Pumpkin Seed",
           benefit: "Hypoallergenic protein source with B-vitamins",
-          image: "/placeholder.svg?height=150&width=150&text=Rice+Protein",
+          image: "/pumkinseeds.png?height=150&width=150&text=Rice+Protein",
         },
+        
       ],
     },
     {
       category: "Fermented Botanicals",
       icon: <Star className="w-6 h-6 text-yellow-600" />,
       description:
-        "Enhanced bioavailability through traditional fermentation processes",
+        "Enhanced absorption for digestive health and anti-inflammatory benefits",
       ingredients: [
         {
-          name: "Fermented Turmeric",
+          name: "Ginger",
           benefit: "Enhanced curcumin absorption for inflammation support",
-          image: "/placeholder.svg?height=150&width=150&text=Turmeric",
+          image: "/ginger.png?height=150&width=150&text=Turmeric",
         },
         {
-          name: "Fermented Ginger",
+          name: "Black Cumin Seed",
           benefit: "Improved digestive support and nausea relief",
-          image: "/placeholder.svg?height=150&width=150&text=Ginger",
+          image: "/blackcuminseed.png?height=150&width=150&text=Ginger",
         },
-        {
-          name: "Fermented Ashwagandha",
-          benefit: "Better stress adaptation and energy balance",
-          image: "/placeholder.svg?height=150&width=150&text=Ashwagandha",
-        },
+        // {
+        //   name: "Fermented Ashwagandha",
+        //   benefit: "Better stress adaptation and energy balance",
+        //   image: "/placeholder.svg?height=150&width=150&text=Ashwagandha",
+        // },
       ],
     },
     {
@@ -900,39 +914,39 @@ function IngredientsTabSection() {
         {
           name: "Reishi",
           benefit: "Stress reduction and immune system modulation",
-          image: "/placeholder.svg?height=150&width=150&text=Reishi",
-        },
-        {
-          name: "Turkey Tail",
-          benefit: "Immune support with powerful polysaccharides",
-          image: "/placeholder.svg?height=150&width=150&text=Turkey+Tail",
+          image: "/reishi.png?height=150&width=150&text=Reishi",
         },
         {
           name: "Shiitake",
+          benefit: "Immune support with powerful polysaccharides",
+          image: "/shiitake.png?height=150&width=150&text=Turkey+Tail",
+        },
+        {
+          name: "Maitake",
           benefit: "Cardiovascular health and immune enhancement",
-          image: "/placeholder.svg?height=150&width=150&text=Shiitake",
+          image: "/maitake.png?height=150&width=150&text=Shiitake",
         },
       ],
     },
     {
-      category: "Adaptogens & Antioxidants",
+      category: "Antioxidants and Adaptogens",
       icon: <Heart className="w-6 h-6 text-red-500" />,
       description: "Stress-fighting compounds that support overall resilience",
       ingredients: [
         {
-          name: "Rhodiola Rosea",
+          name: "Matcha Green Tea",
           benefit: "Mental clarity and fatigue resistance",
-          image: "/placeholder.svg?height=150&width=150&text=Rhodiola",
+          image: "/matcha.png?height=150&width=150&text=Matcha",
         },
         {
-          name: "Schisandra Berry",
+          name: "Ashwagandha",
           benefit: "Liver support and cellular protection",
-          image: "/placeholder.svg?height=150&width=150&text=Schisandra",
+          image: "/ashwagandha.png?height=150&width=150&text=Ashwagandha",
         },
         {
-          name: "Astragalus Root",
+          name: "Dandelion Root",
           benefit: "Immune strengthening and energy support",
-          image: "/placeholder.svg?height=150&width=150&text=Astragalus",
+          image: "/dandelionroot.png?height=150&width=150&text=Dandelion+Root",
         },
       ],
     },
@@ -944,34 +958,39 @@ function IngredientsTabSection() {
         {
           name: "Inulin",
           benefit: "Feeds beneficial gut bacteria for digestive health",
-          image: "/placeholder.svg?height=150&width=150&text=Inulin",
+          image: "/inulin.png?height=150&width=150&text=Inulin",
         },
-        {
-          name: "Acacia Fiber",
-          benefit: "Gentle, soluble fiber for regularity",
-          image: "/placeholder.svg?height=150&width=150&text=Acacia+Fiber",
-        },
+        // {
+        //   name: "Acacia Fiber",
+        //   benefit: "Gentle, soluble fiber for regularity",
+        //   image: "/placeholder.svg?height=150&width=150&text=Acacia+Fiber",
+        // },
       ],
     },
     {
-      category: "Chai Spices",
+      category: "Spices",
       icon: <Star className="w-6 h-6 text-orange-600" />,
       description: "Warming spices that aid digestion and provide comfort",
       ingredients: [
         {
-          name: "Ceylon Cinnamon",
+          name: "Cinnamon",
           benefit: "Blood sugar support and warming comfort",
-          image: "/placeholder.svg?height=150&width=150&text=Cinnamon",
+          image: "/cinnamon.png?height=150&width=150&text=Cinnamon",
         },
         {
           name: "Cardamom",
           benefit: "Digestive aid with aromatic therapeutic properties",
-          image: "/placeholder.svg?height=150&width=150&text=Cardamom",
+          image: "/cardamom.png?height=150&width=150&text=Cardamom",
         },
         {
-          name: "Black Pepper",
+          name: "Cocoa",
           benefit: "Enhanced nutrient absorption and circulation",
-          image: "/placeholder.svg?height=150&width=150&text=Black+Pepper",
+          image: "/cocoa.png?height=150&width=150&text=Cocoa",
+        },
+        {
+          name: "Clove",
+          benefit: "Enhanced nutrient absorption and circulation",
+          image: "/clove.png?height=150&width=150&text=Clove",
         },
       ],
     },
@@ -988,8 +1007,8 @@ function IngredientsTabSection() {
               onClick={() => setActiveTab(index)}
               className={`flex-1 min-w-0 px-4 py-4 text-sm font-medium transition-all duration-200 flex items-center justify-center space-x-2 ${
                 activeTab === index
-                  ? "bg-purple-600 text-white border-b-2 border-purple-600"
-                  : "text-purple-600 hover:bg-purple-50 hover:text-purple-800"
+                  ? "bg-[#d3a1ca] text-black border-b-2 border-[#d81177]"
+                  : "text-black hover:bg-purple-50 hover:text-[#d81177]"
               }`}
             >
               <span className="hidden sm:block">{category.icon}</span>
@@ -1007,7 +1026,7 @@ function IngredientsTabSection() {
               {ingredientCategories[activeTab].icon}
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-purple-800">
+              <h3 className="text-2xl font-bold text-[#d81177]">
                 {ingredientCategories[activeTab].category}
               </h3>
               <p className="text-gray-600 mt-1">
@@ -1017,30 +1036,29 @@ function IngredientsTabSection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {ingredientCategories[activeTab].ingredients.map(
-            (ingredient, ingredientIndex) => (
-              <div
-                key={ingredientIndex}
-                className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
-              >
-                <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-purple-200">
-                  <Image
-                    src={ingredient.image || "/placeholder.svg"}
-                    alt={ingredient.name}
-                    width={150}
-                    height={150}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h4 className="font-semibold text-purple-800 mb-2">
-                  {ingredient.name}
-                </h4>
-                <p className="text-sm text-gray-600">{ingredient.benefit}</p>
-              </div>
-            )
-          )}
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {ingredientCategories[activeTab].ingredients.map((ingredient, index) => (
+    <div
+      key={index}
+      className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
+    >
+      <div className="w-[240px] h-[240px] mb-4 flex items-center justify-center overflow-hidden">
+        <Image
+          src={ingredient.image || "/placeholder.svg"}
+          alt={ingredient.name}
+          width={240}
+          height={240}
+          className="object-contain w-full h-full"
+        />
+      </div>
+      <h4 className="font-semibold text-gray-700 mb-2">
+        {ingredient.name}
+      </h4>
+      {/* <p className="text-sm text-gray-600">{ingredient.benefit}</p> */}
+    </div>
+  ))}
+</div>
+
       </div>
     </div>
   );
