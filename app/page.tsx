@@ -119,7 +119,7 @@ export default function NourishResilienceLanding() {
         id="hero"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-orange-50 to-purple-50"></div>
+        <div className="absolute inset-0 "></div>
         <Image
           src="/placeholder.svg?height=800&width=1200"
           alt="Nourish Resilience Product"
@@ -127,7 +127,7 @@ export default function NourishResilienceLanding() {
           height={800}
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
-        <section className="relative bg-gradient-to-b from-[#fff0f7] via-white to-[#fff] py-24 px-4 sm:px-8">
+        <section className="relative  py-24 px-4 sm:px-8">
           {/* Optional decorative shape */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute -top-40 left-1/2 w-[60rem] h-[60rem] -translate-x-1/2 bg-[#fce7f3] opacity-30 rounded-full blur-3xl" />
