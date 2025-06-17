@@ -197,7 +197,7 @@ export default function NourishResilienceLanding() {
             </div>
             <div className="relative">
               <Image
-                src="/picture1.png?height=600&width=500"
+                src="picture1.png?height=600&width=500"
                 alt="Supportive women in nature"
                 width={500}
                 height={600}
