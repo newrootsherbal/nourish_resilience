@@ -97,7 +97,7 @@ export default function NourishResilienceLanding() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-medium transition-colors hover:text-black ${
+                  className={`text-sm font-lg transition-colors hover:text-black ${
                     activeSection === item.id
                       ? "text-black-700"
                       : "text-gray-600"
