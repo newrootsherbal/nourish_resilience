@@ -135,7 +135,7 @@ export default function NourishResilienceLanding() {
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <div className="animate-fade-in-up space-y-6">
-              <h1 className="text-5xl md:text-7xl font-extrabold text-[#d81177] leading-tight tracking-tight drop-shadow-sm">
+              <h1 className="text-5xl md:text-7xl font-medium text-[#d81177] leading-tight tracking-tight drop-shadow-sm">
                 Fuel Your Recovery
               </h1>
 
@@ -151,7 +151,7 @@ export default function NourishResilienceLanding() {
               <div className="flex flex-col sm:flex-row gap-4 sm:justify-center pt-4">
                 <button
                   onClick={() => scrollToSection("introduction")}
-                  className="bg-gradient-to-r from-[#d0a2c9] to-[#d81177] text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  className="bg-[#d81177] text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
                 >
                   Learn More
                 </button>
