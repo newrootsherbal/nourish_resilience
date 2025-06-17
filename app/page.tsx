@@ -606,7 +606,7 @@ export default function NourishResilienceLanding() {
                   alt="Nourish Chai Smoothie"
                   width={400}
                   height={300}
-                  className="w-full h-48 object-cover rounded-lg mb-6"
+                  className="w-full h-48 object-contain rounded-lg mb-6"
                 />
                 <h3 className="text-2xl font-bold text-[#8bc345] mb-4">
                   Nourish Chai Smoothie
@@ -641,7 +641,7 @@ export default function NourishResilienceLanding() {
                   alt="Warming Resilience Latte"
                   width={400}
                   height={300}
-                  className="w-full h-48 object-cover rounded-lg mb-6"
+                  className="w-full h-48 object-contain rounded-lg mb-6"
                 />
                 <h3 className="text-2xl font-bold text-[#8bc345] mb-4">
                   Warming Resilience Latte
