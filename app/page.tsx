@@ -715,10 +715,10 @@ export default function NourishResilienceLanding() {
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-gray-500" />
               <a
-                href="tel:1-800-000-0000"
+                href="tel:1-888-863-9274"
                 className="hover:text-white transition-colors"
               >
-                1-800-000-0000
+                1-888-863-9274
               </a>
             </div>
             <div className="flex gap-4 pt-2">
