@@ -556,91 +556,32 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
       {/* Certification Achievement Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-purple-600 to-orange-500 rounded-3xl p-12 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full -translate-x-16 -translate-y-16"></div>
-              <div className="absolute bottom-0 right-0 w-48 h-48 bg-white rounded-full translate-x-24 translate-y-24"></div>
-              <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-white rounded-full"></div>
-            </div>
+     <section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="bg-[#d3a1ca] text-black rounded-2xl p-10 text-center shadow-lg">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        Certified Excellence in Every Scoop
+      </h2>
+      <p className="text-lg text-black/90 max-w-3xl mx-auto mb-6">
+        Our ingredients are <strong>organic, non-GMO</strong>, and processed in a
+        <strong> third-party cGMP-certified facility</strong> — designed to meet the unique needs of post-cancer recovery.
+      </p>
 
-            <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
-                  <Star className="w-5 h-5 text-yellow-300" />
-                  <span className="text-sm font-medium">
-                    Latest Achievement
-                  </span>
-                </div>
+      <div className="flex flex-wrap justify-center gap-4 mt-6">
+        <span className="bg-white text-gray-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
+          Certified Organic
+        </span>
+        <span className="bg-white  text-gray-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
+          Non-GMO
+        </span>
+        <span className="bg-white  text-gray-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
+          cGMP Certified
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                  Certified Excellence in Every Scoop
-                </h2>
-
-                <p className="text-lg leading-relaxed text-white/90">
-                  All ingredients are{" "}
-                  <strong>
-                    organic, non-GMO, curated in a third-party cGMP facility
-                  </strong>
-                  , and carefully selected to meet the unique needs of
-                  post-cancer physiology.
-                </p>
-
-                <div className="flex flex-wrap gap-4 pt-4">
-                  <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                    <Shield className="w-5 h-5 text-green-300" />
-                    <span className="text-sm font-medium">
-                      Certified Organic
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                    <Leaf className="w-5 h-5 text-green-300" />
-                    <span className="text-sm font-medium">Non-GMO</span>
-                  </div>
-                  <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-                    <Star className="w-5 h-5 text-yellow-300" />
-                    <span className="text-sm font-medium">cGMP Certified</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-center">
-                <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-sm">
-                  <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto bg-gradient-to-br from-green-100 to-green-50 rounded-full flex items-center justify-center border-4 border-green-200">
-                      <Image
-                        src="/placeholder.svg?height=120&width=120&text=cGMP+Certified"
-                        alt="cGMP Certification Logo"
-                        width={120}
-                        height={120}
-                        className="w-24 h-24 object-contain"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-800">
-                        cGMP Certified
-                      </h3>
-                      <p className="text-sm text-gray-600 mt-2">
-                        Third-party verified manufacturing standards ensuring
-                        the highest quality and safety
-                      </p>
-                    </div>
-                    <div className="bg-green-50 rounded-lg p-3">
-                      <p className="text-xs text-green-800 font-medium">
-                        ✓ Pharmaceutical-grade quality
-                        <br />✓ Rigorous testing protocols
-                        <br />✓ Contamination-free environment
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* Recipes Section */}
       <section id="recipes" className="py-20 bg-white">
         <div className="container mx-auto px-4">
