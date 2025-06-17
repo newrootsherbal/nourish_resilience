@@ -10,6 +10,7 @@ import {
   Shield,
   Star,
   Users,
+  Phone,
   Mail,
   Instagram,
   Facebook,
@@ -96,9 +97,9 @@ export default function NourishResilienceLanding() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-medium transition-colors hover:text-purple-600 ${
+                  className={`text-sm font-medium transition-colors hover:text-black ${
                     activeSection === item.id
-                      ? "text-purple-600"
+                      ? "text-black-700"
                       : "text-gray-600"
                   }`}
                 >
@@ -106,13 +107,13 @@ export default function NourishResilienceLanding() {
                 </button>
               ))}
             </div>
-            <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-              Shop Now
+
+            <button className="bg-[#d81177] border-2 border-[#d81177] text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-[#fce7f3] hover:to-white">
+               Shop Now
             </button>
           </div>
         </div>
       </nav>
-
       {/* Hero Section */}
       <section
         id="hero"
@@ -167,7 +168,6 @@ export default function NourishResilienceLanding() {
           <ChevronDown className="w-8 h-8 text-purple-600" />
         </div>
       </section>
-
       {/* Introduction Section */}
       <section id="introduction" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -207,7 +207,6 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
       </section>
-
       {/* Dr. Khamba's Story Section */}
       <section
         id="story"
@@ -335,7 +334,6 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
       </section>
-
       {/* Who Can Benefit Section */}
       <section id="benefits" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -401,7 +399,6 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
       </section>
-
       {/* Fueling Recovery Section */}
       <section
         id="fuelingRecovery"
@@ -493,43 +490,44 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
       </section>
-
       {/* what is nourish resilience */}
-     <section className="bg-white py-16 px-4 sm:px-8 lg:px-16 font-sans">
-  <div className="max-w-4xl mx-auto text-center">
-    <h2 className="text-3xl md:text-4xl font-bold text-[#d81177] mb-6">
-      What is Nourish Resilience
-    </h2>
-    <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-      <span className="font-semibold text-gray-800">
-        Nourish Resilience™
-      </span>{" "}
-      is a clinically informed, organic vegan protein supplement designed
-      specifically for post-breast cancer care and chronic illness recovery.
-      This functional nutrition formula blends{" "}
-      <span className="text-gray-800">
-        bioavailable proteins, powerful antioxidants, adaptogenic medicinal
-        mushrooms, fermented botanicals
-      </span>
-      , and{" "}
-      <span className="text-gray-800">gut-supportive prebiotics</span>{" "}
-      — all selected to support{" "}
-      <span className="italic text-gray-800">immune resilience, metabolic balance</span>, and{" "}
-      <span className="italic text-gray-800">emotional wellbeing</span>.
-    </p>
-    <p className="text-lg text-gray-700 leading-relaxed">
-      With a comforting{" "}
-      <span className="font-semibold text-gray-800">chai-inspired flavour</span>{" "}
-      featuring cardamom and cocoa, Nourish Resilience can be enjoyed warm or iced
-      as part of your daily{" "}
-      <span className="text-gray-800">self-care ritual</span>.
-    </p>
-  </div>
-</section>
-
-``
-
-
+      <section className="bg-white py-16 px-4 sm:px-8 lg:px-16 font-sans">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#d81177] mb-6">
+            What is Nourish Resilience
+          </h2>
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+            <span className="font-semibold text-gray-800">
+              Nourish Resilience™
+            </span>{" "}
+            is a clinically informed, organic vegan protein supplement designed
+            specifically for post-breast cancer care and chronic illness
+            recovery. This functional nutrition formula blends{" "}
+            <span className="text-gray-800">
+              bioavailable proteins, powerful antioxidants, adaptogenic
+              medicinal mushrooms, fermented botanicals
+            </span>
+            , and{" "}
+            <span className="text-gray-800">gut-supportive prebiotics</span> —
+            all selected to support{" "}
+            <span className="italic text-gray-800">
+              immune resilience, metabolic balance
+            </span>
+            , and{" "}
+            <span className="italic text-gray-800">emotional wellbeing</span>.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            With a comforting{" "}
+            <span className="font-semibold text-gray-800">
+              chai-inspired flavour
+            </span>{" "}
+            featuring cardamom and cocoa, Nourish Resilience can be enjoyed warm
+            or iced as part of your daily{" "}
+            <span className="text-gray-800">self-care ritual</span>.
+          </p>
+        </div>
+      </section>
+      ``
       {/* Key Ingredients Section */}
       <section
         id="ingredients"
@@ -557,7 +555,6 @@ export default function NourishResilienceLanding() {
           </div> */}
         </div>
       </section>
-
       {/* Certification Achievement Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -644,7 +641,6 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
       </section>
-
       {/* Recipes Section */}
       <section id="recipes" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -653,7 +649,11 @@ export default function NourishResilienceLanding() {
               Simple Ways to Nourish Daily
             </h2>
             <p className="text-lg text-gray-600">
-              Every step you take toward wellness matters. Nourish Resilience brings you clean, organic ingredients designed to strengthen your body and spirit. These simple, nourishing recipes fit effortlessly into your new wellness routine — helping you rise stronger, every day.
+              Every step you take toward wellness matters. Nourish Resilience
+              brings you clean, organic ingredients designed to strengthen your
+              body and spirit. These simple, nourishing recipes fit effortlessly
+              into your new wellness routine — helping you rise stronger, every
+              day.
             </p>
           </div>
 
@@ -686,7 +686,8 @@ export default function NourishResilienceLanding() {
                     </ul>
                   </div>
                   <p>
-                    <strong>Instructions:</strong> Blend until creamy. Serve chilled
+                    <strong>Instructions:</strong> Blend until creamy. Serve
+                    chilled
                   </p>
                 </div>
               </div>
@@ -717,7 +718,8 @@ export default function NourishResilienceLanding() {
                     </ul>
                   </div>
                   <p>
-                    <strong>Instructions:</strong> Stir or froth well. Sprinkle with cinnamon or cocoa powder before serving.
+                    <strong>Instructions:</strong> Stir or froth well. Sprinkle
+                    with cinnamon or cocoa powder before serving.
                   </p>
                 </div>
               </div>
@@ -725,129 +727,87 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
       </section>
-
       {/* Bottom Banner */}
-      <section className="py-8 bg-purple-800 text-white overflow-hidden">
-        <div className="animate-scroll">
-          <div className="flex space-x-8 text-lg font-medium whitespace-nowrap">
-            <span>● REBUILD YOUR STRENGTH</span>
-            <span>● RECONNECT WITH YOUR VITALITY</span>
-            <span>● THRIVE BEYOND RECOVERY</span>
-            <span>● REBUILD YOUR STRENGTH</span>
-            <span>● RECONNECT WITH YOUR VITALITY</span>
-            <span>● THRIVE BEYOND RECOVERY</span>
+      <section className="py-6 bg-gray-300 text-black">
+        <div className="max-w-screen-xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-6 text-center text-base md:text-lg font-semibold uppercase tracking-wide">
+            <span>Rebuild Your Strength</span>
+            <span>Reconnect with Your Vitality</span>
+            <span>Thrive Beyond Recovery</span>
           </div>
         </div>
       </section>
-
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-             
-
-<a
-  href="https://vitazan.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block w-40"
-  aria-label="Visit Vitazan website"
->
-  <Image
-    src="/vitazan.png" // Ensure this is inside /public
-    alt="Vitazan Logo"
-    width={160}
-    height={40}
-    priority
-    className="object-contain w-full h-auto"
-  />
-</a>
-
-              <p className="text-gray-400">
-                Supporting women's health through science-backed nutrition and
-                compassionate care.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Products
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Dr. Khamba's Story
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Support</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Shipping
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Returns
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Privacy Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Stay Connected</h4>
-              <div className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="bg-gray-800 border border-gray-700 text-white px-3 py-2 rounded-lg flex-1 focus:outline-none focus:ring-2 focus:ring-purple-500"
-                />
-                <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors">
-                  <Mail className="w-4 h-4" />
-                </button>
-              </div>
-              <div className="flex space-x-4">
-                <Instagram className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-                <Facebook className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-                <Twitter className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              </div>
-            </div> */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto px-4 flex flex-wrap md:flex-nowrap justify-between items-start gap-6">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <a
+              href="https://vitazan.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Vitazan website"
+              className="inline-block"
+            >
+              <Image
+                src="/vitazan.png"
+                alt="Vitazan Logo"
+                width={160}
+                height={40}
+                className="w-auto h-10 object-contain"
+                priority
+              />
+            </a>
           </div>
 
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>
-              &copy; {new Date().getFullYear()} Vitazan.com. All rights
-              reserved.
-            </p>
+          {/* Contact Info */}
+          <div className="text-sm text-gray-400 flex flex-col items-start md:items-end gap-2">
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-gray-500" />
+              <a
+                href="mailto:info@vitazan.com"
+                className="hover:text-white transition-colors"
+              >
+                info@vitazan.com
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4 text-gray-500" />
+              <a
+                href="tel:1-800-000-0000"
+                className="hover:text-white transition-colors"
+              >
+                1-800-000-0000
+              </a>
+            </div>
+            <div className="flex gap-4 pt-2">
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="hover:text-white transition-colors"
+              >
+                <Instagram className="w-5 h-5 text-gray-400" />
+              </a>
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="hover:text-white transition-colors"
+              >
+                <Facebook className="w-5 h-5 text-gray-400" />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="hover:text-white transition-colors"
+              >
+                <Twitter className="w-5 h-5 text-gray-400" />
+              </a>
+            </div>
           </div>
+        </div>
+
+        <div className="mt-6 text-center text-xs text-gray-500 border-t border-gray-800 pt-4">
+          &copy; {new Date().getFullYear()} Vitazan.com. All rights reserved.
         </div>
       </footer>
     </div>
@@ -861,8 +821,7 @@ function IngredientsTabSection() {
     {
       category: "Organic Vegan Protein",
       icon: <Leaf className="w-6 h-6 text-green-600" />,
-      description:
-        "Supports muscle maintenance, metabolism, and recovery",
+      description: "Supports muscle maintenance, metabolism, and recovery",
       ingredients: [
         {
           name: "Mung Bean",
@@ -879,7 +838,6 @@ function IngredientsTabSection() {
           benefit: "Hypoallergenic protein source with B-vitamins",
           image: "/pumkinseeds.png?height=150&width=150&text=Rice+Protein",
         },
-        
       ],
     },
     {
@@ -1037,28 +995,29 @@ function IngredientsTabSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-  {ingredientCategories[activeTab].ingredients.map((ingredient, index) => (
-    <div
-      key={index}
-      className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
-    >
-      <div className="w-[240px] h-[240px] mb-4 flex items-center justify-center overflow-hidden">
-        <Image
-          src={ingredient.image || "/placeholder.svg"}
-          alt={ingredient.name}
-          width={240}
-          height={240}
-          className="object-contain w-full h-full"
-        />
-      </div>
-      <h4 className="font-semibold text-gray-700 mb-2">
-        {ingredient.name}
-      </h4>
-      {/* <p className="text-sm text-gray-600">{ingredient.benefit}</p> */}
-    </div>
-  ))}
-</div>
-
+          {ingredientCategories[activeTab].ingredients.map(
+            (ingredient, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
+              >
+                <div className="w-[240px] h-[240px] mb-4 flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={ingredient.image || "/placeholder.svg"}
+                    alt={ingredient.name}
+                    width={240}
+                    height={240}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-700 mb-2">
+                  {ingredient.name}
+                </h4>
+                {/* <p className="text-sm text-gray-600">{ingredient.benefit}</p> */}
+              </div>
+            )
+          )}
+        </div>
       </div>
     </div>
   );
