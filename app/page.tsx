@@ -566,18 +566,20 @@ export default function NourishResilienceLanding() {
         Our ingredients are <strong>organic, non-GMO</strong>, and processed in a
         <strong> third-party cGMP-certified facility</strong> — designed to meet the unique needs of post-cancer recovery.
       </p>
+<div className="flex flex-wrap justify-center gap-3 mt-6">
+  <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
+    ✓ Certified Organic
+  </span>
+  <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
+    ✓ Non-GMO
+  </span>
+  <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
+    ✓ cGMP Certified
+  </span>
+</div>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-6">
-        <span className="bg-white text-gray-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
-          Certified Organic
-        </span>
-        <span className="bg-white  text-gray-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
-          Non-GMO
-        </span>
-        <span className="bg-white  text-gray-700 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
-          cGMP Certified
-        </span>
-      </div>
+
+
     </div>
   </div>
 </section>
@@ -602,7 +604,7 @@ export default function NourishResilienceLanding() {
             <div className="bg-gradient-to-br from-purple-50 to-orange-50 border border-purple-200 rounded-xl overflow-hidden shadow-lg">
               <div className="p-8">
                 <Image
-                  src="/chai.png?height=300&width=400"
+                  src="/chai1.png?height=300&width=400"
                   alt="Nourish Chai Smoothie"
                   width={400}
                   height={300}
@@ -921,7 +923,7 @@ function IngredientsTabSection() {
       <div className="p-8">
         <div className="mb-8">
           <div className="flex items-center space-x-4 mb-4">
-            <div className="p-2 bg-purple-100 rounded-lg">
+            <div className="p-2  rounded-lg">
               {ingredientCategories[activeTab].icon}
             </div>
             <div>
