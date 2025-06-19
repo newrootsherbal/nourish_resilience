@@ -109,7 +109,7 @@ export default function NourishResilienceLanding() {
             </div>
 
             <button className="bg-[#d81177] border-2 border-[#d81177] text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-[#fce7f3] hover:to-white">
-               Shop Now
+              Shop Now
             </button>
           </div>
         </div>
@@ -164,7 +164,10 @@ export default function NourishResilienceLanding() {
           </div>
         </section>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+          onClick={() => scrollToSection("introduction")}
+        >
           <ChevronDown className="w-8 h-8 text-purple-600" />
         </div>
       </section>
@@ -556,34 +559,32 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
       {/* Certification Achievement Section */}
-     <section className="py-16 bg-white">
-  <div className="container mx-auto px-4">
-    <div className="bg-[#d3a1ca] text-black rounded-2xl p-10 text-center shadow-lg">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Certified Excellence in Every Scoop
-      </h2>
-      <p className="text-lg text-black/90 max-w-3xl mx-auto mb-6">
-        Our ingredients are <strong>organic, non-GMO</strong>, and processed in a
-        <strong> third-party cGMP-certified facility</strong> — designed to meet the unique needs of post-cancer recovery.
-      </p>
-<div className="flex flex-wrap justify-center gap-3 mt-6">
-  <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
-    ✓ Certified Organic
-  </span>
-  <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
-    ✓ Non-GMO
-  </span>
-  <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
-    ✓ cGMP Certified
-  </span>
-</div>
-
-
-
-    </div>
-  </div>
-</section>
-
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="bg-[#d3a1ca] text-black rounded-2xl p-10 text-center shadow-lg">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Certified Excellence in Every Scoop
+            </h2>
+            <p className="text-lg text-black/90 max-w-3xl mx-auto mb-6">
+              Our ingredients are <strong>organic, non-GMO</strong>, and
+              processed in a
+              <strong> third-party cGMP-certified facility</strong> — designed
+              to meet the unique needs of post-cancer recovery.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3 mt-6">
+              <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
+                ✓ Certified Organic
+              </span>
+              <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
+                ✓ Non-GMO
+              </span>
+              <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
+                ✓ cGMP Certified
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Recipes Section */}
       <section id="recipes" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -673,10 +674,10 @@ export default function NourishResilienceLanding() {
       {/* Bottom Banner */}
       <section className="py-6 bg-gray-300 text-black">
         <div className="max-w-screen-xl mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-6 text-center text-base md:text-lg font-semibold uppercase tracking-wide">
-            <span>Rebuild Your Strength</span>
-            <span>Reconnect with Your Vitality</span>
-            <span>Thrive Beyond Recovery</span>
+          <div className="grid grid-cols-3 text-center text-base md:text-lg font-semibold uppercase tracking-wide">
+            <div className="text-left">Rebuild Your Strength</div>
+            <div className="text-center">Reconnect with Your Vitality</div>
+            <div className="text-right">Thrive Beyond Recovery</div>
           </div>
         </div>
       </section>
