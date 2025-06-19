@@ -672,7 +672,7 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
       {/* Bottom Banner */}
-     <section className="py-6 bg-gray-300 text-black">
+     <section className="py-6 bg-gray-400 text-black">
   <div className="max-w-screen-xl mx-auto px-4">
     <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left text-base md:text-lg font-semibold uppercase tracking-wide gap-6">
       <span className="w-full md:w-auto text-left">Rebuild Your Strength</span>
@@ -683,7 +683,7 @@ export default function NourishResilienceLanding() {
 </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-gray-300 text-white py-8">
         <div className="container mx-auto px-4 flex flex-wrap md:flex-nowrap justify-between items-start gap-6">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -706,9 +706,9 @@ export default function NourishResilienceLanding() {
           </div>
 
           {/* Contact Info */}
-          <div className="text-sm text-gray-400 flex flex-col items-start md:items-end gap-2">
+          <div className="text-sm text-gray-900 flex flex-col items-start md:items-end gap-2">
             <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-gray-500" />
+              <Mail className="w-4 h-4 text-gray-900" />
               <a
                 href="mailto:info@vitazan.com"
                 className="hover:text-white transition-colors"
@@ -717,7 +717,7 @@ export default function NourishResilienceLanding() {
               </a>
             </div>
             <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-gray-500" />
+              <Phone className="w-4 h-4 text-gray-900" />
               <a
                 href="tel:1-888-863-9274"
                 className="hover:text-white transition-colors"
@@ -731,27 +731,27 @@ export default function NourishResilienceLanding() {
                 aria-label="Instagram"
                 className="hover:text-white transition-colors"
               >
-                <Instagram className="w-5 h-5 text-gray-400" />
+                <Instagram className="w-5 h-5 text-gray-900" />
               </a>
               <a
                 href="#"
                 aria-label="Facebook"
                 className="hover:text-white transition-colors"
               >
-                <Facebook className="w-5 h-5 text-gray-400" />
+                <Facebook className="w-5 h-5 text-gray-900" />
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
                 className="hover:text-white transition-colors"
               >
-                <Twitter className="w-5 h-5 text-gray-400" />
+                <Twitter className="w-5 h-5 text-gray-900" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-6 text-center text-xs text-gray-500 border-t border-gray-800 pt-4">
+        <div className="mt-6 text-center text-xs text-gray-500  border-gray-800 pt-4">
           &copy; {new Date().getFullYear()} Vitazan.com. All rights reserved.
         </div>
       </footer>
