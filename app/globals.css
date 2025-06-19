@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Custom horizontal scrollbar */
+.scrollbar-gray::-webkit-scrollbar {
+  height: 6px; /* Horizontal scrollbars */
+}
+
+.scrollbar-gray::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar-gray::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Tailwind's gray-400 */
+  border-radius: 9999px;
+}
+
+/* For Firefox */
+.scrollbar-gray {
+  scrollbar-color: #a0aec0 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+
+
 @keyframes fade-in-up {
   from {
     opacity: 0;

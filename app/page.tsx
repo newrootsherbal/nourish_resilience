@@ -672,15 +672,16 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
       {/* Bottom Banner */}
-      <section className="py-6 bg-gray-300 text-black">
-        <div className="max-w-screen-xl mx-auto px-4">
-          <div className="grid grid-cols-3 text-center text-base md:text-lg font-semibold uppercase tracking-wide">
-            <div className="text-left">Rebuild Your Strength</div>
-            <div className="text-center">Reconnect with Your Vitality</div>
-            <div className="text-right">Thrive Beyond Recovery</div>
-          </div>
-        </div>
-      </section>
+     <section className="py-6 bg-gray-300 text-black">
+  <div className="max-w-screen-xl mx-auto px-4">
+    <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left text-base md:text-lg font-semibold uppercase tracking-wide gap-6">
+      <span className="w-full md:w-auto text-left">Rebuild Your Strength</span>
+      <span className="w-full md:w-auto text-center">Reconnect with Your Vitality</span>
+      <span className="w-full md:w-auto text-right">Thrive Beyond Recovery</span>
+    </div>
+  </div>
+</section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 flex flex-wrap md:flex-nowrap justify-between items-start gap-6">
@@ -900,69 +901,71 @@ function IngredientsTabSection() {
 
   return (
     <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-200 shadow-lg overflow-hidden">
-      {/* Tab Navigation */}
-      <div className="border-b border-purple-200">
-        <div className="flex flex-wrap">
-          {ingredientCategories.map((category, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`flex-1 min-w-0 px-4 py-4 text-sm font-medium transition-all duration-200 flex items-center justify-center space-x-2 ${
-                activeTab === index
-                  ? "bg-[#d3a1ca] text-black border-b-2 border-[#d81177]"
-                  : "text-black hover:bg-purple-50 hover:text-[#d81177]"
-              }`}
-            >
-              <span className="hidden sm:block">{category.icon}</span>
-              <span className="truncate">{category.category}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Tab Content */}
-      <div className="p-8">
-        <div className="mb-8">
-          <div className="flex items-center space-x-4 mb-4">
-            <div className="p-2  rounded-lg">
-              {ingredientCategories[activeTab].icon}
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-[#d81177]">
-                {ingredientCategories[activeTab].category}
-              </h3>
-              <p className="text-gray-600 mt-1">
-                {ingredientCategories[activeTab].description}
-              </p>
-            </div>
+  {/* Tab Navigation */}
+  <div className="border-b border-purple-200 overflow-x-auto scrollbar-gray">
+    <div className="flex min-w-full space-x-2 px-4 sm:px-6 py-2 sm:justify-center">
+      {ingredientCategories.map((category, index) => (
+        <button
+          key={index}
+          onClick={() => setActiveTab(index)}
+          className={`flex-shrink-0 px-4 py-2 text-sm sm:text-base font-medium transition-all duration-200 rounded-md whitespace-nowrap ${
+            activeTab === index
+              ? "bg-[#d3a1ca] text-black border-b-2 border-[#d81177]"
+              : "text-black hover:bg-purple-50 hover:text-[#d81177]"
+          }`}
+        >
+          <div className="flex items-center space-x-2">
+            <span className="hidden sm:block">{category.icon}</span>
+            <span className="truncate">{category.category}</span>
           </div>
-        </div>
+        </button>
+      ))}
+    </div>
+  </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {ingredientCategories[activeTab].ingredients.map(
-            (ingredient, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
-              >
-                <div className="w-[240px] h-[240px] mb-4 flex items-center justify-center overflow-hidden">
-                  <Image
-                    src={ingredient.image || "/placeholder.svg"}
-                    alt={ingredient.name}
-                    width={240}
-                    height={240}
-                    className="object-contain w-full h-full"
-                  />
-                </div>
-                <h4 className="font-semibold text-gray-700 mb-2">
-                  {ingredient.name}
-                </h4>
-                {/* <p className="text-sm text-gray-600">{ingredient.benefit}</p> */}
-              </div>
-            )
-          )}
+  {/* Tab Content */}
+  <div className="p-4 sm:p-6 md:p-8">
+    {/* Category Header */}
+    <div className="mb-6 md:mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 mb-4">
+        <div className="p-2 rounded-lg flex justify-center sm:justify-start">
+          {ingredientCategories[activeTab].icon}
+        </div>
+        <div className="mt-2 sm:mt-0 text-center sm:text-left">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#d81177]">
+            {ingredientCategories[activeTab].category}
+          </h3>
+          <p className="text-gray-600 mt-1 text-sm sm:text-base">
+            {ingredientCategories[activeTab].description}
+          </p>
         </div>
       </div>
     </div>
+
+    {/* Ingredients Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {ingredientCategories[activeTab].ingredients.map((ingredient, index) => (
+        <div
+          key={index}
+          className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-4 sm:p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
+        >
+          <div className="w-full aspect-square mb-4 flex items-center justify-center overflow-hidden">
+            <Image
+              src={ingredient.image || "/placeholder.svg"}
+              alt={ingredient.name}
+              width={240}
+              height={240}
+              className="object-contain w-full h-full"
+            />
+          </div>
+          <h4 className="font-semibold text-gray-700 text-base sm:text-lg">
+            {ingredient.name}
+          </h4>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
   );
 }
