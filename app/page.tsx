@@ -108,9 +108,7 @@ export default function NourishResilienceLanding() {
               ))}
             </div>
 
-            <button className="bg-[#d81177] border-2 border-[#d81177] text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-[#fce7f3] hover:to-white">
-              Shop Now
-            </button>
+            
           </div>
         </div>
       </nav>
@@ -121,48 +119,13 @@ export default function NourishResilienceLanding() {
       >
         <div className="absolute inset-0 "></div>
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/heroo.jpg?height=800&width=1200"
           alt="Nourish Resilience Product"
           width={1200}
           height={800}
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <section className="relative  py-24 px-4 sm:px-8">
-          {/* Optional decorative shape */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute -top-40 left-1/2 w-[60rem] h-[60rem] -translate-x-1/2 bg-[#fce7f3] opacity-30 rounded-full blur-3xl" />
-          </div>
-
-          <div className="relative z-10 max-w-4xl mx-auto text-center">
-            <div className="animate-fade-in-up space-y-6">
-              <h1 className="text-5xl md:text-7xl font-medium text-[#d81177] leading-tight tracking-tight drop-shadow-sm">
-                Fuel Your Recovery
-              </h1>
-
-              <h2 className="text-3xl md:text-5xl font-light text-[#fc7daa] italic">
-                Nourish Resilience™
-              </h2>
-
-              <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
-                Discover science-backed nutrition designed to restore energy,
-                reduce inflammation, and help your body bounce back stronger.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 sm:justify-center pt-4">
-                <button
-                  onClick={() => scrollToSection("introduction")}
-                  className="bg-[#d81177] text-white px-6 py-3 rounded-2xl text-lg font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
-                >
-                  Learn More
-                </button>
-
-                <button className="bg-white border-2 border-[#d0a2c9] text-[#d81177] px-6 py-3 rounded-2xl text-lg font-semibold shadow-md hover:bg-[#fce7f3] hover:scale-105 transition-all duration-300">
-                  Shop Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/*  */}
 
         <div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
@@ -200,7 +163,7 @@ export default function NourishResilienceLanding() {
             </div>
             <div className="relative">
               <Image
-                src="/Picture1.png?height=600&width=500"
+                src="/img1.png?height=600&width=500"
                 alt="Supportive women in nature"
                 width={500}
                 height={600}
