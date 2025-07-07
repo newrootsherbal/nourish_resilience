@@ -236,7 +236,7 @@ export default function NourishResilienceLanding() {
 
                 <button
                   onClick={() => setShowMoreStory(!showMoreStory)}
-                  className="inline-flex items-center gap-2 text-[#d81177] hover:text-[#d3a1ca] font-medium transition-colors group"
+                  className="inline-flex items-center gap-2 text-[#d3a1ca] hover:text-[#d81177] font-medium transition-colors group"
                 >
                   {showMoreStory ? "Read Less" : "Read More About Her Journey"}
                   <ChevronRight
