@@ -114,21 +114,22 @@ export default function NourishResilienceLanding() {
       </nav>
       {/* Hero Section */}
       <section
-        id="hero"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      >
+  id="hero"
+  className="relative mt-14 min-h-screen flex items-center justify-center overflow-hidden"
+>
+
         <div className="absolute inset-0 "></div>
         <Image
-          src="/heroo.jpg?height=800&width=1200"
+          src="/heroo2.jpg?height=1000&width=1200"
           alt="Nourish Resilience Product"
           width={1200}
-          height={800}
-          className="absolute inset-0 w-full h-full object-cover"
+          height={1000}
+          className="absolute inset-0 w-full h-full "
         />
         {/*  */}
 
         <div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+          className="absolute bottom-14 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
           onClick={() => scrollToSection("introduction")}
         >
           <ChevronDown className="w-8 h-8 text-purple-600" />
