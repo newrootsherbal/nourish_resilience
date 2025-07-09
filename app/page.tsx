@@ -111,27 +111,27 @@ export default function NourishResilienceLanding() {
         </div>
       </nav>
       {/* Hero Section */}
-      <section
-        id="hero"
-        className="relative mt-14 min-h-screen flex items-center justify-center overflow-hidden"
-      >
-        <div className="absolute inset-0 "></div>
-        <Image
-          src="/heroo2.jpg?height=1000&width=1200"
-          alt="Nourish Resilience Product"
-          width={1200}
-          height={1000}
-          className="absolute inset-0 w-full h-full "
-        />
-        {/*  */}
+      <section id="hero" className="relative w-full overflow-hidden">
+  <div className="w-full">
+    <Image
+      src="/heroo2.jpg" // your full banner image
+      alt="Nourish Resilience Banner"
+      width={1600}
+      height={800}
+      className="w-full h-auto object-contain sm:object-cover"
+      priority
+    />
+  </div>
 
-        <div
-          className="absolute bottom-14 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
-          onClick={() => scrollToSection("introduction")}
-        >
-          <ChevronDown className="w-8 h-8 text-purple-600" />
-        </div>
-      </section>
+  {/* Optional Scroll Down Icon */}
+  <div
+    className="absolute left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer z-10"
+    onClick={() => scrollToSection("introduction")}
+  >
+    <ChevronDown className="w-6 h-6 text-pink-600" />
+  </div>
+</section>
+
       {/* Introduction Section */}
       <section id="introduction" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -338,7 +338,6 @@ export default function NourishResilienceLanding() {
                   can become a key part of your long-term wellness journey.
                   <br className="hidden sm:block" />
                   <br />
-                 
                 </p>
               </div>
             </div>
@@ -394,7 +393,7 @@ export default function NourishResilienceLanding() {
                   themes echoed again and again: reliable nutritional guidance
                   was hard to find, supportive connection was essential to
                   healing, and post-treatment changes to metabolism, hormones,
-                  and overall health needed new, thoughtful care
+                  and overall health needed new, thoughtful care.
                 </p>
               </div>
 
@@ -855,7 +854,7 @@ function IngredientsTabSection() {
     <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-200 shadow-lg overflow-hidden">
       {/* Tab Navigation */}
       <div className="border-b border-purple-200 overflow-x-auto scrollbar-gray">
-        <div className="flex min-w-full space-x-2 px-4 sm:px-6 py-2 sm:justify-center">
+        <div className="flex min-w-full space-x-2 px-4 sm:px-6 py-2 ">
           {ingredientCategories.map((category, index) => (
             <button
               key={index}
