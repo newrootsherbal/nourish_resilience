@@ -338,20 +338,7 @@ export default function NourishResilienceLanding() {
                   can become a key part of your long-term wellness journey.
                   <br className="hidden sm:block" />
                   <br />
-                  Ask your{" "}
-                  <span className="font-medium text-black-700">
-                    naturopathic doctor
-                  </span>
-                  ,{" "}
-                  <span className="font-medium text-black-700">
-                    integrative health provider
-                  </span>
-                  , or{" "}
-                  <span className="font-medium text-black-700">
-                    functional medicine practitioner
-                  </span>{" "}
-                  how Nourish Resilience® can support your long-term wellness
-                  journey.
+                 
                 </p>
               </div>
             </div>
