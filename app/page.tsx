@@ -309,12 +309,15 @@ export default function NourishResilienceLanding() {
               <h2 className="text-4xl font-bold text-[#d81177] mb-8">
                 Who Can Benefit?
               </h2>
+               
               <ul className="space-y-4">
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto font-bold">
+                Nourish Resilience is ideal for:
+              </p>
                 {[
-                  "Women in breast cancer recovery seeking long-term wellness support",
-                  "Individuals managing chronic illness recovery",
-                  "Those experiencing post-treatment side effects like fatigue, weight changes, digestive issues, hormonal imbalances, anxiety, or brain fog",
-                  "Anyone looking to support their immune system, metabolism, and emotional health naturally",
+                  "Women using holistic nutritional supplementation as part of their recovery process",
+                  "Individuals looking for a nutritional beverage for wellbeing",
+              
                 ].map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <Heart className="w-5 h-5 text-[#8bc345] mt-1 flex-shrink-0" />
@@ -332,9 +335,7 @@ export default function NourishResilienceLanding() {
                   <strong className="text-[#d81177] font-semibold">
                     Nourish Resilience™
                   </strong>{" "}
-                  is your trusted partner in functional nutrition - designed to
-                  support you through breast cancer recovery and chronic illness
-                  healing.
+                  is your trusted partner for functional nutrition after-cancer care and during chronic illness recovery. Ask your naturopathic doctor, integrative healthcare provider, or functional-medicine practitioner about how Nourish Resilience can become a key part of your long-term wellness journey.
                   <br className="hidden sm:block" />
                   <br />
                   Ask your{" "}
@@ -464,25 +465,17 @@ export default function NourishResilienceLanding() {
             What is Nourish Resilience
           </h2>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-            <span className="font-semibold text-gray-800">
-              Nourish Resilience™
-            </span>{" "}
-            is a clinically informed, organic vegan protein supplement designed
-            specifically for post-breast cancer care and chronic illness
-            recovery. This functional nutrition formula blends{" "}
-            <span className="text-gray-800">
-              bioavailable proteins, powerful antioxidants, adaptogenic
-              medicinal mushrooms, fermented botanicals
-            </span>
-            , and{" "}
-            <span className="text-gray-800">gut-supportive prebiotics</span> —
-            all selected to support{" "}
-            <span className="italic text-gray-800">
-              immune resilience, metabolic balance
-            </span>
-            , and{" "}
-            <span className="italic text-gray-800">emotional wellbeing</span>.
-          </p>
+  <span className="font-semibold text-gray-800">
+    Nourish Resilience™
+  </span>{" "}
+  is a clinically informed, organic vegan protein supplement designed
+  specifically for post-breast cancer care and chronic illness recovery. This
+  functional nutrition formula blends bioavailable proteins, powerful antioxidants,
+  <strong> adaptogenic medicinal mushrooms, fermented botanicals, </strong> and
+  <strong> gut-supportive prebiotics </strong> —each selected as part of a
+  holistic nutrition approach.
+</p>
+
           <p className="text-lg text-gray-700 leading-relaxed">
             With a comforting{" "}
             <span className="font-semibold text-gray-800">
@@ -530,10 +523,7 @@ export default function NourishResilienceLanding() {
               Certified Excellence in Every Scoop
             </h2>
             <p className="text-lg text-black/90 max-w-3xl mx-auto mb-6">
-              Our ingredients are <strong>organic, non-GMO</strong>, and
-              processed in a
-              <strong> third-party cGMP-certified facility</strong> — designed
-              to meet the unique needs of post-cancer recovery.
+              All ingredients are organic, non-GMO, curated in a third-party cGMP facility, and carefully selected to meet the unique needs of postcancer physiology.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
               <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
@@ -730,7 +720,7 @@ function IngredientsTabSection() {
     {
       category: "Organic Vegan Protein",
       icon: <Leaf className="w-6 h-6 text-green-600" />,
-      description: "Supports muscle maintenance, metabolism, and recovery",
+      description: "Supports muscle maintenance, repair body tissues, and build antibodies",
       ingredients: [
         {
           name: "Mung Bean",
@@ -753,7 +743,7 @@ function IngredientsTabSection() {
       category: "Fermented Botanicals",
       icon: <Star className="w-6 h-6 text-yellow-600" />,
       description:
-        "Enhanced absorption for digestive health and anti-inflammatory benefits",
+        "Enhanced absorption for digestive health",
       ingredients: [
         {
           name: "Ginger",
@@ -776,7 +766,7 @@ function IngredientsTabSection() {
       category: "Medicinal Mushrooms",
       icon: <Shield className="w-6 h-6 text-purple-600" />,
       description:
-        "Immune-supporting fungi with powerful adaptogenic properties",
+        "Strengthen immune recovery",
       ingredients: [
         {
           name: "Reishi",
@@ -798,7 +788,7 @@ function IngredientsTabSection() {
     {
       category: "Antioxidants and Adaptogens",
       icon: <Heart className="w-6 h-6 text-red-500" />,
-      description: "Stress-fighting compounds that support overall resilience",
+      description: "Energize and cleanse",
       ingredients: [
         {
           name: "Matcha Green Tea",
@@ -820,7 +810,7 @@ function IngredientsTabSection() {
     {
       category: "Prebiotic Fibre",
       icon: <Users className="w-6 h-6 text-blue-600" />,
-      description: "Gut health support for optimal nutrient absorption",
+      description: "Supports gut microbiome and healthy digestion",
       ingredients: [
         {
           name: "Inulin",
@@ -837,7 +827,7 @@ function IngredientsTabSection() {
     {
       category: "Spices",
       icon: <Star className="w-6 h-6 text-orange-600" />,
-      description: "Warming spices that aid digestion and provide comfort",
+      description: "Antioxidant benefits and comforting taste",
       ingredients: [
         {
           name: "Cinnamon",
