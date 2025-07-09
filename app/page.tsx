@@ -107,17 +107,14 @@ export default function NourishResilienceLanding() {
                 </button>
               ))}
             </div>
-
-            
           </div>
         </div>
       </nav>
       {/* Hero Section */}
       <section
-  id="hero"
-  className="relative mt-14 min-h-screen flex items-center justify-center overflow-hidden"
->
-
+        id="hero"
+        className="relative mt-14 min-h-screen flex items-center justify-center overflow-hidden"
+      >
         <div className="absolute inset-0 "></div>
         <Image
           src="/heroo2.jpg?height=1000&width=1200"
@@ -149,7 +146,7 @@ export default function NourishResilienceLanding() {
                 new chapter.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Nourish Resilience was born from a very real experience: a
+                Nourish Resilience® was born from a very real experience: a
                 cancer diagnosis that led to a deeper understanding of healing,
                 nutrition, and community.
               </p>
@@ -184,11 +181,11 @@ export default function NourishResilienceLanding() {
             {/* Section Title */}
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-[#8bc345] mb-4">
-                Dr. Khamba's Journey
+                Dr Khamba's Journey
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 A personal story of resilience, recovery, and the creation of
-                Nourish Resilience™
+                Nourish Resilience®
               </p>
             </div>
 
@@ -213,9 +210,9 @@ export default function NourishResilienceLanding() {
                 <div className="absolute -bottom-5 sm:-bottom-6 right-0 sm:right-4 bg-white rounded-xl px-5 py-3 shadow-xl border border-purple-200 backdrop-blur-sm">
                   <div className="text-center">
                     <p className="text-sm font-semibold text-[#d81177] tracking-wide">
-                      Dr. Baljit Khamba
+                      Dr Baljit Khamba
                     </p>
-                    <p className="text-xs text-gray-700">ND, EdD, MPH</p>
+                    <p className="text-xs text-gray-700">ND, MPH, EdD</p>
                   </div>
                 </div>
               </div>
@@ -261,7 +258,7 @@ export default function NourishResilienceLanding() {
                 <div className="prose prose-lg max-w-none space-y-6">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     I began crafting daily blends incorporating many of the
-                    ingredients now found in Nourish Resilience™ — including
+                    ingredients now found in Nourish Resilience® — including
                     reishi, fermented ginger, black cumin seed, dandelion root,
                     ashwagandha, and chai-inspired spices like cinnamon and
                     cardamom. These nutrients and herbs supported me in managing
@@ -271,7 +268,7 @@ export default function NourishResilienceLanding() {
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Nourish Resilience™ emerged from this lived experience — not
+                    Nourish Resilience® emerged from this lived experience — not
                     just as a product, but as a deeply intentional formulation
                     designed to support recovery, resilience, and vitality in
                     others. It reflects the science of nutritional therapeutics,
@@ -288,7 +285,7 @@ export default function NourishResilienceLanding() {
                 wisdom to heal and thrive."
               </p> */}
                     <footer className="mt-3 text-sm text-[#d81177] font-medium">
-                      Dr. Baljit Khamba, ND, EdD, MPH
+                      Dr Baljit Khamba, ND, MPH, EdD
                       <br />
                       <span className="text-black">
                         Breast cancer survivor &amp; thriver
@@ -309,15 +306,14 @@ export default function NourishResilienceLanding() {
               <h2 className="text-4xl font-bold text-[#d81177] mb-8">
                 Who Can Benefit?
               </h2>
-               
+
               <ul className="space-y-4">
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto font-bold">
-                Nourish Resilience is ideal for:
-              </p>
+                  Nourish Resilience® is ideal for:
+                </p>
                 {[
                   "Women using holistic nutritional supplementation as part of their recovery process",
                   "Individuals looking for a nutritional beverage for wellbeing",
-              
                 ].map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <Heart className="w-5 h-5 text-[#8bc345] mt-1 flex-shrink-0" />
@@ -333,9 +329,13 @@ export default function NourishResilienceLanding() {
                   <br className="hidden sm:block" />
                   <br />
                   <strong className="text-[#d81177] font-semibold">
-                    Nourish Resilience™
+                    Nourish Resilience®
                   </strong>{" "}
-                  is your trusted partner for functional nutrition after-cancer care and during chronic illness recovery. Ask your naturopathic doctor, integrative healthcare provider, or functional-medicine practitioner about how Nourish Resilience can become a key part of your long-term wellness journey.
+                  is your trusted partner for functional nutrition after-cancer
+                  care and during chronic illness recovery. Ask your
+                  naturopathic doctor, integrative healthcare provider, or
+                  functional-medicine practitioner about how Nourish Resilience®
+                  can become a key part of your long-term wellness journey.
                   <br className="hidden sm:block" />
                   <br />
                   Ask your{" "}
@@ -350,7 +350,7 @@ export default function NourishResilienceLanding() {
                   <span className="font-medium text-black-700">
                     functional medicine practitioner
                   </span>{" "}
-                  how Nourish Resilience™ can support your long-term wellness
+                  how Nourish Resilience® can support your long-term wellness
                   journey.
                 </p>
               </div>
@@ -385,7 +385,6 @@ export default function NourishResilienceLanding() {
               />
               <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg border border-orange-200">
                 <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
                   <p className="text-sm font-medium text-gray-800">
                     Community & Connection
                   </p>
@@ -422,7 +421,7 @@ export default function NourishResilienceLanding() {
               >
                 <div className="prose prose-lg max-w-none space-y-6">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    With this vision in mind, Nourish Resilience was developed:
+                    With this vision in mind, Nourish Resilience® was developed:
                     a clinically informed, organic plant-based supplement
                     designed to fill the gaps left after treatment. Crafted with
                     the purest ingredients—vegan proteins, medicinal mushrooms,
@@ -434,7 +433,7 @@ export default function NourishResilienceLanding() {
                   <p className="text-gray-700 leading-relaxed text-lg">
                     Our mission is simple: to empower women to nourish their
                     next chapter with strength, vitality, and confidence.
-                    Nourish Resilience is more than a supplement; it’s a symbol
+                    Nourish Resilience® is more than a supplement; it’s a symbol
                     of moving forward, rebuilding from within, and knowing that
                     cancer may have been one chapter—but it is not the whole
                     story.
@@ -462,27 +461,32 @@ export default function NourishResilienceLanding() {
       <section className="bg-white py-16 px-4 sm:px-8 lg:px-16 font-sans">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#d81177] mb-6">
-            What is Nourish Resilience
+            What is Nourish Resilience®
           </h2>
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-  <span className="font-semibold text-gray-800">
-    Nourish Resilience™
-  </span>{" "}
-  is a clinically informed, organic vegan protein supplement designed
-  specifically for post-breast cancer care and chronic illness recovery. This
-  functional nutrition formula blends bioavailable proteins, powerful antioxidants,
-  <strong> adaptogenic medicinal mushrooms, fermented botanicals, </strong> and
-  <strong> gut-supportive prebiotics </strong> —each selected as part of a
-  holistic nutrition approach.
-</p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <span className="font-semibold text-gray-800">
+              Nourish Resilience®
+            </span>{" "}
+            is a clinically informed, organic vegan protein supplement designed
+            specifically for post-breast cancer care and chronic illness
+            recovery. This functional nutrition formula blends bioavailable
+            proteins, powerful antioxidants,
+            <strong>
+              {" "}
+              adaptogenic medicinal mushrooms, fermented botanicals,{" "}
+            </strong>{" "}
+            and
+            <strong> gut-supportive prebiotics </strong> —each selected as part
+            of a holistic nutrition approach.
+          </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
             With a comforting{" "}
             <span className="font-semibold text-gray-800">
               chai-inspired flavour
             </span>{" "}
-            featuring cardamom and cocoa, Nourish Resilience can be enjoyed warm
-            or iced as part of your daily{" "}
+            featuring cardamom and cocoa, Nourish Resilience® can be enjoyed
+            warm or iced as part of your daily{" "}
             <span className="text-gray-800">self-care ritual</span>.
           </p>
         </div>
@@ -523,7 +527,9 @@ export default function NourishResilienceLanding() {
               Certified Excellence in Every Scoop
             </h2>
             <p className="text-lg text-black/90 max-w-3xl mx-auto mb-6">
-              All ingredients are organic, non-GMO, curated in a third-party cGMP facility, and carefully selected to meet the unique needs of postcancer physiology.
+              All ingredients are organic, non-GMO, curated in a third-party
+              cGMP facility, and carefully selected to meet the unique needs of
+              postcancer physiology.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
               <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
@@ -547,7 +553,7 @@ export default function NourishResilienceLanding() {
               Simple Ways to Nourish Daily
             </h2>
             <p className="text-lg text-gray-600">
-              Every step you take toward wellness matters. Nourish Resilience
+              Every step you take toward wellness matters. Nourish Resilience®
               brings you clean, organic ingredients designed to strengthen your
               body and spirit. These simple, nourishing recipes fit effortlessly
               into your new wellness routine — helping you rise stronger, every
@@ -575,7 +581,7 @@ export default function NourishResilienceLanding() {
                   <div>
                     <strong>Ingredients:</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1 scoop Nourish Resilience™</li>
+                      <li>1 scoop Nourish Resilience®</li>
                       <li>1 cup unsweetened coconut milk</li>
                       <li>1/2 frozen banana</li>
                       <li>1/4 cup frozen berries</li>
@@ -610,7 +616,7 @@ export default function NourishResilienceLanding() {
                   <div>
                     <strong>Ingredients:</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1 scoop Nourish Resilience</li>
+                      <li>1 scoop Nourish Resilience®</li>
                       <li>1 cup heated oat milk or almond milk</li>
                       <li>1/2 teaspoon honey (optional)</li>
                     </ul>
@@ -626,16 +632,22 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
       {/* Bottom Banner */}
-     <section className="py-6 bg-gray-400 text-black">
-  <div className="max-w-screen-xl mx-auto px-4">
-    <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left text-base md:text-lg font-semibold uppercase tracking-wide gap-6">
-      <span className="w-full md:w-auto text-left">Rebuild Your Strength</span>
-      <span className="w-full md:w-auto text-center">Reconnect with Your Vitality</span>
-      <span className="w-full md:w-auto text-right">Thrive Beyond Recovery</span>
-    </div>
-  </div>
-</section>
-
+      <section className="py-6 bg-gray-400 text-black">
+        <div className="max-w-screen-xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left text-base md:text-lg font-semibold uppercase tracking-wide gap-6">
+            <span className="w-full md:w-auto text-left">
+              Rebuild Your Strength
+            </span>
+            <span className="w-full md:w-auto text-center">
+              Reconnect with Your Vitality
+            </span>
+            <span className="w-full md:w-auto text-right">
+              {" "}
+              Nourish your body
+            </span>
+          </div>
+        </div>
+      </section>
       {/* Footer */}
       <footer className="bg-gray-300 text-white py-8">
         <div className="container mx-auto px-4 flex flex-wrap md:flex-nowrap justify-between items-start gap-6">
@@ -720,7 +732,8 @@ function IngredientsTabSection() {
     {
       category: "Organic Vegan Protein",
       icon: <Leaf className="w-6 h-6 text-green-600" />,
-      description: "Supports muscle maintenance, repair body tissues, and build antibodies",
+      description:
+        "Supports muscle maintenance, repair body tissues, and build antibodies",
       ingredients: [
         {
           name: "Mung Bean",
@@ -742,8 +755,7 @@ function IngredientsTabSection() {
     {
       category: "Fermented Botanicals",
       icon: <Star className="w-6 h-6 text-yellow-600" />,
-      description:
-        "Enhanced absorption for digestive health",
+      description: "Enhanced absorption for digestive health",
       ingredients: [
         {
           name: "Ginger",
@@ -765,8 +777,7 @@ function IngredientsTabSection() {
     {
       category: "Medicinal Mushrooms",
       icon: <Shield className="w-6 h-6 text-purple-600" />,
-      description:
-        "Strengthen immune recovery",
+      description: "Strengthen immune recovery",
       ingredients: [
         {
           name: "Reishi",
@@ -855,71 +866,72 @@ function IngredientsTabSection() {
 
   return (
     <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-200 shadow-lg overflow-hidden">
-  {/* Tab Navigation */}
-  <div className="border-b border-purple-200 overflow-x-auto scrollbar-gray">
-    <div className="flex min-w-full space-x-2 px-4 sm:px-6 py-2 sm:justify-center">
-      {ingredientCategories.map((category, index) => (
-        <button
-          key={index}
-          onClick={() => setActiveTab(index)}
-          className={`flex-shrink-0 px-4 py-2 text-sm sm:text-base font-medium transition-all duration-200 rounded-md whitespace-nowrap ${
-            activeTab === index
-              ? "bg-[#d3a1ca] text-black border-b-2 border-[#d81177]"
-              : "text-black hover:bg-purple-50 hover:text-[#d81177]"
-          }`}
-        >
-          <div className="flex items-center space-x-2">
-            <span className="hidden sm:block">{category.icon}</span>
-            <span className="truncate">{category.category}</span>
-          </div>
-        </button>
-      ))}
-    </div>
-  </div>
-
-  {/* Tab Content */}
-  <div className="p-4 sm:p-6 md:p-8">
-    {/* Category Header */}
-    <div className="mb-6 md:mb-8">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 mb-4">
-        <div className="p-2 rounded-lg flex justify-center sm:justify-start">
-          {ingredientCategories[activeTab].icon}
+      {/* Tab Navigation */}
+      <div className="border-b border-purple-200 overflow-x-auto scrollbar-gray">
+        <div className="flex min-w-full space-x-2 px-4 sm:px-6 py-2 sm:justify-center">
+          {ingredientCategories.map((category, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTab(index)}
+              className={`flex-shrink-0 px-4 py-2 text-sm sm:text-base font-medium transition-all duration-200 rounded-md whitespace-nowrap ${
+                activeTab === index
+                  ? "bg-[#d3a1ca] text-black border-b-2 border-[#d81177]"
+                  : "text-black hover:bg-purple-50 hover:text-[#d81177]"
+              }`}
+            >
+              <div className="flex items-center space-x-2">
+                <span className="hidden sm:block">{category.icon}</span>
+                <span className="truncate">{category.category}</span>
+              </div>
+            </button>
+          ))}
         </div>
-        <div className="mt-2 sm:mt-0 text-center sm:text-left">
-          <h3 className="text-xl sm:text-2xl font-bold text-[#d81177]">
-            {ingredientCategories[activeTab].category}
-          </h3>
-          <p className="text-gray-600 mt-1 text-sm sm:text-base">
-            {ingredientCategories[activeTab].description}
-          </p>
+      </div>
+
+      {/* Tab Content */}
+      <div className="p-4 sm:p-6 md:p-8">
+        {/* Category Header */}
+        <div className="mb-6 md:mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 mb-4">
+            <div className="p-2 rounded-lg flex justify-center sm:justify-start">
+              {ingredientCategories[activeTab].icon}
+            </div>
+            <div className="mt-2 sm:mt-0 text-center sm:text-left">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#d81177]">
+                {ingredientCategories[activeTab].category}
+              </h3>
+              <p className="text-gray-600 mt-1 text-sm sm:text-base">
+                {ingredientCategories[activeTab].description}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Ingredients Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {ingredientCategories[activeTab].ingredients.map(
+            (ingredient, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-4 sm:p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
+              >
+                <div className="w-full aspect-square mb-4 flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={ingredient.image || "/placeholder.svg"}
+                    alt={ingredient.name}
+                    width={240}
+                    height={240}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-700 text-base sm:text-lg">
+                  {ingredient.name}
+                </h4>
+              </div>
+            )
+          )}
         </div>
       </div>
     </div>
-
-    {/* Ingredients Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {ingredientCategories[activeTab].ingredients.map((ingredient, index) => (
-        <div
-          key={index}
-          className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-4 sm:p-6 border border-purple-100 flex flex-col items-center text-center hover:shadow-md transition-shadow"
-        >
-          <div className="w-full aspect-square mb-4 flex items-center justify-center overflow-hidden">
-            <Image
-              src={ingredient.image || "/placeholder.svg"}
-              alt={ingredient.name}
-              width={240}
-              height={240}
-              className="object-contain w-full h-full"
-            />
-          </div>
-          <h4 className="font-semibold text-gray-700 text-base sm:text-lg">
-            {ingredient.name}
-          </h4>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-
   );
 }
