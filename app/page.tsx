@@ -111,44 +111,134 @@ export default function NourishResilienceLanding() {
         </div>
       </nav>
       {/* Hero Section */}
-      <section id="hero" className="relative w-full overflow-hidden bg-white">
-        {/* Hero Image Container */}
-       <div className="relative w-full min-h-[100vh] lg:h-screen">
+ <section id="hero" className="relative w-full overflow-hidden bg-white">
+      {/* Background Image */}
+      <div className="relative w-full h-screen blur-lg sm:blur-0">
+        <Image
+          src="/pinkbg.png"
+          alt="Hero Banner"
+          fill
+          className="object-cover object-[center] md:object-[80%_center]"
+          priority
+        />
 
-          <Image
-            src="/heroo.jpg"
-            alt="Nourish Resilience Banner"
-            fill
-            sizes="100vw"
-            className="object-contain"
-            priority
-          />
-         
-        </div>
-      </section>
-
-      <section id="introduction" className="py-10 bg-white">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-      {/* Text Content */}
-      <div className="space-y-6">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#d81177] leading-snug sm:leading-tight">
-          Your Next Chapter of Healing Starts Here
-        </h2>
-        <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-          At Vitazan, we believe that the journey to wellness doesn’t end with
-          the completion of treatment — it’s just the beginning of a new chapter.
-        </p>
-        <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-          Nourish Resilience® was born from a very real experience: a cancer
-          diagnosis that led to a deeper understanding of healing, nutrition, and
-          community.
-        </p>
+        {/* Subtle overlay for better text readability on right side only */}
+        <div className="absolute inset-0 bg-gradient-to-l from-black/30 via-transparent to-transparent" />
       </div>
 
-      {/* Image */}
-     
-      <div className="relative">
+      {/* Content Overlay - Right Side Only */}
+      <div className="absolute inset-0 flex items-center justify-end px-6 md:px-6 lg:px-24">
+        <div className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl">
+          {/* Vertical Stack - Text and Bottle */}
+          <div className="mt-24 flex flex-col items-center  space-y-10 text-center ">
+            {/* Text Content Section */}
+            <div className="space-y-6">
+              
+
+              {/* Main Heading */}
+              <div className="space-y-4">
+                <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[0.8] tracking-tight drop-shadow-2xl">
+                  <span className="text-[#d81177] ">Nourish  Resilience  </span>
+                  
+      
+                  <sup className="text-lg text-[#d81177]  md:text-xl align-top font-normal">®</sup>
+                </h1>
+
+                {/* Subtitle */}
+                <div className="relative">
+                  <p className="text-xl md:text-2xl lg:text-3xl text-black-700  tracking-wide drop-shadow-lg">
+                    Fuel Your Recovery
+                  </p>
+                  
+                </div>
+              </div>
+
+           
+            
+
+              {/* Trust Indicators */}
+             
+            </div>
+
+            {/* Bottle Image Section */}
+            <div className="relative group mt-8">
+              {/* Decorative glow effects */}
+              <div className="absolute -top-6 -right-6 w-24 h-24  blur-2xl" />
+              <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-[#ff69b4]/30 rounded-full blur-xl" />
+
+              {/* Bottle container with glass morphism effect */}
+              <div className="relative">
+                <div className="absolute inset-0  " />
+                <div className="relative ">
+                  <Image
+                    src="/bottle.png"
+                    alt="Nourish Resilience Bottle"
+                    width={480}
+                    height={480}
+                    className="object-contain transform group-hover:scale-105 transition-transform duration-500 drop-shadow-2xl"
+                    priority
+                  />
+                </div>
+
+                {/* Floating elements around bottle */}
+                <div className="absolute -top-3 -left-3 w-2 h-2 bg-white/60 rounded-full animate-pulse" />
+                <div className="absolute -bottom-4 -right-4 w-2 h-2 bg-[#ff69b4]/80 rounded-full animate-bounce" />
+                <div className="absolute top-1/3 -right-6 w-1 h-1 bg-white/40 rounded-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 cursor-pointer group"
+        onClick={() => scrollToSection?.("introduction")}
+      >
+        <div className="flex flex-col items-center space-y-2">
+          <span className="text-sm text-white font-medium opacity-70 group-hover:opacity-100 transition-opacity drop-shadow-sm">
+            Scroll to explore
+          </span>
+          <div className="p-2 rounded-full border-2 border-white/50 group-hover:border-white transition-colors backdrop-blur-sm">
+            <ChevronDown className="w-5 h-5 text-white animate-bounce" />
+          </div>
+        </div>
+      </div>
+
+      {/* Floating decorative elements - positioned on right side only */}
+      <div className="absolute top-20 right-10 w-2 h-2 bg-white/40 rounded-full opacity-60 animate-pulse" />
+      <div className="absolute top-1/3 right-20 w-1 h-1 bg-[#ff69b4]/60 rounded-full opacity-40 animate-bounce" />
+      <div className="absolute bottom-1/3 right-16 w-3 h-3 bg-white/30 rounded-full opacity-50" />
+    </section>
+
+
+
+
+
+
+      <section id="introduction" className="py-10 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+            {/* Text Content */}
+            <div className="space-y-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#d81177] leading-snug sm:leading-tight">
+                Your Next Chapter of Healing Starts Here
+              </h2>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                At Vitazan, we believe that the journey to wellness doesn’t end
+                with the completion of treatment — it’s just the beginning of a
+                new chapter.
+              </p>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                Nourish Resilience® was born from a very real experience: a
+                cancer diagnosis that led to a deeper understanding of healing,
+                nutrition, and community.
+              </p>
+            </div>
+
+            {/* Image */}
+
+            <div className="relative">
               <Image
                 src="/img1.png?height=600&width=500"
                 alt="Woman in peaceful meditation"
@@ -157,11 +247,9 @@ export default function NourishResilienceLanding() {
                 className="rounded-2xl shadow-2xl"
               />
             </div>
-    </div>
-  </div>
-</section>
-
-
+          </div>
+        </div>
+      </section>
       {/* Dr. Khamba's Story Section */}
       <section
         id="story"
@@ -346,88 +434,72 @@ export default function NourishResilienceLanding() {
       </section>
       {/* Fueling Recovery Section */}
       <section
-        id="fuelingRecovery"
-        className="py-20 bg-gradient-to-r from-orange-50 to-purple-50"
-      >
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* IMAGE COLUMN - First on desktop, second on mobile */}
-            <div className="relative md:order-1 order-2">
-              <Image
-                src="/fuel.png?height=600&width=500&text=Women+Supporting+Recovery"
-                alt="Women supporting each other in recovery"
-                width={500}
-                height={600}
-                className="rounded-2xl shadow-2xl"
-              />
-              
-            </div>
+  id="fuelingRecovery"
+  className="py-20 bg-gradient-to-r from-orange-50 to-purple-50"
+>
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      {/* IMAGE COLUMN - Right aligned on desktop */}
+      <div className="relative md:order-1 order-2 flex justify-center">
+        <Image
+          src="/fuel.png?height=600&width=500&text=Women+Supporting+Recovery"
+          alt="Women supporting each other in recovery"
+          width={500}
+          height={600}
+          className="rounded-2xl shadow-2xl"
+        />
+      </div>
 
-            {/* CONTENT COLUMN - Second on desktop, first on mobile */}
-            <div className="space-y-6 md:order-2 order-1">
-              <h2 className="text-4xl font-bold text-[#8bc345] mb-6">
-                Fueling Recovery
-              </h2>
+      {/* CONTENT COLUMN */}
+      <div className="space-y-6 md:order-2 order-1">
+        <h2 className="text-4xl font-bold text-[#8bc345] mb-6">
+          Fueling Recovery
+        </h2>
 
-              <div className="prose prose-lg max-w-none">
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  Through firsthand experience and connecting with others on
-                  similar paths, it became clear that thriving after breast
-                  cancer requires more than medical protocols—it demands ongoing
-                  nourishment for the body, mind, and spirit. We heard the same
-                  themes echoed again and again: reliable nutritional guidance
-                  was hard to find, supportive connection was essential to
-                  healing, and post-treatment changes to metabolism, hormones,
-                  and overall health needed new, thoughtful care.
-                </p>
-              </div>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-gray-700 leading-relaxed text-lg">
+            Through firsthand experience and connecting with others on
+            similar paths, it became clear that thriving after breast
+            cancer requires more than medical protocols—it demands ongoing
+            nourishment for the body, mind, and spirit...
+          </p>
+        </div>
 
-              {/* EXPANDABLE CONTENT */}
-              <div
-                className={`space-y-6 overflow-hidden transition-all duration-700 ease-in-out ${
-                  showMoreRecovery
-                    ? "max-h-[600px] opacity-100"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="prose prose-lg max-w-none space-y-6">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    With this vision in mind, Nourish Resilience® was developed:
-                    a clinically informed, organic plant-based supplement
-                    designed to fill the gaps left after treatment. Crafted with
-                    the purest ingredients—vegan proteins, medicinal mushrooms,
-                    prebiotics, fermented botanicals, and powerful
-                    adaptogens—it’s built to support strength, metabolic health,
-                    immune resilience, and emotional wellbeing.
-                  </p>
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Our mission is simple: to empower women to nourish their
-                    next chapter with strength, vitality, and confidence.
-                    Nourish Resilience® is more than a supplement; it’s a symbol
-                    of moving forward, rebuilding from within, and knowing that
-                    cancer may have been one chapter—but it is not the whole
-                    story.
-                  </p>
-                </div>
-              </div>
-
-              {/* TOGGLE BUTTON */}
-              <button
-                onClick={() => setShowMoreRecovery(!showMoreRecovery)}
-                className="inline-flex items-center gap-2 text-[#d3a1ca] hover:text-[#d81177] font-medium transition-colors group"
-              >
-                {showMoreRecovery ? "Read Less" : "Read More"}
-                <ChevronRight
-                  className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${
-                    showMoreRecovery ? "rotate-90" : ""
-                  }`}
-                />
-              </button>
-            </div>
+        {/* EXPANDABLE CONTENT */}
+        <div
+          className={`space-y-6 overflow-hidden transition-all duration-700 ease-in-out ${
+            showMoreRecovery ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="prose prose-lg max-w-none space-y-6">
+            <p className="text-gray-700 leading-relaxed text-lg">
+              With this vision in mind, Nourish Resilience® was developed...
+            </p>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              Our mission is simple: to empower women to nourish their
+              next chapter with strength, vitality, and confidence...
+            </p>
           </div>
         </div>
-      </section>
+
+        {/* TOGGLE BUTTON */}
+        <button
+          onClick={() => setShowMoreRecovery(!showMoreRecovery)}
+          className="inline-flex items-center gap-2 text-[#d3a1ca] hover:text-[#d81177] font-medium transition-colors group"
+        >
+          {showMoreRecovery ? "Read Less" : "Read More"}
+          <ChevronRight
+            className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${
+              showMoreRecovery ? "rotate-90" : ""
+            }`}
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       {/* what is nourish resilience */}
       <section className="bg-white py-16 px-4 sm:px-8 lg:px-16 font-sans">
         <div className="max-w-4xl mx-auto text-center">
@@ -438,15 +510,22 @@ export default function NourishResilienceLanding() {
             <span className="font-semibold text-gray-800">
               Nourish Resilience®
             </span>{" "}
-             is a clinically informed, organic vegan protein supplement designed specifically for post-breast cancer care and chronic illness recovery. This functional nutrition formula blends bioavailable proteins, powerful antioxidants, adaptogenic medicinal mushrooms, fermented botanicals, and gut-supportive prebiotics —each selected as part of a holistic nutrition approach
+            is a clinically informed, organic vegan protein supplement designed
+            specifically for post-breast cancer care and chronic illness
+            recovery. This functional nutrition formula blends bioavailable
+            proteins, powerful antioxidants, adaptogenic medicinal mushrooms,
+            fermented botanicals, and gut-supportive prebiotics —each selected
+            as part of a holistic nutrition approach
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            With a comforting chai-inspired flavour featuring cardamom and cocoa, Nourish Resilience® can be enjoyed warm or iced as part of your daily self-care ritual.
+            With a comforting chai-inspired flavour featuring cardamom and
+            cocoa, Nourish Resilience® can be enjoyed warm or iced as part of
+            your daily self-care ritual.
           </p>
         </div>
       </section>
-      ``
+      
       {/* Key Ingredients Section */}
       <section
         id="ingredients"
@@ -589,19 +668,19 @@ export default function NourishResilienceLanding() {
       {/* Bottom Banner */}
       <section className="py-6 bg-gray-400 text-black">
         <div className="max-w-screen-xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left text-base md:text-lg font-semibold uppercase tracking-wide gap-6">
-            <span className="w-full md:w-auto text-left">
-              Rebuild Your Strength
-            </span>
-            <span className="w-full md:w-auto text-center">
-              Reconnect with Your Vitality
-            </span>
-            <span className="w-full md:w-auto text-right">
-              {" "}
-              Nourish your body
-            </span>
-          </div>
-        </div>
+  <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left text-base md:text-lg font-semibold uppercase tracking-wide gap-6">
+    <span className="w-full text-center md:text-left">
+      Rebuild Your Strength
+    </span>
+    <span className="w-full text-center">
+      Reconnect with Your Vitality
+    </span>
+    <span className="w-full text-center md:text-right">
+      Nourish your body
+    </span>
+  </div>
+</div>
+
       </section>
       {/* Footer */}
       <footer className="bg-gray-300 text-white py-8">
@@ -820,51 +899,52 @@ function IngredientsTabSection() {
   ];
 
   return (
-<div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-200 shadow-lg overflow-hidden p-4 sm:p-6 md:p-8 space-y-12">
-  {ingredientCategories.map((category, index) => (
-    <div key={index} className="space-y-6">
-      {/* Category Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4">
-        <div className="p-2 rounded-lg flex justify-center sm:justify-start">
-          {category.icon}
-        </div>
-        <div className="mt-2 sm:mt-0 text-center sm:text-left">
-          <h3 className="text-xl sm:text-2xl font-bold text-[#d81177]">
-            {category.category}
-          </h3>
-          <p className="text-gray-600 mt-1 text-sm sm:text-base">
-            {category.description}
-          </p>
-        </div>
-      </div>
-
-      {/* Ingredients Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        {category.ingredients.map((ingredient, ingredientIndex) => (
-          <div
-            key={ingredientIndex}
-            className=" p-3 sm:p-4   flex flex-col items-center text-center  "
-          >
-            <div className="w-36 h-36 sm:w-48 sm:h-48 mb-3 flex items-center justify-center overflow-hidden">
-              <Image
-                src={ingredient.image || "/placeholder.svg"}
-                alt={ingredient.name}
-                width={112}
-                height={112}
-                className="object-contain w-full h-full"
-              />
+    <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-200 shadow-lg overflow-hidden p-4 sm:p-6 md:p-8 space-y-12">
+      {ingredientCategories.map((category, index) => (
+        <div key={index} className="space-y-0">
+          {/* Category Header */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+            <div className="p-2 rounded-lg flex justify-center sm:justify-start">
+              {category.icon}
             </div>
-            <h4 className="font-semibold text-gray-700 text-sm sm:text-base">
-              {ingredient.name}
-            </h4>
+            <div className="mt-2 sm:mt-0 text-center sm:text-left">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#d81177]">
+                {category.category}
+              </h3>
+              <p className="text-gray-600 mt-1 text-sm sm:text-base">
+                {category.description}
+              </p>
+            </div>
           </div>
-        ))}
+
+          {/* Ingredients Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+  {category.ingredients.map((ingredient, ingredientIndex) => (
+    <div
+      key={ingredientIndex}
+      className="flex flex-col my-4 items-center text-center space-y-2"
+    >
+      <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-2xl bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 flex items-center justify-center overflow-hidden shadow-md">
+        <Image
+          src={ingredient.image || "/placeholder.svg"}
+          alt={ingredient.name}
+          width={112}
+          height={112}
+          className="object-contain w-full h-full"
+        />
       </div>
+      <h4 className="font-semibold text-gray-700 text-sm sm:text-base">
+        {ingredient.name}
+      </h4>
     </div>
   ))}
 </div>
 
 
+
+        </div>
+      ))}
+    </div>
 
     // <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-purple-200 shadow-lg overflow-hidden">
     //   {/* Tab Navigation */}
@@ -934,8 +1014,5 @@ function IngredientsTabSection() {
     //     </div>
     //   </div>
     // </div>
-
-
-
   );
 }
