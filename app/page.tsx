@@ -173,9 +173,9 @@ export default function NourishResilienceLanding() {
                   </div>
 
                   {/* Floating elements around bottle */}
-                  {/* <div className="absolute -top-3 -left-3 w-2 h-2 bg-white/60 rounded-full animate-pulse" />
-                  {/* <div className="absolute -bottom-4 -right-4 w-2 h-2 bg-[#ff69b4]/80 rounded-full animate-bounce" /> */}
-                  <div className="absolute top-1/3 -right-6 w-1 h-1 bg-white/40 rounded-full" /> */}
+                  <div className="absolute -top-3 -left-3 w-2 h-2 bg-white/60 rounded-full animate-pulse" />
+         
+                  <div className="absolute top-1/3 -right-6 w-1 h-1 bg-white/40 rounded-full" />
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function NourishResilienceLanding() {
             <span className="text-sm text-white font-medium opacity-70 group-hover:opacity-100 transition-opacity drop-shadow-sm">
               Scroll to explore
             </span>
-            <div className="p-2 rounded-full border-2 border-white/50 group-hover:border-white transition-colors backdrop-blur-sm">
+            <div className="p-2 rounded-full  group-hover:border-white transition-colors backdrop-blur-sm">
               <ChevronDown className="w-5 h-5 text-white animate-bounce" />
             </div>
           </div>
