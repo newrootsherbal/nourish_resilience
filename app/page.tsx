@@ -174,7 +174,7 @@ export default function NourishResilienceLanding() {
 
                   {/* Floating elements around bottle */}
                   <div className="absolute -top-3 -left-3 w-2 h-2 bg-white/60 rounded-full animate-pulse" />
-         
+
                   <div className="absolute top-1/3 -right-6 w-1 h-1 bg-white/40 rounded-full" />
                 </div>
               </div>
@@ -259,25 +259,25 @@ export default function NourishResilienceLanding() {
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               {/* Image */}
               <div className="flex flex-col items-center justify-start h-full">
-  {/* Larger Profile Image */}
-  <div className="w-40 h-40 sm:w-72 sm:h-72 rounded-full shadow-2xl overflow-hidden mb-4">
-    <Image
-      src="/baljit.jpg?height=400&width=400"
-      alt="Dr. Baljit Khamba"
-      width={400}
-      height={400}
-      className="w-full h-full object-cover"
-    />
-  </div>
+                {/* Larger Profile Image */}
+                <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full shadow-2xl overflow-hidden mb-4">
+                  <Image
+                    src="/baljit.jpg?height=600&width=600"
+                    alt="Dr. Baljit Khamba"
+                    width={600}
+                    height={600}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-  {/* Nameplate Below Image */}
-  <div className=" px-5 py-1 text-center">
-    <p className="text-sm font-semibold text-[#d81177] tracking-wide">
-      Dr. Baljit Khamba
-    </p>
-    <p className="text-xs text-gray-700">ND, EdD, MPH</p>
-  </div>
-</div>
+                {/* Nameplate Below Image */}
+                <div className=" px-5 py-1 text-center">
+                  <p className="text-sm font-semibold text-[#d81177] tracking-wide">
+                    Dr. Baljit Khamba
+                  </p>
+                  <p className="text-xs text-gray-700">ND, MPH, EdD</p>
+                </div>
+              </div>
 
               {/* Initial Content + Button */}
               <div className="space-y-8">
@@ -347,7 +347,7 @@ export default function NourishResilienceLanding() {
                 wisdom to heal and thrive."
               </p> */}
                     <footer className="mt-3 text-sm text-[#d81177] font-medium">
-                      Dr. Baljit Khamba, ND, EdD, MPH
+                      Dr. Baljit Khamba, ND, MPH, EdD
                       <br />
                       <span className="text-black">
                         Breast cancer survivor &amp; thriver
@@ -386,16 +386,17 @@ export default function NourishResilienceLanding() {
               </ul>
               <div className="bg-gradient-to-r from-orange-50 via-white to-purple-50 p-6 rounded-xl shadow-sm  ">
                 <p className="text-base text-gray-700 leading-relaxed">
-                  Nourish Resilience complements a Mediterranean-style diet and works
-                  synergistically with holistic practices like yoga,
+                  Nourish Resilience complements a Mediterranean-style diet and
+                  works synergistically with holistic practices like yoga,
                   mindfulness, acupuncture, and strength training.
                   <br className="hidden sm:block" />
                   <br />
-                  
-                     It’s your trusted partner for functional nutrition developed to assist women in their recovery journey following serious illness. Ask your
-                  naturopathic doctor, integrative healthcare provider, or
-                  functional-medicine practitioner about how Nourish Resilience®
-                  can become a key part of your long-term wellness journey.
+                  It’s your trusted partner for functional nutrition developed
+                  to assist women in their recovery journey following serious
+                  illness. Ask your naturopathic doctor, integrative healthcare
+                  provider, or functional-medicine practitioner about how
+                  Nourish Resilience® can become a key part of your long-term
+                  wellness journey.
                   <br className="hidden sm:block" />
                   <br />
                 </p>
@@ -439,16 +440,35 @@ export default function NourishResilienceLanding() {
 
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed text-lg">
-                 Through Dr. Khamba's firsthand experience and connecting with others on similar paths, it became clear that thriving after breast cancer requires more than medical protocols—it demands ongoing nourishment for the body, mind, and spirit. Vitazan Professional heard the same themes echoed again and again: reliable nutritional guidance was hard to find, supportive connection was essential to healing, and posttreatment changes to metabolism, hormones, and overall health needed new, thoughtful care
-                </p><br/>
+                  Through Dr. Khamba's firsthand experience and connecting with
+                  others on similar paths, it became clear that thriving after
+                  breast cancer requires more than medical protocols—it demands
+                  ongoing nourishment for the body, mind, and spirit. Vitazan
+                  Professional heard the same themes echoed again and again:
+                  reliable nutritional guidance was hard to find, supportive
+                  connection was essential to healing, and posttreatment changes
+                  to metabolism, hormones, and overall health needed new,
+                  thoughtful care
+                </p>
+                <br />
                 <p className="text-gray-700 leading-relaxed text-lg">
-                    With this vision in mind, Nourish Resilience was developed: a clinically informed, organic plant-based supplement designed to fill the gaps left after treatment. Crafted with the purest ingredients—vegan proteins, medicinal mushrooms, prebiotics, fermented botanicals, and powerful adaptogens—it’s built to support strength, metabolic health, immune resilience, and emotional wellbeing.
-                  </p><br/>
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Our mission is simple: to empower women to nourish their next chapter with strength, vitality, and confidence. Nourish Resilience is more than a supplement; it’s a symbol of moving forward, rebuilding from within, and knowing that cancer may have been one chapter—but it is not the whole story.
-                  </p>
+                  With this vision in mind, Nourish Resilience was developed: a
+                  clinically informed, organic plant-based supplement designed
+                  to fill the gaps left after treatment. Crafted with the purest
+                  ingredients—vegan proteins, medicinal mushrooms, prebiotics,
+                  fermented botanicals, and powerful adaptogens—it’s built to
+                  support strength, metabolic health, immune resilience, and
+                  emotional wellbeing.
+                </p>
+                <br />
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  Our mission is simple: to empower women to nourish their next
+                  chapter with strength, vitality, and confidence. Nourish
+                  Resilience is more than a supplement; it’s a symbol of moving
+                  forward, rebuilding from within, and knowing that cancer may
+                  have been one chapter—but it is not the whole story.
+                </p>
               </div>
-
             </div>
           </div>
         </div>
@@ -464,10 +484,12 @@ export default function NourishResilienceLanding() {
             <span className="font-semibold text-gray-800">
               Nourish Resilience®
             </span>{" "}
-          is a clinically informed, organic vegan protein supplement developed to assist women in their recovery journey following serious illness, including breast cancer. This functional nutrition formula blends bioavailable
-            proteins, powerful antioxidants, adaptogenic medicinal mushrooms,
-            fermented botanicals, and gut-supportive prebiotics —each selected
-            as part of a holistic nutrition approach
+            is a clinically informed, organic vegan protein supplement developed
+            to assist women in their recovery journey following serious illness,
+            including breast cancer. This functional nutrition formula blends
+            bioavailable proteins, powerful antioxidants, adaptogenic medicinal
+            mushrooms, fermented botanicals, and gut-supportive prebiotics —each
+            selected as part of a holistic nutrition approach
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -475,9 +497,13 @@ export default function NourishResilienceLanding() {
             cocoa, Nourish Resilience® can be enjoyed warm or iced as part of
             your daily self-care ritual.
           </p>
-          <br/>
+          <br />
           <p className="text-lg text-gray-700 leading-relaxed">
-            Vitazan Professional is committed to providing clean, laboratory verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO-17025 certified lab. Every lot of Nourish Resilience goes through a series of testing including pesticide and heavy metal testing
+            Vitazan Professional is committed to providing clean, laboratory
+            verified products. Our products are made in a certified cGMP
+            facility and tested in an on-site independently managed ISO-17025
+            certified lab. Every lot of Nourish Resilience goes through a series
+            of testing including pesticide and heavy metal testing
           </p>
         </div>
       </section>
@@ -517,7 +543,10 @@ export default function NourishResilienceLanding() {
               Certified Excellence in Every Scoop
             </h2>
             <p className="text-lg text-black/90 max-w-3xl mx-auto mb-6">
-             All carefully selected ingredients are certified non-GMO and organic, manufactured in our certified cGMP facility and tested in an ISO 17025 accredited laboratory to meet the unique needs of post cancer physiology
+              All carefully selected ingredients are certified non-GMO and
+              organic, manufactured in our certified cGMP facility and tested in
+              an ISO 17025 accredited laboratory to meet the unique needs of
+              post cancer physiology
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
               <span className="bg-[#f5eaf3] text-[#861c56] text-sm font-medium px-4 py-1.5 rounded-md border border-[#e4c7dd] shadow-inner">
