@@ -291,18 +291,8 @@ export default function NourishResilienceLanding() {
                     evidence-based naturopathic medicine and the traditional
                     healing wisdom of my South Asian roots.
                   </p>{" "}
-                  <br />
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    I began crafting daily blends incorporating many of the
-                    ingredients now found in Nourish Resilience® — including
-                    reishi, fermented ginger, black cumin seed, dandelion root,
-                    ashwagandha, and chai-inspired spices like cinnamon and
-                    cardamom. These nutrients and herbs supported me in managing
-                    post-surgical fatigue, hormonal fluctuations,
-                    detoxification, and the emotional and metabolic aftermath of
-                    cancer treatment
-                  </p>
-                  <br />
+          
+                <br />
                   <p className="text-gray-700 leading-relaxed text-lg">
                     I began crafting daily blends incorporating many of the
                     ingredients now found in Nourish Resilience™ — including
