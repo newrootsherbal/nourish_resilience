@@ -251,7 +251,8 @@ export default function NourishResilienceLanding() {
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 A personal story of resilience, recovery, and the creation of
-                Nourish Resilience™
+                Nourish Resilience®
+
               </p>
             </div>
 
@@ -320,7 +321,7 @@ export default function NourishResilienceLanding() {
                 <div className="prose prose-lg max-w-none space-y-6">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     I began crafting daily blends incorporating many of the
-                    ingredients now found in Nourish Resilience™ — including
+                    ingredients now found in Nourish Resilience® — including
                     reishi, fermented ginger, black cumin seed, dandelion root,
                     ashwagandha, and chai-inspired spices like cinnamon and
                     cardamom. These nutrients and herbs supported me in managing
@@ -330,7 +331,7 @@ export default function NourishResilienceLanding() {
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Nourish Resilience™ emerged from this lived experience — not
+                    Nourish Resilience® emerged from this lived experience — not
                     just as a product, but as a deeply intentional formulation
                     designed to support recovery, resilience, and vitality in
                     others. It reflects the science of nutritional therapeutics,
@@ -386,7 +387,7 @@ export default function NourishResilienceLanding() {
               </ul>
               <div className="bg-gradient-to-r from-orange-50 via-white to-purple-50 p-6 rounded-xl shadow-sm  ">
                 <p className="text-base text-gray-700 leading-relaxed">
-                  Nourish Resilience complements a Mediterranean-style diet and
+                  Nourish Resilience® complements a Mediterranean-style diet and
                   works synergistically with holistic practices like yoga,
                   mindfulness, acupuncture, and strength training.
                   <br className="hidden sm:block" />
@@ -415,14 +416,14 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
       {/* Fueling Recovery Section */}
-      <section
+       <section
         id="fuelingRecovery"
         className="py-20 bg-gradient-to-r from-orange-50 to-purple-50"
       >
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            {/* IMAGE COLUMN - Right aligned on desktop */}
-            <div className="relative md:order-1 order-2 flex justify-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* IMAGE COLUMN - First on desktop, second on mobile */}
+            <div className="relative md:order-1 order-2">
               <Image
                 src="/fuel.png?height=600&width=500&text=Women+Supporting+Recovery"
                 alt="Women supporting each other in recovery"
@@ -430,9 +431,10 @@ export default function NourishResilienceLanding() {
                 height={600}
                 className="rounded-2xl shadow-2xl"
               />
+              
             </div>
 
-            {/* CONTENT COLUMN */}
+            {/* CONTENT COLUMN - Second on desktop, first on mobile */}
             <div className="space-y-6 md:order-2 order-1">
               <h2 className="text-4xl font-bold text-[#8bc345] mb-6">
                 Fueling Recovery
@@ -440,35 +442,59 @@ export default function NourishResilienceLanding() {
 
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  Through Dr. Khamba's firsthand experience and connecting with
-                  others on similar paths, it became clear that thriving after
-                  breast cancer requires more than medical protocols—it demands
-                  ongoing nourishment for the body, mind, and spirit. Vitazan
-                  Professional heard the same themes echoed again and again:
-                  reliable nutritional guidance was hard to find, supportive
-                  connection was essential to healing, and posttreatment changes
-                  to metabolism, hormones, and overall health needed new,
-                  thoughtful care
-                </p>
-                <br />
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  With this vision in mind, Nourish Resilience was developed: a
-                  clinically informed, organic plant-based supplement designed
-                  to fill the gaps left after treatment. Crafted with the purest
-                  ingredients—vegan proteins, medicinal mushrooms, prebiotics,
-                  fermented botanicals, and powerful adaptogens—it’s built to
-                  support strength, metabolic health, immune resilience, and
-                  emotional wellbeing.
-                </p>
-                <br />
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  Our mission is simple: to empower women to nourish their next
-                  chapter with strength, vitality, and confidence. Nourish
-                  Resilience is more than a supplement; it’s a symbol of moving
-                  forward, rebuilding from within, and knowing that cancer may
-                  have been one chapter—but it is not the whole story.
+                  Through firsthand experience and connecting with others on
+                  similar paths, it became clear that thriving after breast
+                  cancer requires more than medical protocols—it demands ongoing
+                  nourishment for the body, mind, and spirit. We heard the same
+                  themes echoed again and again: reliable nutritional guidance
+                  was hard to find, supportive connection was essential to
+                  healing, and post-treatment changes to metabolism, hormones,
+                  and overall health needed new, thoughtful care
                 </p>
               </div>
+
+              {/* EXPANDABLE CONTENT */}
+              <div
+                className={`space-y-6 overflow-hidden transition-all duration-700 ease-in-out ${
+                  showMoreRecovery
+                    ? "max-h-[600px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="prose prose-lg max-w-none space-y-6">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    With this vision in mind, Nourish Resilience® was developed:
+                    a clinically informed, organic plant-based supplement
+                    designed to fill the gaps left after treatment. Crafted with
+                    the purest ingredients—vegan proteins, medicinal mushrooms,
+                    prebiotics, fermented botanicals, and powerful
+                    adaptogens—it’s built to support strength, metabolic health,
+                    immune resilience, and emotional wellbeing.
+                  </p>
+
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    Our mission is simple: to empower women to nourish their
+                    next chapter with strength, vitality, and confidence.
+                    Nourish Resilience® is more than a supplement; it’s a symbol
+                    of moving forward, rebuilding from within, and knowing that
+                    cancer may have been one chapter—but it is not the whole
+                    story.
+                  </p>
+                </div>
+              </div>
+
+              {/* TOGGLE BUTTON */}
+              <button
+                onClick={() => setShowMoreRecovery(!showMoreRecovery)}
+                className="inline-flex items-center gap-2 text-[#d81177] hover:text-[#d81177] font-medium transition-colors group"
+              >
+                {showMoreRecovery ? "Read Less" : "Read More"}
+                <ChevronRight
+                  className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${
+                    showMoreRecovery ? "rotate-90" : ""
+                  }`}
+                />
+              </button>
             </div>
           </div>
         </div>
@@ -502,7 +528,7 @@ export default function NourishResilienceLanding() {
             Vitazan Professional is committed to providing clean, laboratory
             verified products. Our products are made in a certified cGMP
             facility and tested in an on-site independently managed ISO-17025
-            certified lab. Every lot of Nourish Resilience goes through a series
+            certified lab. Every lot of Nourish Resilience® goes through a series
             of testing including pesticide and heavy metal testing
           </p>
         </div>
