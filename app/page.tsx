@@ -244,43 +244,44 @@ export default function NourishResilienceLanding() {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            {/* Grid on desktop, stack on mobile */}
+            {/* Section Title */}
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-[#8bc345] mb-4">
+                Dr. Khamba's Journey
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                A personal story of resilience, recovery, and the creation of
+                Nourish Resilience™
+              </p>
+            </div>
+
+            {/* Grid with Image and Intro Content */}
             <div className="grid lg:grid-cols-2 gap-12 items-start">
-              {/* Image + Name - Centered on mobile */}
-              <div className="relative flex flex-col items-center justify-start">
-                {/* Profile Image */}
-                <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full shadow-2xl overflow-hidden">
-                  <Image
-                    src="/baljit.jpg?height=480&width=480"
-                    alt="Dr. Baljit Khamba"
-                    width={480}
-                    height={480}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              {/* Image */}
+              <div className="flex flex-col items-center justify-start h-full">
+  {/* Larger Profile Image */}
+  <div className="w-40 h-40 sm:w-72 sm:h-72 rounded-full shadow-2xl overflow-hidden mb-4">
+    <Image
+      src="/baljit.jpg?height=400&width=400"
+      alt="Dr. Baljit Khamba"
+      width={400}
+      height={400}
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-                {/* Nameplate - margin added for mobile spacing */}
-                <div className="mt-4 bg-white rounded-xl px-6 py-3 shadow-xl border border-purple-200 backdrop-blur-sm text-center">
-                  <p className="text-sm font-semibold text-[#d81177] tracking-wide">
-                    Dr Baljit Khamba
-                  </p>
-                  <p className="text-xs text-gray-700">ND, MPH, EdD</p>
-                </div>
-              </div>
+  {/* Nameplate Below Image */}
+  <div className=" px-5 py-1 text-center">
+    <p className="text-sm font-semibold text-[#d81177] tracking-wide">
+      Dr. Baljit Khamba
+    </p>
+    <p className="text-xs text-gray-700">ND, EdD, MPH</p>
+  </div>
+</div>
 
-              {/* Text Content - Aligned left */}
-              <div className="text-left space-y-8">
-                <div>
-                  <h2 className="text-4xl font-bold text-[#8bc345] mb-4">
-                    Dr Baljit Khamba's Journey
-                  </h2>
-                  <p className="text-lg text-gray-600">
-                    A personal story of resilience, recovery, and the creation
-                    of Nourish Resilience®
-                  </p>
-                </div>
-
-                <div className="prose prose-lg max-w-none text-left">
+              {/* Initial Content + Button */}
+              <div className="space-y-8">
+                <div className="prose prose-lg max-w-none">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     As a BRCA1-positive survivor of triple-negative breast
                     cancer, I underwent both a double mastectomy and bilateral
@@ -290,34 +291,63 @@ export default function NourishResilienceLanding() {
                     determined to support my body using a blend of
                     evidence-based naturopathic medicine and the traditional
                     healing wisdom of my South Asian roots.
-                  </p>{" "}
-          
-                <br />
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => setShowMoreStory(!showMoreStory)}
+                  className="inline-flex items-center gap-2 text-[#d81177] hover:text-[#d3a1ca] font-medium transition-colors group"
+                >
+                  {showMoreStory ? "Read Less" : "Read More About Her Journey"}
+                  <ChevronRight
+                    className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${
+                      showMoreStory ? "rotate-90" : ""
+                    }`}
+                  />
+                </button>
+              </div>
+            </div>
+
+            {/* Expanded Full-Width Story */}
+            <div
+              className={`transition-all duration-700 ease-in-out overflow-hidden ${
+                showMoreStory
+                  ? "max-h-[2000px] opacity-100 mt-12"
+                  : "max-h-0 opacity-0"
+              }`}
+            >
+              <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div className="prose prose-lg max-w-none space-y-6">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     I began crafting daily blends incorporating many of the
                     ingredients now found in Nourish Resilience™ — including
                     reishi, fermented ginger, black cumin seed, dandelion root,
                     ashwagandha, and chai-inspired spices like cinnamon and
                     cardamom. These nutrients and herbs supported me in managing
-                    postsurgical fatigue, hormonal fluctuations, detoxification,
-                    and the emotional and metabolic aftermath of cancer
-                    treatment.
+                    post-surgical fatigue, hormonal fluctuations,
+                    detoxification, and the emotional and metabolic aftermath of
+                    cancer treatment.
                   </p>
-                  <br />
+
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Nourish Resilience™ emerged from this lived experience—not
+                    Nourish Resilience™ emerged from this lived experience — not
                     just as a product, but as a deeply intentional formulation
                     designed to support recovery, resilience, and vitality in
                     others. It reflects the science of nutritional therapeutics,
                     the wisdom of ancestral medicine, and the realities of life
-                    after cancer. I’m proud to offer it as part of a broader
+                    after cancer. I'm proud to offer it as part of a broader
                     commitment to helping women feel strong, whole, and
-                    nourished—from the cellular level outward.
+                    nourished — from the cellular level outward.
                   </p>
-                  <br />
+
                   <div className="border-l-4 border-[#8bc345] pl-6 bg-purple-50 p-4 rounded-r-lg">
+                    {/* <p className="text-purple-800 font-medium italic">
+                "Every ingredient was chosen not just for its scientific
+                backing, but for its ability to honor the body's innate
+                wisdom to heal and thrive."
+              </p> */}
                     <footer className="mt-3 text-sm text-[#d81177] font-medium">
-                      Dr Baljit Khamba, ND, MPH, EdD
+                      Dr. Baljit Khamba, ND, EdD, MPH
                       <br />
                       <span className="text-black">
                         Breast cancer survivor &amp; thriver
@@ -847,7 +877,7 @@ function IngredientsTabSection() {
                 key={ingredientIndex}
                 className="flex flex-col my-4 items-center text-center space-y-2"
               >
-                <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-2xl bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 flex items-center justify-center overflow-hidden shadow-md">
+                <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-2xl  flex items-center justify-center overflow-hidden ">
                   <Image
                     src={ingredient.image || "/placeholder.svg"}
                     alt={ingredient.name}
