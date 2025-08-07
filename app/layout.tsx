@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Nourish Resilience ',
   description: 'Created By Saloni',
   generator: 'saloni',
+  icons: {
+    icon: '/favicon.jpg', // Path relative to the public directory
+  },
 }
 
 export default function RootLayout({
