@@ -541,10 +541,10 @@ export default function NourishResilienceLanding() {
       {/* Bottom Banner */}
       <section className="py-6 bg-[#d81177] text-white">
         <div className="max-w-screen-xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left text-base md:text-lg font-semibold uppercase tracking-wide gap-4 md:gap-6">
-            <span className="w-full md:text-left">Rebuild Your Strength</span>
-            <span className="w-full">Reconnect with Your Vitality</span>
-            <span className="w-full md:text-right">Nourish your body</span>
+          <div className="flex flex-col md:flex-row justify-between items-center text-center text-base md:text-lg font-semibold uppercase tracking-wide gap-4 md:gap-6">
+            <span>Rebuild Your Strength</span>
+            <span>Reconnect with Your Vitality</span>
+            <span>Nourish your body</span>
           </div>
         </div>
       </section>
