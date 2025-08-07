@@ -114,7 +114,7 @@ export default function NourishResilienceLanding() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative w-full h-[85vh] overflow-hidden bg-white"
+        className="relative w-full min-h-[600px] 2xl:min-h-[720px] flex items-center justify-center overflow-hidden"
       >
         <Image
           src="/pinkbg.webp"
@@ -123,17 +123,10 @@ export default function NourishResilienceLanding() {
           className="object-cover object-left"
           priority
         />
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background: "linear-gradient(90deg, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.38) 30%, rgba(0,0,0,0.28) 70%, rgba(0,0,0,0.01) 100%)",
-          }}
-        />
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/5 via-black/30 to-black/5" />
 
-        {/* Content Container */}
-        <div className="relative z-10 flex h-full flex-col items-center justify-center p-4 text-center text-white">
-          <div className="flex animate-fade-in-up flex-col items-center space-y-8">
-            {/* Text Content Section */}
+        <div className="relative z-10 flex w-full flex-col items-center justify-center px-4 pt-20 pb-32 text-center text-white">
+          <div className="flex animate-fade-in-up flex-col items-center space-y-8 md:space-y-10">
             <div className="space-y-4">
               <h1
                 className="text-5xl font-black tracking-tighter text-white drop-shadow-lg md:text-6xl lg:text-7xl"
@@ -143,9 +136,7 @@ export default function NourishResilienceLanding() {
               </h1>
             </div>
 
-            {/* Bottle Image Section */}
-            <div className="group relative mx-auto w-60 md:w-72">
-              {/* Decorative glow effect */}
+            <div className="group relative mx-auto w-52 sm:w-64 md:w-80">
               <div className="absolute -inset-4 animate-pulse rounded-full bg-[#931d33]/30 blur-2xl" />
               <Image
                 src="/3173-Nourish-Resilience-476g.png"
@@ -156,15 +147,15 @@ export default function NourishResilienceLanding() {
                 priority
               />
             </div>
+
             <p
-              className="text-xl text-white drop-shadow-md md:text-2xl lg:text-3xl font-semibold"
+              className="max-w-xl text-xl text-white drop-shadow-md md:text-2xl lg:text-3xl font-semibold"
               style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.5)" }}
             >
               Your Next Chapter of Healing Starts Here
             </p>
           </div>
 
-          {/* Scroll Indicator */}
           <button
             className="group absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer focus:outline-none"
             onClick={() => scrollToSection("benefits")}
@@ -187,53 +178,53 @@ export default function NourishResilienceLanding() {
       <section id="benefits" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-6">
-          <h2 className="text-4xl font-bold text-[#d81177] mb-8">
-            Who Can Benefit?
-          </h2>
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold text-[#d81177] mb-8">
+                Who Can Benefit?
+              </h2>
 
-          <ul className="space-y-4">
-            <p className="text-lg text-gray-600 max-w-2xl mx-0 font-bold">
-          Nourish Resilience® is ideal for:
-            </p>
-            {[
-          "Women using holistic nutritional supplementation as part of their recovery process",
-          "Individuals looking for a nutritional beverage for wellbeing",
-            ].map((benefit, index) => (
-          <li key={index} className="flex items-start space-x-3">
-            <Heart className="w-5 h-5 text-[#8bc345] mt-1 flex-shrink-0" />
-            <span className="text-gray-700">{benefit}</span>
-          </li>
-            ))}
-          </ul>
-          <div className="bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa] p-6 rounded-xl shadow-sm  ">
-            <p className="text-base text-gray-700 leading-relaxed">
-          Nourish Resilience® complements a Mediterranean-style diet and
-          works synergistically with holistic practices like yoga,
-          mindfulness, acupuncture, and strength training.
-          <br className="hidden sm:block" />
-          <br />
-          It’s your trusted partner for functional nutrition developed
-          to assist women in their recovery journey following serious
-          illness. Ask your naturopathic doctor, integrative healthcare
-          provider, or functional-medicine practitioner about how
-          Nourish Resilience® can become a key part of your long-term
-          wellness journey.
-          <br className="hidden sm:block" />
-          <br />
-            </p>
-          </div>
-        </div>
-        <div className="relative w-full h-full min-h-[24rem] flex items-stretch">
-          <Image
-            src="/pinkladies.webp"
-            alt="Woman in peaceful meditation"
-            fill
-            className="object-cover rounded-2xl"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            priority
-          />
-        </div>
+              <ul className="space-y-4">
+                <p className="text-lg text-gray-600 max-w-2xl mx-0 font-bold">
+                  Nourish Resilience® is ideal for:
+                </p>
+                {[
+                  "Women using holistic nutritional supplementation as part of their recovery process",
+                  "Individuals looking for a nutritional beverage for wellbeing",
+                ].map((benefit, index) => (
+                  <li key={index} className="flex items-start space-x-3">
+                    <Heart className="w-5 h-5 text-[#8bc345] mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa] p-6 rounded-xl shadow-sm  ">
+                <p className="text-base text-gray-700 leading-relaxed">
+                  Nourish Resilience® complements a Mediterranean-style diet and
+                  works synergistically with holistic practices like yoga,
+                  mindfulness, acupuncture, and strength training.
+                  <br className="hidden sm:block" />
+                  <br />
+                  It’s your trusted partner for functional nutrition developed
+                  to assist women in their recovery journey following serious
+                  illness. Ask your naturopathic doctor, integrative healthcare
+                  provider, or functional-medicine practitioner about how
+                  Nourish Resilience® can become a key part of your long-term
+                  wellness journey.
+                  <br className="hidden sm:block" />
+                  <br />
+                </p>
+              </div>
+            </div>
+            <div className="relative w-full h-full min-h-[24rem] flex items-stretch">
+              <Image
+                src="/pinkladies.webp"
+                alt="Woman in peaceful meditation"
+                fill
+                className="object-cover rounded-2xl"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -393,7 +384,7 @@ export default function NourishResilienceLanding() {
             certified lab. Every lot of Nourish Resilience® goes through a
             series of testing including pesticide and heavy metal testing
           </p>
-          <Image 
+          <Image
             src="/ISO 17025.png"
             alt="laboratory ISO 17025 certification"
             width={400}
@@ -432,57 +423,57 @@ export default function NourishResilienceLanding() {
       </section>
       {/* Certification Achievement Section */}
       <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa] text-[#d81177] rounded-2xl p-10 text-center shadow-lg">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Certified Excellence in Every Scoop
-          </h2>
-          <p className="text-lg text-black/90 max-w-3xl mx-auto mb-8">
-            All carefully selected ingredients are certified non-GMO and
-            organic, manufactured in our certified cGMP facility and tested in
-            an ISO 17025 accredited laboratory to meet the unique needs of
-            post cancer physiology
-          </p>
-          <div className="flex flex-wrap justify-evenly items-center gap-6 md:gap-12 mt-8">
-            <Image
-              src="/cGMP.png"
-              alt="USDA Organic Certified"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
-            <Image
-              src="/GMO.png"
-              alt="Non-GMO Certified"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
-            <Image
-              src="/Vegan.png"
-              alt="cGMP Certified"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
-            <Image
-              src="/Gluten.png"
-              alt="ISO 17025 Accredited"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
-            <Image
-              src="/Canada.png"
-              alt="3rd Party Lab Tested"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
+        <div className="container mx-auto px-4">
+          <div className="bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa] text-[#d81177] rounded-2xl p-10 text-center shadow-lg">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Certified Excellence in Every Scoop
+            </h2>
+            <p className="text-lg text-black/90 max-w-3xl mx-auto mb-8">
+              All carefully selected ingredients are certified non-GMO and
+              organic, manufactured in our certified cGMP facility and tested in
+              an ISO 17025 accredited laboratory to meet the unique needs of
+              post cancer physiology
+            </p>
+            <div className="flex flex-wrap justify-evenly items-center gap-6 md:gap-12 mt-8">
+              <Image
+                src="/cGMP.png"
+                alt="USDA Organic Certified"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+              <Image
+                src="/GMO.png"
+                alt="Non-GMO Certified"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+              <Image
+                src="/Vegan.png"
+                alt="cGMP Certified"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+              <Image
+                src="/Gluten.png"
+                alt="ISO 17025 Accredited"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+              <Image
+                src="/Canada.png"
+                alt="3rd Party Lab Tested"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
       {/* Recipes Section */}
       <section id="recipes" className="py-20 bg-white">
         <div className="container mx-auto px-4">
