@@ -254,7 +254,7 @@ export default function NourishResilienceLanding() {
                 {/* Larger Profile Image */}
                 <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full shadow-2xl overflow-hidden mb-4">
                   <Image
-                    src="/baljit.jpg?height=600&width=600"
+                    src="/baljit.webp"
                     alt="Dr. Baljit Khamba"
                     width={600}
                     height={600}
