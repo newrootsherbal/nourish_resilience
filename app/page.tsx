@@ -368,7 +368,7 @@ export default function NourishResilienceLanding() {
             including breast cancer. This functional nutrition formula blends
             bioavailable proteins, powerful antioxidants, adaptogenic medicinal
             mushrooms, fermented botanicals, and gut-supportive prebiotics —each
-            selected as part of a holistic nutrition approach
+            selected as part of a holistic nutrition approach.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -382,7 +382,7 @@ export default function NourishResilienceLanding() {
             verified products. Our products are made in a certified cGMP
             facility and tested in an on-site independently managed ISO-17025
             certified lab. Every lot of Nourish Resilience® goes through a
-            series of testing including pesticide and heavy metal testing
+            series of testing including pesticide and heavy metal testing.
           </p>
           <Image
             src="/ISO 17025.png"
@@ -429,10 +429,7 @@ export default function NourishResilienceLanding() {
               Certified Excellence in Every Scoop
             </h2>
             <p className="text-lg text-black/90 max-w-3xl mx-auto mb-8">
-              All carefully selected ingredients are certified non-GMO and
-              organic, manufactured in our certified cGMP facility and tested in
-              an ISO 17025 accredited laboratory to meet the unique needs of
-              post cancer physiology
+              All carefully selected ingredients are certified non-GMO and organic, manufactured in our certified cGMP facility and tested in an ISO 17025 accredited laboratory to meet the unique needs of post cancer physiology.
             </p>
             <div className="flex flex-wrap justify-evenly items-center gap-6 md:gap-12 mt-8">
               <Image
