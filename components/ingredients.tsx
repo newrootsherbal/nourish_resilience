@@ -75,7 +75,7 @@ const ingredientCategories: IngredientCategory[] = [
       {
         name: 'Inulin',
         benefit: 'Feeds beneficial gut bacteria for digestive health',
-        image: '/artichoke.jpg',
+        image: '/artichoke.webp',
       },
     ],
   },
@@ -86,7 +86,7 @@ const ingredientCategories: IngredientCategory[] = [
       {
         name: 'Cinnamon',
         benefit: 'Blood sugar support and warming comfort',
-        image: '/cinnamon.jpg',
+        image: '/cinnamon.webp',
       },
       { name: 'Cardamom', benefit: '...', image: '...' },
       { name: 'Cocoa', benefit: '...', image: '...' },
