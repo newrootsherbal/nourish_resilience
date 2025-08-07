@@ -98,11 +98,11 @@ const ingredientCategories: IngredientCategory[] = [
 export default function IngredientsGridSection() {
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex flex-wrap gap-8 justify-center">
         {ingredientCategories.map((category, index) => (
           <div
             key={index}
-            className="relative h-96 w-full overflow-hidden rounded-2xl shadow-lg"
+            className="relative h-96 w-[450px] overflow-hidden rounded-2xl shadow-lg"
             style={{
               backgroundImage: `url(${category.ingredients[0].image})`,
               backgroundSize: 'cover',
@@ -110,9 +110,9 @@ export default function IngredientsGridSection() {
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
-            <div className="relative h-full flex flex-col justify-end p-6 text-white">
-              <h3 className="text-3xl font-bold mb-2">{category.category}</h3>
-              <p className="text-xl text-gray-200">{category.description}</p>
+            <div className="relative h-full flex flex-col justify-start p-6 text-white">
+              <h3 className="text-3xl font-bold mb-2 mt-20">{category.category}</h3>
+              <p className="text-xl text-gray-200 min-h-[2lh]">{category.description}</p>
               <div className="mt-4 border-t border-white/20 pt-4">
                 <p className="font-semibold text-base mb-2">Includes:</p>
                 <ul className="space-y-1">

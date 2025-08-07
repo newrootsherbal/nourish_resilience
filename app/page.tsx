@@ -125,24 +125,24 @@ export default function NourishResilienceLanding() {
         />
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/5 via-black/30 to-black/5" />
 
-        <div className="relative z-10 flex w-full flex-col items-center justify-center px-4 pt-20 pb-32 text-center text-white">
-          <div className="flex animate-fade-in-up flex-col items-center space-y-8 md:space-y-10">
+        <div className="relative z-10 flex w-full flex-col items-center justify-center px-4 pt-24 pb-32 text-center text-white">
+          <div className="flex animate-fade-in-up flex-col items-center space-y-8 md:space-y-14">
             <div className="space-y-4">
               <h1
-                className="text-5xl font-black tracking-tighter text-white drop-shadow-lg md:text-6xl lg:text-7xl"
+                className="text-5xl font-black tracking-tighter text-white drop-shadow-lg md:text-6xl lg:text-7xl pt-8"
                 style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.7)" }}
               >
-                Nourish Resilience ®
+                Nourish Resilience<sup>®</sup>
               </h1>
             </div>
 
-            <div className="group relative mx-auto w-52 sm:w-64 md:w-80">
+            <div className="group relative mx-auto w-64 md:w-80">
               <div className="absolute -inset-4 animate-pulse rounded-full bg-[#931d33]/30 blur-2xl" />
               <Image
                 src="/3173-Nourish-Resilience-476g.png"
                 alt="Nourish Resilience Bottle"
-                width={520}
-                height={520}
+                width={960}
+                height={960}
                 className="transform-gpu object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105"
                 priority
               />
@@ -155,22 +155,6 @@ export default function NourishResilienceLanding() {
               Your Next Chapter of Healing Starts Here
             </p>
           </div>
-
-          <button
-            className="group absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer focus:outline-none"
-            onClick={() => scrollToSection("benefits")}
-            aria-label="Scroll to benefits"
-            type="button"
-          >
-            <div className="flex flex-col items-center space-y-2">
-              <span className="font-medium text-white opacity-70 transition-opacity group-hover:opacity-100">
-                Scroll to explore
-              </span>
-              <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white/80 transition-colors group-hover:border-white">
-                <ChevronDown className="h-5 w-5 animate-bounce text-white" />
-              </div>
-            </div>
-          </button>
         </div>
       </section>
 
@@ -275,14 +259,7 @@ export default function NourishResilienceLanding() {
               <div className="space-y-8">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    As a BRCA1-positive survivor of triple-negative breast
-                    cancer, I underwent both a double mastectomy and bilateral
-                    oophorectomy in my early 40s. This experience was not only
-                    physically and emotionally transformative but also
-                    professionally catalytic. Throughout my recovery, I was
-                    determined to support my body using a blend of
-                    evidence-based naturopathic medicine and the traditional
-                    healing wisdom of my South Asian roots.
+                    As a BRCA1-positive survivor of triple-negative breast cancer, I underwent chemotherapy, both a double mastectomy and bilateral oophorectomy in my early 40s. This experience was not only physically and emotionally transformative but also professionally catalytic. Throughout my recovery, I was determined to support my body using a blend of evidence-based naturopathic medicine and the traditional healing wisdom of my South Asian roots.
                   </p>
                 </div>
 
