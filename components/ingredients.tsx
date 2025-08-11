@@ -114,7 +114,7 @@ export default function IngredientsGridSection() {
               <h3 className="text-3xl font-bold mb-2 mt-20">{category.category}</h3>
               <p className="text-xl text-gray-200 min-h-[2lh]">{category.description}</p>
               <div className="mt-4 border-t border-white/20 pt-4">
-                <p className="font-semibold text-base mb-2">Includes:</p>
+                <p className="font-semibold text-base mb-2">Organic Ingredients:</p>
                 <ul className="space-y-1">
                   {category.ingredients.map((ing) => (
                     <li key={ing.name} className="text-sm text-gray-300">

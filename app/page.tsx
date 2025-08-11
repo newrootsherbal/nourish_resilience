@@ -259,7 +259,7 @@ export default function NourishResilienceLanding() {
               <div className="space-y-8">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    As a BRCA1-positive survivor of triple-negative breast cancer, I underwent chemotherapy, both a double mastectomy and bilateral oophorectomy in my early 40s. This experience was not only physically and emotionally transformative but also professionally catalytic. Throughout my recovery, I was determined to support my body using a blend of evidence-based naturopathic medicine and the traditional healing wisdom of my South Asian roots.
+                     As a breast cancer survivor of triple-negative, BRCA1-positive gene, I underwent chemotherapy, both a double mastectomy and bilateral oophorectomy in my early 40s. This experience was not only physically and emotionally transformative but also professionally catalytic. Throughout my recovery, I was determined to support my body using a blend of evidence-based naturopathic medicine and the traditional healing wisdom of my South Asian roots.
                   </p>
                 </div>
 
@@ -355,19 +355,21 @@ export default function NourishResilienceLanding() {
           </p>
           <br />
           <p className="text-lg text-gray-700 leading-relaxed">
-            Vitazan Professional is committed to providing clean, laboratory
-            verified products. Our products are made in a certified cGMP
-            facility and tested in an on-site independently managed ISO-17025
-            certified lab. Every lot of Nourish Resilience® goes through a
-            series of testing including pesticide and heavy metal testing.
+            Vitazan Professional is committed to providing clean, laboratory verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO-17025 certified lab. Every lot of Nourish Resilience® goes through a series of testing including identity, potency, oxidation, disintegration, purity, and more.
           </p>
-          <Image
-            src="/ISO 17025.png"
-            alt="laboratory ISO 17025 certification"
-            width={400}
-            height={200}
-            className="mx-auto mt-8 mb-6"
-          />
+          <br />
+          <a
+            href="https://nhplab.com"
+            className="image-shadow-button"
+          >
+            <Image
+              src="/ISO 17025.png"
+              alt="laboratory ISO 17025 certification"
+              width={400}
+              height={200}
+              className="mx-auto"
+            />
+          </a>
         </div>
       </section>
 
