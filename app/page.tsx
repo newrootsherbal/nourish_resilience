@@ -360,6 +360,7 @@ export default function NourishResilienceLanding() {
           <br />
           <a
             href="https://nhplab.com"
+            target="_blank"
             className="image-shadow-button"
           >
             <Image
