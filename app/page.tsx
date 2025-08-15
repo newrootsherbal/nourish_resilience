@@ -417,7 +417,7 @@ export default function NourishResilienceLanding() {
               Certified Excellence in Every Scoop
             </h2>
             <p className="text-lg text-black/90 max-w-3xl mx-auto mb-8">
-              All carefully selected ingredients are certified non-GMO and organic, manufactured in our certified cGMP facility and tested in an ISO 17025 accredited laboratory to meet the unique needs of post cancer physiology.
+              All carefully selected ingredients are certified non-GMO and organic, manufactured in our certified cGMP facility and tested in an ISO 17025 accredited laboratory.
             </p>
             <div className="flex flex-wrap justify-evenly items-center gap-6 md:gap-12 mt-8">
               <Image
