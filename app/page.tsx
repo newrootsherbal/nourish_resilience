@@ -382,44 +382,6 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
 
-      {/* CTA For Healthcare Professionals Section */}
-      <section className="bg-white font-sans pb-16">
-        <div className="bg-gradient-to-br from-pink-50 to-rose-100 container mx-auto rounded-2xl p-10 text-center shadow-xl">
-            <div className="flex flex-col items-center justify-center gap-5 text-gray-800">
-              <h3 className="text-3xl font-bold text-[#d81177]">
-                For Healthcare Professionals
-              </h3>
-              <p className="text-lg max-w-2xl mx-auto">
-                To order Nourish Resilience for your clinic, please contact our brand partner NFH.
-              </p>
-              <a href="https://nfh.ca" target="_blank" rel="noopener noreferrer" className="my-3 transition-transform hover:scale-105">
-                <Image
-                  src="/nfh.png"
-                  alt="NFH Logo"
-                  width={150}
-                  height={75}
-                  className="object-contain"
-                />
-              </a>
-              <div className="text-lg text-center space-y-2 font-medium">
-                <p>
-                  Call: <a href="tel:1-866-510-3123" className="font-semibold text-[#d81177] hover:underline">
-                    1-866-510-3123
-                  </a>
-                </p>
-                <p>
-                  Email: <a href="mailto:info@nfh.ca" className="font-semibold text-[#d81177] hover:underline">
-                    info@nfh.ca
-                  </a>
-                </p>
-              </div>
-              <div className="mt-6 bg-rose-100/70 border border-rose-200 text-rose-800 rounded-lg px-4 py-2 text-center">
-                <p className="font-semibold">Online purchasing for patients coming soon!</p>
-              </div>
-            </div>
-          </div>
-      </section>
-
       {/* Key Ingredients Section */}
       <section
         id="ingredients"
@@ -587,6 +549,45 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
       </section>
+
+      {/* CTA For Healthcare Professionals Section */}
+      <section className="bg-white font-sans pb-16">
+        <div className="bg-gradient-to-br from-pink-50 to-rose-100 container mx-auto rounded-2xl p-10 text-center shadow-xl">
+            <div className="flex flex-col items-center justify-center gap-5 text-gray-800">
+              <h3 className="text-3xl font-bold text-[#d81177]">
+                For Healthcare Professionals
+              </h3>
+              <p className="text-lg max-w-2xl mx-auto">
+                To order Nourish Resilience for your clinic, please contact our brand partner NFH.
+              </p>
+              <a href="https://nfh.ca" target="_blank" rel="noopener noreferrer" className="my-3 transition-transform hover:scale-105">
+                <Image
+                  src="/nfh.png"
+                  alt="NFH Logo"
+                  width={150}
+                  height={75}
+                  className="object-contain"
+                />
+              </a>
+              <div className="text-lg text-center space-y-2 font-medium">
+                <p>
+                  Call: <a href="tel:1-866-510-3123" className="font-semibold text-[#d81177] hover:underline">
+                    1-866-510-3123
+                  </a>
+                </p>
+                <p>
+                  Email: <a href="mailto:info@nfh.ca" className="font-semibold text-[#d81177] hover:underline">
+                    info@nfh.ca
+                  </a>
+                </p>
+              </div>
+              <div className="mt-6 bg-rose-100/70 border border-rose-200 text-rose-800 rounded-lg px-4 py-2 text-center">
+                <p className="font-semibold">Online purchasing for patients coming soon!</p>
+              </div>
+            </div>
+          </div>
+      </section>
+      
       {/* Bottom Banner */}
       <section className="py-6 bg-[#d81177] text-white">
         <div className="max-w-screen-xl mx-auto px-4">
