@@ -390,7 +390,7 @@ export default function NourishResilienceLanding() {
                 For Healthcare Professionals
               </h3>
               <p className="text-lg max-w-2xl mx-auto">
-                To order Nourish Resilience for your clinic, please contact our exclusive distributor, NFH.
+                To order Nourish Resilience for your clinic, please contact our brand partner NFH.
               </p>
               <a href="https://nfh.ca" target="_blank" rel="noopener noreferrer" className="my-3 transition-transform hover:scale-105">
                 <Image
