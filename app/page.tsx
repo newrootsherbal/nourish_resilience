@@ -25,6 +25,15 @@ export default function NourishResilienceLanding() {
   const [activeSection, setActiveSection] = useState("hero");
   const [showMoreStory, setShowMoreStory] = useState(false);
   const [showMoreRecovery, setShowMoreRecovery] = useState(false);
+  const [bottleImage, setBottleImage] = useState(
+    "/3173-Nourish-Resilience-476g.png"
+  );
+
+  useEffect(() => {
+    if (window.location.hostname === "nourish-resilience.com") {
+      setBottleImage("/bottleus.png");
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -146,7 +155,7 @@ export default function NourishResilienceLanding() {
             <div className="group relative mx-auto w-64 md:w-80">
               <div className="absolute -inset-4 animate-pulse rounded-full bg-[#931d33]/30 blur-2xl" />
               <Image
-                src="/3173-Nourish-Resilience-476g.png"
+                src={bottleImage}
                 alt="Nourish Resilience Bottle"
                 width={960}
                 height={960}
@@ -195,12 +204,7 @@ export default function NourishResilienceLanding() {
                   mindfulness, acupuncture, and strength training.
                   <br className="hidden sm:block" />
                   <br />
-                  It’s your trusted partner for functional nutrition developed
-                  to assist women in their recovery journey following serious
-                  illness. Ask your naturopathic doctor, integrative healthcare
-                  provider, or functional-medicine practitioner about how
-                  Nourish Resilience® can become a key part of your long-term
-                  wellness journey.
+                  It's your trusted support for functional nutrition developed to assist women in their recovery journey following serious illness, including breast cancer. Ask your naturopathic doctor, integrative healthcare provider, or functional-medicine practitioner about how Nourish Resilience® can become a key part of your long-term wellness journey.
                   <br className="hidden sm:block" />
                   <br />
                 </p>
