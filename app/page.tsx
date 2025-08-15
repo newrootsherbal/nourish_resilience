@@ -139,7 +139,7 @@ export default function NourishResilienceLanding() {
               className="text-xl text-white drop-shadow-md md:text-2xl lg:text-3xl font-semibold"
               style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.5)" }}
             >
-              Will be available through your healthcare provider
+              Available through your healthcare provider
             </p>
             </div>
 
