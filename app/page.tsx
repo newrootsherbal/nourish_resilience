@@ -581,9 +581,9 @@ export default function NourishResilienceLanding() {
                   </a>
                 </p>
               </div>
-              <div className="mt-6 bg-rose-100/70 border border-rose-200 text-rose-800 rounded-lg px-4 py-2 text-center">
+              {/* <div className="mt-6 bg-rose-100/70 border border-rose-200 text-rose-800 rounded-lg px-4 py-2 text-center">
                 <p className="font-semibold">Online purchasing for patients coming soon!</p>
-              </div>
+              </div> */}
             </div>
           </div>
       </section>
