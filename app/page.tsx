@@ -28,10 +28,14 @@ export default function NourishResilienceLanding() {
   const [bottleImage, setBottleImage] = useState(
     "/3173-Nourish-Resilience-476g.png"
   );
+  const [trademarkSymbol, setTrademarkSymbol] = useState<React.ReactNode>(
+    <sup>®</sup>
+  );
 
   useEffect(() => {
     if (window.location.hostname === "nourish-resilience.com") {
       setBottleImage("/bottleus.png");
+      setTrademarkSymbol("™");
     }
   }, []);
 
@@ -141,7 +145,7 @@ export default function NourishResilienceLanding() {
                 className="text-5xl font-black tracking-tighter text-white drop-shadow-lg md:text-6xl lg:text-7xl pt-8"
                 style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.7)" }}
               >
-                Nourish Resilience<sup>®</sup>
+                Nourish Resilience{trademarkSymbol}
               </h1>
               <h2 className="text-3xl font-black tracking-tighter text-white drop-shadow-lg md:text-4xl lg:text-5xl" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.7)" }}>Coming Soon!</h2>
               <p
@@ -185,7 +189,7 @@ export default function NourishResilienceLanding() {
 
               <ul className="space-y-4">
                 <p className="text-lg text-gray-600 max-w-2xl mx-0 font-bold">
-                  Nourish Resilience® is ideal for:
+                  Nourish Resilience{trademarkSymbol} is ideal for:
                 </p>
                 {[
                   "Women using holistic nutritional supplementation as part of their recovery process",
@@ -199,12 +203,12 @@ export default function NourishResilienceLanding() {
               </ul>
               <div className="bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa] p-6 rounded-xl shadow-sm  ">
                 <p className="text-base text-gray-700 leading-relaxed">
-                  Nourish Resilience® complements a Mediterranean-style diet and
+                  Nourish Resilience{trademarkSymbol} complements a Mediterranean-style diet and
                   works synergistically with holistic practices like yoga,
                   mindfulness, acupuncture, and strength training.
                   <br className="hidden sm:block" />
                   <br />
-                  It's your trusted support for functional nutrition developed to assist women in their recovery journey following serious illness, including breast cancer. Ask your naturopathic doctor, integrative healthcare provider, or functional-medicine practitioner about how Nourish Resilience® can become a key part of your long-term wellness journey.
+                  It's your trusted support for functional nutrition developed to assist women in their recovery journey following serious illness, including breast cancer. Ask your naturopathic doctor, integrative healthcare provider, or functional-medicine practitioner about how Nourish Resilience{trademarkSymbol} can become a key part of your long-term wellness journey.
                   <br className="hidden sm:block" />
                   <br />
                 </p>
@@ -238,7 +242,7 @@ export default function NourishResilienceLanding() {
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 A personal story of resilience, recovery, and the creation of
-                Nourish Resilience®
+                Nourish Resilience{trademarkSymbol}
               </p>
             </div>
 
@@ -300,7 +304,7 @@ export default function NourishResilienceLanding() {
                 <div className="prose prose-lg max-w-none space-y-6">
                   <p className="text-gray-700 leading-relaxed text-lg">
                     I began crafting daily blends incorporating many of the
-                    ingredients now found in Nourish Resilience® — including
+                    ingredients now found in Nourish Resilience{trademarkSymbol} — including
                     reishi, fermented ginger, black cumin seed, dandelion root,
                     ashwagandha, and chai-inspired spices like cinnamon and
                     cardamom. These nutrients and herbs supported me in managing
@@ -310,7 +314,7 @@ export default function NourishResilienceLanding() {
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-lg">
-                    Nourish Resilience® emerged from this lived experience — not
+                    Nourish Resilience{trademarkSymbol} emerged from this lived experience — not
                     just as a product, but as a deeply intentional formulation
                     designed to support recovery, resilience, and vitality in
                     others. It reflects the science of nutritional therapeutics,
@@ -345,11 +349,11 @@ export default function NourishResilienceLanding() {
       <section className="bg-white py-16 px-4 sm:px-8 lg:px-16 font-sans">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#d81177] mb-6">
-            What is Nourish Resilience®
+            What is Nourish Resilience{trademarkSymbol}
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             <span className="font-semibold text-gray-800">
-              Nourish Resilience®
+              Nourish Resilience{trademarkSymbol}
             </span>{" "}
             is a clinically informed, organic vegan protein supplement developed
             to assist women in their recovery journey following serious illness,
@@ -361,7 +365,7 @@ export default function NourishResilienceLanding() {
 
           <p className="text-lg text-gray-700 leading-relaxed">
             With a comforting chai-inspired flavour featuring cardamom and
-            cocoa, Nourish Resilience® can be enjoyed warm or iced as part of
+            cocoa, Nourish Resilience{trademarkSymbol} can be enjoyed warm or iced as part of
             your daily self-care ritual.
           </p>
           <br />
@@ -380,7 +384,7 @@ export default function NourishResilienceLanding() {
               />
             </a>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Vitazan Professional is committed to providing clean, laboratory verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO-17025 certified lab. Every lot of Nourish Resilience® goes through a series of testing including identity, potency, oxidation, disintegration, purity, and more.
+              Vitazan Professional is committed to providing clean, laboratory verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO-17025 certified lab. Every lot of Nourish Resilience{trademarkSymbol} goes through a series of testing including identity, potency, oxidation, disintegration, purity, and more.
             </p>
           </div>
         </div>
@@ -471,7 +475,7 @@ export default function NourishResilienceLanding() {
               Simple Ways to Nourish Daily
             </h2>
             <p className="text-lg text-gray-600">
-              Every step you take toward wellness matters. Nourish Resilience®
+              Every step you take toward wellness matters. Nourish Resilience{trademarkSymbol}
               brings you clean, organic ingredients designed to strengthen your
               body and spirit. These simple, nourishing recipes fit effortlessly
               into your new wellness routine — helping you rise stronger, every
@@ -501,7 +505,7 @@ export default function NourishResilienceLanding() {
                   <div>
                     <strong>Ingredients:</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1 scoop Nourish Resilience®</li>
+                      <li>1 scoop Nourish Resilience{trademarkSymbol}</li>
                       <li>1 cup unsweetened coconut milk</li>
                       <li>1/2 frozen banana</li>
                       <li>1/4 cup frozen berries</li>
@@ -538,7 +542,7 @@ export default function NourishResilienceLanding() {
                   <div>
                     <strong>Ingredients:</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1 scoop Nourish Resilience®</li>
+                      <li>1 scoop Nourish Resilience{trademarkSymbol}</li>
                       <li>1 cup heated oat milk or almond milk</li>
                       <li>1/2 teaspoon honey (optional)</li>
                     </ul>
