@@ -351,7 +351,7 @@ export default function NourishResilienceLanding() {
             to assist women in their recovery journey following serious illness,
             including breast cancer. This functional nutrition formula blends
             bioavailable proteins, powerful antioxidants, adaptogenic medicinal
-            mushrooms, fermented botanicals, and gut-supportive prebiotics —each
+            mushrooms, fermented botanicals, and gut-supportive prebiotic —each
             selected as part of a holistic nutrition approach.
           </p>
 
@@ -553,37 +553,58 @@ export default function NourishResilienceLanding() {
       {/* CTA For Healthcare Professionals Section */}
       <section className="bg-white font-sans pb-16">
         <div className="bg-gradient-to-br from-pink-50 to-rose-100 container mx-auto rounded-2xl p-10 text-center shadow-xl">
-            <div className="flex flex-col items-center justify-center gap-5 text-gray-800">
+            <div className="flex flex-col items-center justify-center gap-8 text-gray-800">
               <h3 className="text-3xl font-bold text-[#d81177]">
                 For Healthcare Professionals
               </h3>
-              <p className="text-lg max-w-2xl mx-auto">
-                To order Nourish Resilience for your clinic, please contact our brand partner NFH.
-              </p>
-              <a href="https://nfh.ca" target="_blank" rel="noopener noreferrer" className="my-3 transition-transform hover:scale-105">
-                <Image
-                  src="/nfh.png"
-                  alt="NFH Logo"
-                  width={150}
-                  height={75}
-                  className="object-contain"
-                />
-              </a>
-              <div className="text-lg text-center space-y-2 font-medium">
-                <p>
-                  Call: <a href="tel:1-866-510-3123" className="font-semibold text-[#d81177] hover:underline">
-                    1-866-510-3123
+              <div className="grid md:grid-cols-2 gap-10 md:gap-6 items-start w-full max-w-4xl">
+                {/* NFH Column */}
+                <div className="flex flex-col items-center justify-start text-center gap-4 h-full">
+                  <p className="text-lg">
+                    To order for your clinic, please contact our brand partner NFH:
+                  </p>
+                  <a href="https://nfh.ca" target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
+                    <Image
+                      src="/nfh.png"
+                      alt="NFH Logo"
+                      width={150}
+                      height={75}
+                      className="object-contain"
+                    />
                   </a>
-                </p>
-                <p>
-                  Email: <a href="mailto:info@nfh.ca" className="font-semibold text-[#d81177] hover:underline">
-                    info@nfh.ca
+                  <div className="text-lg space-y-1 font-medium">
+                    <p>
+                      <a href="tel:1-866-510-3123" className="hover:underline">
+                        1-866-510-3123
+                      </a>
+                    </p>
+                    <p>
+                      <a href="mailto:info@nfh.ca" className="hover:underline">
+                        info@nfh.ca
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Fullscript Column */}
+                <div className="flex flex-col items-center justify-between text-center gap-4 h-full md:border-l md:border-rose-200 md:pl-6">
+                  <p className="text-lg">
+                    For patient prescriptions, find us on Fullscript:
+                  </p>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
+                    <Image
+                      src="/fullscript-logo.png"
+                      alt="Fullscript Logo"
+                      width={150}
+                      height={50}
+                      className="object-contain"
+                    />
                   </a>
-                </p>
+                  <p className="text-base font-medium text-gray-600">
+                    Available Fall 2025
+                  </p>
+                </div>
               </div>
-              {/* <div className="mt-6 bg-rose-100/70 border border-rose-200 text-rose-800 rounded-lg px-4 py-2 text-center">
-                <p className="font-semibold">Online purchasing for patients coming soon!</p>
-              </div> */}
             </div>
           </div>
       </section>
