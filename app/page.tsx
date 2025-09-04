@@ -384,7 +384,7 @@ export default function NourishResilienceLanding() {
               />
             </a>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Vitazan Professional is committed to providing clean, laboratory verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO-17025 certified lab. Every lot of Nourish Resilience{trademarkSymbol} goes through a series of testing including identity, potency, oxidation, disintegration, purity, and more.
+              Vitazan Professional is committed to providing clean, laboratory verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO-17025 certified lab. Every lot of Nourish Resilience{trademarkSymbol} goes through a series of testing including identity, potency, oxidation, disintegration, purity, and much more.
             </p>
           </div>
         </div>
