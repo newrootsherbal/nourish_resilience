@@ -26,7 +26,7 @@ export default function NourishResilienceLanding() {
   const [showMoreStory, setShowMoreStory] = useState(false);
   const [showMoreRecovery, setShowMoreRecovery] = useState(false);
   const [bottleImage, setBottleImage] = useState(
-    "/3173-Nourish-Resilience-476g.png"
+    "/3565Vitazan.webp"
   );
   const [trademarkSymbol, setTrademarkSymbol] = useState<React.ReactNode>(
     <sup>®</sup>
@@ -34,7 +34,7 @@ export default function NourishResilienceLanding() {
 
   useEffect(() => {
     if (window.location.hostname === "nourish-resilience.com") {
-      setBottleImage("/bottleus.png");
+      setBottleImage("/3565UVitazan.webp");
       setTrademarkSymbol("™");
     }
   }, []);
