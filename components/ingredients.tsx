@@ -65,7 +65,6 @@ const ingredientCategories: IngredientCategory[] = [
         image: '/GreenTea.webp',
       },
       { name: 'Ashwagandha', benefit: '...', image: '...' },
-      { name: 'Dandelion Root', benefit: '...', image: '...' },
     ],
   },
   {
@@ -77,6 +76,7 @@ const ingredientCategories: IngredientCategory[] = [
         benefit: 'Feeds beneficial gut bacteria for digestive health',
         image: '/artichoke.webp',
       },
+      { name: 'Dandelion Root', benefit: '...', image: '...' },
     ],
   },
   {
