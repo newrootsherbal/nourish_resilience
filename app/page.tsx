@@ -24,9 +24,11 @@ import {
 export default function NourishResilienceLanding() {
   const [activeSection, setActiveSection] = useState("hero");
   const [showMoreStory, setShowMoreStory] = useState(false);
-  const [showMoreRecovery, setShowMoreRecovery] = useState(false);
   const [bottleImage, setBottleImage] = useState(
     "/3565Vitazan.webp"
+  );
+  const [secondaryBottleImage, setSecondaryBottleImage] = useState(
+    "/3173-Nourish-Resilience-476g.png"
   );
   const [trademarkSymbol, setTrademarkSymbol] = useState<React.ReactNode>(
     <sup>®</sup>
@@ -35,6 +37,7 @@ export default function NourishResilienceLanding() {
   useEffect(() => {
     if (window.location.hostname === "nourish-resilience.com") {
       setBottleImage("/3565UVitazan.webp");
+      setSecondaryBottleImage("/bottleus.png");
       setTrademarkSymbol("™");
     }
   }, []);
@@ -156,16 +159,25 @@ export default function NourishResilienceLanding() {
             </p>
             </div>
 
-            <div className="group relative mx-auto w-64 md:w-80">
-              <div className="absolute -inset-4 animate-pulse rounded-full bg-[#931d33]/30 blur-2xl" />
-              <Image
-                src={bottleImage}
-                alt="Nourish Resilience Bottle"
-                width={960}
-                height={960}
-                className="transform-gpu object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105"
-                priority
-              />
+            <div className="group relative mx-auto flex w-full max-w-[28rem] justify-center md:max-w-[40rem]">
+              <div className="absolute -inset-6 animate-pulse rounded-full bg-[#931d33]/30 blur-2xl" />
+              <div className="relative z-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
+                <Image
+                  src={bottleImage}
+                  alt="Nourish Resilience Bottle"
+                  width={960}
+                  height={960}
+                  className="w-32 transform-gpu object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105 sm:w-40 md:w-48"
+                  priority
+                />
+                <Image
+                  src={secondaryBottleImage}
+                  alt="Nourish Resilience Bottle Alternate"
+                  width={960}
+                  height={960}
+                  className="w-32 transform-gpu object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105 sm:w-40 md:w-48"
+                />
+              </div>
             </div>
 
             <p
