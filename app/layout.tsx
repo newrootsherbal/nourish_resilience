@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nourishresilience.ca'),
   title: 'Nourish Resilience - Clinically Informed, Organic Vegan Protein Supplement for Women in Recovery',
   description: 'Nourish Resilience is a clinically informed, organic vegan protein supplement designed to support women in their recovery journey after serious illness, including breast cancer. This functional nutrition formula combines bioavailable proteins, powerful antioxidants, adaptogenic medicinal mushrooms, fermented botanicals, and gut-supportive prebiotics.',
   generator: 'Vitazan Professional',

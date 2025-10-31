@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Ingredients from "../components/ingredients";
+// import { ShareYourStoryForm } from "@/components/share-your-story-form"
 
 import {
   ChevronDown,
@@ -617,6 +618,8 @@ export default function NourishResilienceLanding() {
             </div>
           </div>
       </section>
+
+      {/* <ShareYourStoryForm /> */}
       
       {/* Bottom Banner */}
       <section className="py-6 bg-[#d81177] text-white">
