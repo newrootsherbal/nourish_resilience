@@ -357,7 +357,7 @@ export default function NourishResilienceLanding() {
             <span className="font-semibold text-gray-800">
               Nourish Resilience{trademarkSymbol}
             </span>{" "}
-            is a clinically informed, organic whole-food  supplement developed
+            is a clinically informed, whole-food supplement developed
             to assist women in their recovery journey following serious illness,
             including breast cancer. This functional nutrition formula blends
             bioavailable proteins, powerful antioxidants, adaptogenic medicinal
