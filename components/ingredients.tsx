@@ -18,7 +18,7 @@ type IngredientCategory = {
 
 const ingredientCategories: IngredientCategory[] = [
   {
-    category: 'Organic Vegan Protein',
+    category: 'Vegan Protein',
     description: 'Supports muscle maintenance, repair body tissues, and build antibodies.',
     ingredients: [
       {

@@ -427,7 +427,7 @@ export default function NourishResilienceLanding() {
               Certified Excellence in Every Scoop
             </h2>
             <p className="text-lg text-black/90 max-w-3xl mx-auto mb-8">
-              All carefully selected ingredients are certified non-GMO and organic, manufactured in our certified cGMP facility and tested in an ISO 17025 accredited laboratory.
+              All carefully selected ingredients are certified non-GMO, manufactured in our certified cGMP facility and tested in an ISO 17025 accredited laboratory.
             </p>
             <div className="flex flex-wrap justify-evenly items-center gap-6 md:gap-12 mt-8">
               <Image
@@ -444,13 +444,13 @@ export default function NourishResilienceLanding() {
                 height={80}
                 className="object-contain"
               />
-              {/* <Image
+              <Image
                 src="/Vegan.png"
                 alt="cGMP Certified"
                 width={80}
                 height={80}
                 className="object-contain"
-              /> */}
+              />
               <Image
                 src="/Gluten.png"
                 alt="ISO 17025 Accredited"
@@ -478,7 +478,7 @@ export default function NourishResilienceLanding() {
             </h2>
             <p className="text-lg text-gray-600">
               Every step you take toward wellness matters. Nourish Resilience{trademarkSymbol}
-              brings you clean, organic ingredients designed to strengthen your
+              brings you clean, ingredients designed to strengthen your
               body and spirit. These simple, nourishing recipes fit effortlessly
               into your new wellness routine — helping you rise stronger, every
               day.
