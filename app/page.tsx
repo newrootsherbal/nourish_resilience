@@ -357,7 +357,7 @@ export default function NourishResilienceLanding() {
             <span className="font-semibold text-gray-800">
               Nourish Resilience{trademarkSymbol}
             </span>{" "}
-            is a clinically informed, organic vegan protein supplement developed
+            is a clinically informed, organic whole-food  supplement developed
             to assist women in their recovery journey following serious illness,
             including breast cancer. This functional nutrition formula blends
             bioavailable proteins, powerful antioxidants, adaptogenic medicinal
@@ -444,13 +444,13 @@ export default function NourishResilienceLanding() {
                 height={80}
                 className="object-contain"
               />
-              <Image
+              {/* <Image
                 src="/Vegan.png"
                 alt="cGMP Certified"
                 width={80}
                 height={80}
                 className="object-contain"
-              />
+              /> */}
               <Image
                 src="/Gluten.png"
                 alt="ISO 17025 Accredited"

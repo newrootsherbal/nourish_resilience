@@ -3,13 +3,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nourishresilience.ca'),
-  title: 'Nourish Resilience - Clinically Informed, Organic Vegan Protein Supplement for Women in Recovery',
-  description: 'Nourish Resilience is a clinically informed, organic vegan protein supplement designed to support women in their recovery journey after serious illness, including breast cancer. This functional nutrition formula combines bioavailable proteins, powerful antioxidants, adaptogenic medicinal mushrooms, fermented botanicals, and gut-supportive prebiotics.',
+  title: 'Nourish Resilience - Clinically Informed, Organic whole-food  Supplement for Women in Recovery',
+  description: 'Nourish Resilience is a clinically informed, organic whole-food  supplement designed to support women in their recovery journey after serious illness, including breast cancer. This functional nutrition formula combines bioavailable proteins, powerful antioxidants, adaptogenic medicinal mushrooms, fermented botanicals, and gut-supportive prebiotics.',
   generator: 'Vitazan Professional',
   keywords: [
     'Nourish Resilience',
     'recovery',
-    'organic vegan protein supplement',
+    'organic whole-food  supplement',
     'breast cancer',
     'functional nutrition',
     'clinically informed',
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     icon: '/favicon.jpg', // Path relative to the public directory
   },
   openGraph: {
-    title: 'Nourish Resilience - Clinically Informed, Organic Vegan Protein Supplement for Women in Recovery',
-    description: 'Nourish Resilience is a clinically informed, organic vegan protein supplement designed to support women in their recovery journey after serious illness, including breast cancer.',
+    title: 'Nourish Resilience - Clinically Informed, Organic whole-food  Supplement for Women in Recovery',
+    description: 'Nourish Resilience is a clinically informed, organic whole-food  supplement designed to support women in their recovery journey after serious illness, including breast cancer.',
     images: [
       {
         url: '/3173-Nourish-Resilience-476g.png', // Use actual image path from public folder
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     siteName: 'Nourish Resilience',
   },
   twitter: {
-    title: 'Nourish Resilience - Clinically Informed, Organic Vegan Protein Supplement for Women in Recovery',
-    description: 'Nourish Resilience is a clinically informed, organic vegan protein supplement designed to support women in their recovery journey after serious illness, including breast cancer.',
+    title: 'Nourish Resilience - Clinically Informed, Organic whole-food  Supplement for Women in Recovery',
+    description: 'Nourish Resilience is a clinically informed, organic whole-food  supplement designed to support women in their recovery journey after serious illness, including breast cancer.',
     images: [
       {
         url: '/3173-Nourish-Resilience-476g.png',
