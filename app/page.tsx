@@ -35,7 +35,7 @@ export default function NourishResilienceLanding() {
   useEffect(() => {
     if (window.location.hostname === "nourish-resilience.com") {
       setBottleImage("/USversion.webp");
-      setTrademarkSymbol("™");
+      setTrademarkSymbol("®");
     }
   }, []);
 
