@@ -174,7 +174,7 @@ export default function NourishResilienceLanding() {
               className="text-xl text-white drop-shadow-md md:text-2xl lg:text-3xl font-semibold"
               style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.5)" }}
             >
-              Your Next Chapter of Healing Starts Here
+              The Future of Recovery Nutrition Starts Here
             </p>
           </div>
         </div>
@@ -194,8 +194,9 @@ export default function NourishResilienceLanding() {
                   Nourish Resilience{trademarkSymbol} is ideal for:
                 </p>
                 {[
-                  "Women using holistic nutritional supplementation as part of their recovery process",
-                  "Individuals looking for a nutritional beverage for wellbeing",
+                  "Women seeking comprehensive, nutrition-based support as part of their recovery journey",
+                  "Individuals who prefer a nourishing, functional beverage over capsules or pills",
+                  "Those in need of gentle, foundational support during periods of heightened stress, fatigue, or overwhelm"
                 ].map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <Heart className="w-5 h-5 text-[#8bc345] mt-1 flex-shrink-0" />
@@ -357,12 +358,7 @@ export default function NourishResilienceLanding() {
             <span className="font-semibold text-gray-800">
               Nourish Resilience{trademarkSymbol}
             </span>{" "}
-            is a clinically informed, whole-food supplement developed
-            to assist women in their recovery journey following serious illness,
-            including breast cancer. This functional nutrition formula blends
-            bioavailable proteins, powerful antioxidants, adaptogenic medicinal
-            mushrooms, fermented botanicals, and gut-supportive prebiotic —each
-            selected as part of a holistic nutrition approach.
+            is a verifiably clean, plant-based, whole-food supplement designed to assist women in their recovery journey following serious illness, including breast cancer. This functional nutrition formula blends bioavailable vegan proteins, powerful antioxidants, medicinal mushrooms, fermented botanicals, cinnamon, and gut supportive prebiotic – each selected as part of a holistic nutrition approach.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
