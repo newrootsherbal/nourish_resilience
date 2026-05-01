@@ -23,18 +23,22 @@ export default function KhambaPage() {
 
   const [bottleImage, setBottleImage] = useState("/Canversion.webp");
   const [trademarkSymbol, setTrademarkSymbol] = useState<React.ReactNode>(
-    <sup>®</sup>
+    locale === "fr" ? null : <sup>®</sup>
   );
 
   useEffect(() => {
-    if (
+    if (locale === "fr") {
+      setTrademarkSymbol(null);
+    } else if (
       typeof window !== "undefined" &&
       window.location.hostname === "nourish-resilience.com"
     ) {
       setBottleImage("/USversion.webp");
       setTrademarkSymbol("®");
+    } else {
+      setTrademarkSymbol(<sup>®</sup>);
     }
-  }, []);
+  }, [locale]);
 
   const toggleLanguage = () => {
     const newLocale = locale === "fr" ? "en" : "fr";
