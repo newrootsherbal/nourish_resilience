@@ -26,6 +26,7 @@ import {
 export default function NourishResilienceLanding() {
   const t = useTranslations();
   const locale = useLocale();
+  const imgSuffix = locale === "fr" ? "_FR" : "";
   const [activeSection, setActiveSection] = useState("hero");
   const pathname = usePathname();
   const router = useRouter();
@@ -286,7 +287,7 @@ export default function NourishResilienceLanding() {
               className="image-shadow-button shrink-0"
             >
               <Image
-                src="/ISO 17025.png"
+                src={`/ISO 17025${imgSuffix}.png`}
                 alt="laboratory ISO 17025 certification"
                 width={300}
                 height={237}
@@ -331,11 +332,11 @@ export default function NourishResilienceLanding() {
               {t("Certifications.description")}
             </p>
             <div className="flex flex-wrap justify-evenly items-center gap-6 md:gap-12 mt-8">
-              <Image src="/cGMP.png" alt="cGMP" width={80} height={80} className="object-contain" />
-              <Image src="/GMO.png" alt="Non-GMO" width={80} height={80} className="object-contain" />
+              <Image src={`/cGMP${imgSuffix}.png`} alt="cGMP" width={80} height={80} className="object-contain" />
+              <Image src={`/GMO${imgSuffix}.png`} alt="Non-GMO" width={80} height={80} className="object-contain" />
               <Image src="/Vegan.png" alt="Vegan" width={80} height={80} className="object-contain" />
               <Image src="/Gluten.png" alt="Gluten Free" width={80} height={80} className="object-contain" />
-              <Image src="/Canada.png" alt="Made in Canada" width={80} height={80} className="object-contain" />
+              <Image src={`/Canada${imgSuffix}.png`} alt="Made in Canada" width={80} height={80} className="object-contain" />
             </div>
           </div>
         </div>
