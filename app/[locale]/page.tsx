@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import Ingredients from "../components/ingredients";
-// import { ShareYourStoryForm } from "@/components/share-your-story-form"
+import { useTranslations, useLocale } from "next-intl";
+import Ingredients from "../../components/ingredients";
+import { routing } from "@/i18n/routing";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 
 import {
   ChevronDown,
@@ -18,13 +19,17 @@ import {
   Instagram,
   Facebook,
   Twitter,
-  ChevronRight,
   Linkedin,
+  Languages,
 } from "lucide-react";
 
 export default function NourishResilienceLanding() {
+  const t = useTranslations();
+  const locale = useLocale();
   const [activeSection, setActiveSection] = useState("hero");
-  const [showMoreStory, setShowMoreStory] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
+
   const [bottleImage, setBottleImage] = useState(
     "/Canversion.webp"
   );
@@ -33,7 +38,7 @@ export default function NourishResilienceLanding() {
   );
 
   useEffect(() => {
-    if (window.location.hostname === "nourish-resilience.com") {
+    if (typeof window !== "undefined" && window.location.hostname === "nourish-resilience.com") {
       setBottleImage("/USversion.webp");
       setTrademarkSymbol("®");
     }
@@ -44,7 +49,6 @@ export default function NourishResilienceLanding() {
       const sections = [
         "hero",
         "introduction",
-        "story",
         "benefits",
         "fuelingRecovery",
         "ingredients",
@@ -78,6 +82,11 @@ export default function NourishResilienceLanding() {
     }
   };
 
+  const toggleLanguage = () => {
+    const newLocale = locale === "fr" ? "en" : "fr";
+    router.replace(pathname, { locale: newLocale });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa]">
       {/* Sticky Navigation */}
@@ -92,7 +101,7 @@ export default function NourishResilienceLanding() {
               className="inline-block"
             >
               <Image
-                src="/vitazan.png" // Replace with your actual file name (e.g., favicon_io/logo.png)
+                src="/vitazan.png"
                 alt="Vitazan Logo"
                 width={150}
                 height={50}
@@ -100,26 +109,42 @@ export default function NourishResilienceLanding() {
                 priority
               />
             </Link>
-            <div className="hidden md:flex space-x-6">
-              {[
-                { id: "hero", label: "Home" },
-                { id: "benefits", label: "Benefits" },
-                { id: "story", label: "Story" },
-                { id: "ingredients", label: "Ingredients" },
-                { id: "recipes", label: "Recipes" },
-              ].map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`text-base font-lg transition-colors hover:text-black ${
-                    activeSection === item.id
-                      ? "text-black-700"
-                      : "text-gray-600"
-                  }`}
+            <div className="flex items-center space-x-6">
+              <div className="hidden md:flex space-x-6">
+                {[
+                  { id: "hero", label: t("Navbar.home") },
+                  { id: "benefits", label: t("Navbar.benefits") },
+                  { id: "ingredients", label: t("Navbar.ingredients") },
+                  { id: "recipes", label: t("Navbar.recipes") },
+                ].map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`text-base font-lg transition-colors hover:text-black ${
+                      activeSection === item.id
+                        ? "text-black-700"
+                        : "text-gray-600"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+                <Link
+                  href="/khamba"
+                  className="text-base font-lg transition-colors hover:text-black text-gray-600"
                 >
-                  {item.label}
-                </button>
-              ))}
+                  {t("Navbar.story")}
+                </Link>
+              </div>
+              
+              {/* Language Switcher */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 px-3 py-1 rounded-full border border-pink-200 text-sm font-medium text-[#d81177] hover:bg-pink-50 transition-colors"
+              >
+                <Languages className="w-4 h-4" />
+                <span>{locale === "fr" ? "EN" : "FR"}</span>
+              </button>
             </div>
           </div>
         </div>
@@ -145,14 +170,14 @@ export default function NourishResilienceLanding() {
                 className="text-5xl font-black tracking-tighter text-white drop-shadow-lg md:text-6xl lg:text-7xl pt-8"
                 style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.7)" }}
               >
-                Nourish Resilience{trademarkSymbol}
+                {t("Hero.title")}{trademarkSymbol}
               </h1>
-              <h2 className="text-3xl font-black tracking-tighter text-white drop-shadow-lg md:text-4xl lg:text-5xl" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.7)" }}>Coming Soon!</h2>
+              <h2 className="text-3xl font-black tracking-tighter text-white drop-shadow-lg md:text-4xl lg:text-5xl" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.7)" }}>{t("Hero.comingSoon")}</h2>
               <p
               className="text-xl text-white drop-shadow-md md:text-2xl lg:text-3xl font-semibold"
               style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.5)" }}
             >
-              Available through your healthcare provider
+              {t("Hero.availableThrough")}
             </p>
             </div>
 
@@ -161,7 +186,7 @@ export default function NourishResilienceLanding() {
               <div className="relative z-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
                 <Image
                   src={bottleImage}
-                  alt="Nourish Resilience Bottle"
+                  alt={t("Hero.bottleAlt")}
                   width={1080}
                   height={1080}
                   className="w-40 transform-gpu object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105 sm:w-48 md:w-56"
@@ -174,7 +199,7 @@ export default function NourishResilienceLanding() {
               className="text-xl text-white drop-shadow-md md:text-2xl lg:text-3xl font-semibold"
               style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.5)" }}
             >
-              The Future of Recovery Nutrition Starts Here
+              {t("Hero.futureStartsHere")}
             </p>
           </div>
         </div>
@@ -186,17 +211,19 @@ export default function NourishResilienceLanding() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-[#d81177] mb-8">
-                Who Can Benefit?
+                {t("Benefits.title")}
               </h2>
 
               <ul className="space-y-4">
                 <p className="text-lg text-gray-600 max-w-2xl mx-0 font-bold">
-                  Nourish Resilience{trademarkSymbol} is ideal for:
+                  {t.rich("Benefits.idealFor", {
+                    trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+                  })}
                 </p>
                 {[
-                  "Women seeking comprehensive, nutrition-based support as part of their recovery journey",
-                  "Individuals who prefer a nourishing, functional beverage over capsules or pills",
-                  "Those in need of gentle, foundational support during periods of heightened stress, fatigue, or overwhelm"
+                  t("Benefits.benefit1"),
+                  t("Benefits.benefit2"),
+                  t("Benefits.benefit3")
                 ].map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <Heart className="w-5 h-5 text-[#8bc345] mt-1 flex-shrink-0" />
@@ -206,14 +233,9 @@ export default function NourishResilienceLanding() {
               </ul>
               <div className="bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa] p-6 rounded-xl shadow-sm  ">
                 <p className="text-base text-gray-700 leading-relaxed">
-                  Nourish Resilience{trademarkSymbol} complements a Mediterranean-style diet and
-                  works synergistically with holistic practices like yoga,
-                  mindfulness, acupuncture, and strength training.
-                  <br className="hidden sm:block" />
-                  <br />
-                  It's your trusted support for functional nutrition developed to assist women in their recovery journey following serious illness, including breast cancer. Ask your naturopathic doctor, integrative healthcare provider, or functional-medicine practitioner about how Nourish Resilience{trademarkSymbol} can become a key part of your long-term wellness journey.
-                  <br className="hidden sm:block" />
-                  <br />
+                  {t.rich("Benefits.description", {
+                    trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+                  })}
                 </p>
               </div>
             </div>
@@ -231,158 +253,46 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
 
-      {/* Dr. Khamba's Story Section */}
-      <section
-        id="story"
-        className="py-20 bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa]"
-      >
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            {/* Section Title */}
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-[#8bc345] mb-4">
-                Dr. Khamba's Journey
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                A personal story of resilience, recovery, and the creation of
-                Nourish Resilience{trademarkSymbol}
-              </p>
-            </div>
-
-            {/* Grid with Image and Intro Content */}
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              {/* Image */}
-              <div className="flex flex-col items-center justify-start h-full">
-                {/* Larger Profile Image */}
-                <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full shadow-2xl overflow-hidden mb-4">
-                  <Image
-                    src="/baljit.webp"
-                    alt="Dr. Baljit Khamba"
-                    width={600}
-                    height={600}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Nameplate Below Image */}
-                <div className=" px-5 py-1 text-center">
-                  <p className="text-base font-semibold text-[#d81177] tracking-wide">
-                    Dr. Baljit Khamba
-                  </p>
-                  <p className="text-xs text-gray-700">ND, MPH, EdD</p>
-                </div>
-              </div>
-
-              {/* Initial Content + Button */}
-              <div className="space-y-8">
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                     As a breast cancer survivor of triple-negative, BRCA1-positive gene, I underwent chemotherapy, both a double mastectomy and bilateral oophorectomy in my early 40s. This experience was not only physically and emotionally transformative but also professionally catalytic. Throughout my recovery, I was determined to support my body using a blend of evidence-based naturopathic medicine and the traditional healing wisdom of my South Asian roots.
-                  </p>
-                </div>
-
-                <button
-                  onClick={() => setShowMoreStory(!showMoreStory)}
-                  className="inline-flex items-center gap-2 text-[#d81177] hover:text-[#d3a1ca] font-medium transition-colors group"
-                >
-                  {showMoreStory ? "Read Less" : "Read More About Her Journey"}
-                  <ChevronRight
-                    className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${
-                      showMoreStory ? "rotate-90" : ""
-                    }`}
-                  />
-                </button>
-              </div>
-            </div>
-
-            {/* Expanded Full-Width Story */}
-            <div
-              className={`transition-all duration-700 ease-in-out overflow-hidden ${
-                showMoreStory
-                  ? "max-h-[2000px] opacity-100 mt-12"
-                  : "max-h-0 opacity-0"
-              }`}
-            >
-              <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-                <div className="prose prose-lg max-w-none space-y-6">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    I began crafting daily blends incorporating many of the
-                    ingredients now found in Nourish Resilience{trademarkSymbol} — including
-                    reishi, fermented ginger, black cumin seed, dandelion root,
-                    ashwagandha, and chai-inspired spices like cinnamon and
-                    cardamom. These nutrients and herbs supported me in managing
-                    post-surgical fatigue, hormonal fluctuations,
-                    detoxification, and the emotional and metabolic aftermath of
-                    cancer treatment.
-                  </p>
-
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Nourish Resilience{trademarkSymbol} emerged from this lived experience — not
-                    just as a product, but as a deeply intentional formulation
-                    designed to support recovery, resilience, and vitality in
-                    others. It reflects the science of nutritional therapeutics,
-                    the wisdom of ancestral medicine, and the realities of life
-                    after cancer. I'm proud to offer it as part of a broader
-                    commitment to helping women feel strong, whole, and
-                    nourished — from the cellular level outward.
-                  </p>
-
-                  <div className="border-l-4 border-[#8bc345] pl-6 bg-purple-50 p-4 rounded-r-lg">
-                    {/* <p className="text-purple-800 font-medium italic">
-                "Every ingredient was chosen not just for its scientific
-                backing, but for its ability to honor the body's innate
-                wisdom to heal and thrive."
-              </p> */}
-                    <footer className="mt-3 text-base text-[#d81177] font-medium">
-                      Dr. Baljit Khamba, ND, MPH, EdD
-                      <br />
-                      <span className="text-black">
-                        Breast cancer survivor &amp; thriver
-                      </span>
-                    </footer>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* what is nourish resilience */}
       <section className="bg-white py-16 px-4 sm:px-8 lg:px-16 font-sans">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#d81177] mb-6">
-            What is Nourish Resilience{trademarkSymbol}
+            {t.rich("WhatIs.title", {
+              trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+            })}
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            <span className="font-semibold text-gray-800">
-              Nourish Resilience{trademarkSymbol}
-            </span>{" "}
-            is a verifiably clean, plant-based, whole-food supplement designed to assist women in their recovery journey following serious illness, including breast cancer. This functional nutrition formula blends bioavailable vegan proteins, powerful antioxidants, medicinal mushrooms, fermented botanicals, cinnamon, and gut supportive prebiotic – each selected as part of a holistic nutrition approach.
+            {t.rich("WhatIs.description", {
+              trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>,
+              b: (chunks) => <span className="font-semibold text-gray-800">{chunks}</span>
+            })}
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
-            With a comforting chai-inspired flavour featuring cardamom and
-            cocoa, Nourish Resilience{trademarkSymbol} can be enjoyed warm or iced as part of
-            your daily self-care ritual.
+            {t.rich("WhatIs.flavor", {
+              trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+            })}
           </p>
           <br />
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center gap-8">
             <a
               href="https://nhplab.com"
               target="_blank"
-              className="image-shadow-button mr-8"
+              className="image-shadow-button shrink-0"
             >
               <Image
                 src="/ISO 17025.png"
                 alt="laboratory ISO 17025 certification"
-                width={600}
-                height={475}
+                width={300}
+                height={237}
                 className="mx-auto"
               />
             </a>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Vitazan Professional is committed to providing clean, laboratory verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO-17025 certified lab. Every lot of Nourish Resilience{trademarkSymbol} goes through a series of testing including identity, potency, oxidation, disintegration, purity, and much more.
+            <p className="text-lg text-gray-700 leading-relaxed text-left">
+              {t.rich("WhatIs.qualityCommitment", {
+                trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+              })}
             </p>
           </div>
         </div>
@@ -396,23 +306,14 @@ export default function NourishResilienceLanding() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#8bc345] mb-4">
-              Powerful Ingredients for Healing
+              {t("Ingredients.title")}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Each ingredient is carefully selected for its unique healing
-              properties and synergistic benefits
+              {t("Ingredients.subtitle")}
             </p>
           </div>
 
           <Ingredients />
-
-          {/* <div className="text-center bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-purple-200 mt-12">
-            <p className="text-base text-gray-600">
-              <strong>Quality Assurance:</strong> Certified organic, non-GMO,
-              and crafted in a third-party cGMP facility to ensure the highest
-              standards of purity and potency.
-            </p>
-          </div> */}
         </div>
       </section>
       {/* Certification Achievement Section */}
@@ -420,47 +321,17 @@ export default function NourishResilienceLanding() {
         <div className="container mx-auto px-4">
           <div className="bg-gradient-to-br from-[#fbe4f2] to-[#fff4fa] text-[#d81177] rounded-2xl p-10 text-center shadow-lg">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Certified Excellence in Every Scoop
+              {t("Certifications.title")}
             </h2>
             <p className="text-lg text-black/90 max-w-3xl mx-auto mb-8">
-              All carefully selected ingredients are certified non-GMO, manufactured in our certified cGMP facility and tested in an ISO 17025 accredited laboratory.
+              {t("Certifications.description")}
             </p>
             <div className="flex flex-wrap justify-evenly items-center gap-6 md:gap-12 mt-8">
-              <Image
-                src="/cGMP.png"
-                alt="USDA Organic Certified"
-                width={80}
-                height={80}
-                className="object-contain"
-              />
-              <Image
-                src="/GMO.png"
-                alt="Non-GMO Certified"
-                width={80}
-                height={80}
-                className="object-contain"
-              />
-              <Image
-                src="/Vegan.png"
-                alt="cGMP Certified"
-                width={80}
-                height={80}
-                className="object-contain"
-              />
-              <Image
-                src="/Gluten.png"
-                alt="ISO 17025 Accredited"
-                width={80}
-                height={80}
-                className="object-contain"
-              />
-              <Image
-                src="/Canada.png"
-                alt="3rd Party Lab Tested"
-                width={80}
-                height={80}
-                className="object-contain"
-              />
+              <Image src="/cGMP.png" alt="cGMP" width={80} height={80} className="object-contain" />
+              <Image src="/GMO.png" alt="Non-GMO" width={80} height={80} className="object-contain" />
+              <Image src="/Vegan.png" alt="Vegan" width={80} height={80} className="object-contain" />
+              <Image src="/Gluten.png" alt="Gluten Free" width={80} height={80} className="object-contain" />
+              <Image src="/Canada.png" alt="Made in Canada" width={80} height={80} className="object-contain" />
             </div>
           </div>
         </div>
@@ -470,14 +341,12 @@ export default function NourishResilienceLanding() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#d81177] mb-4">
-              Simple Ways to Nourish Daily
+              {t("Recipes.title")}
             </h2>
             <p className="text-lg text-gray-600">
-              Every step you take toward wellness matters. Nourish Resilience{trademarkSymbol}
-              brings you clean, ingredients designed to strengthen your
-              body and spirit. These simple, nourishing recipes fit effortlessly
-              into your new wellness routine — helping you rise stronger, every
-              day.
+              {t.rich("Recipes.description", {
+                trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+              })}
             </p>
           </div>
 
@@ -486,7 +355,7 @@ export default function NourishResilienceLanding() {
               <div className="relative w-full h-64">
                 <Image
                   src="/latte.webp"
-                  alt="Nourish Chai Smoothie"
+                  alt={t("Recipes.smoothie.title")}
                   fill
                   className="object-cover w-full h-full"
                   priority
@@ -494,26 +363,24 @@ export default function NourishResilienceLanding() {
               </div>
               <div className="p-8 pt-6">
                 <h3 className="text-2xl font-bold text-[#8bc345] mb-4">
-                  Nourish Chai Smoothie
+                  {t("Recipes.smoothie.title")}
                 </h3>
                 <div className="space-y-3 text-gray-700">
                   <p>
-                    <strong>Prep time:</strong> 5 minutes
+                    <strong>{t("Recipes.smoothie.prepTime")}</strong>
                   </p>
                   <div>
-                    <strong>Ingredients:</strong>
+                    <strong>{t("Recipes.smoothie.ingredientsLabel")}</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1 scoop Nourish Resilience{trademarkSymbol}</li>
-                      <li>1 cup unsweetened coconut milk</li>
-                      <li>1/2 frozen banana</li>
-                      <li>1/4 cup frozen berries</li>
-                      <li>1 tablespoon ground flaxseed</li>
-                      <li>1/2 teaspoon honey</li>
+                      {["0", "1", "2", "3", "4", "5"].map((i) => (
+                        <li key={i}>{t.rich(`Recipes.smoothie.ingredients.${i}`, {
+                          trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+                        })}</li>
+                      ))}
                     </ul>
                   </div>
                   <p>
-                    <strong>Instructions:</strong> Blend until creamy. Serve
-                    chilled
+                    <strong>{t("Recipes.smoothie.instructions")}</strong>
                   </p>
                 </div>
               </div>
@@ -523,7 +390,7 @@ export default function NourishResilienceLanding() {
               <div className="relative w-full h-64">
                 <Image
                   src="/coffee.webp"
-                  alt="Warming Resilience Latte"
+                  alt={t("Recipes.latte.title")}
                   fill
                   className="object-cover w-full h-full"
                   priority
@@ -531,23 +398,24 @@ export default function NourishResilienceLanding() {
               </div>
               <div className="p-8 pt-6">
                 <h3 className="text-2xl font-bold text-[#8bc345] mb-4">
-                  Warming Resilience Latte
+                  {t("Recipes.latte.title")}
                 </h3>
                 <div className="space-y-3 text-gray-700">
                   <p>
-                    <strong>Prep time:</strong> 8 minutes
+                    <strong>{t("Recipes.latte.prepTime")}</strong>
                   </p>
                   <div>
-                    <strong>Ingredients:</strong>
+                    <strong>{t("Recipes.latte.ingredientsLabel")}</strong>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                      <li>1 scoop Nourish Resilience{trademarkSymbol}</li>
-                      <li>1 cup heated oat milk or almond milk</li>
-                      <li>1/2 teaspoon honey (optional)</li>
+                      {["0", "1", "2"].map((i) => (
+                        <li key={i}>{t.rich(`Recipes.latte.ingredients.${i}`, {
+                          trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>
+                        })}</li>
+                      ))}
                     </ul>
                   </div>
                   <p>
-                    <strong>Instructions:</strong> Stir or froth well. Sprinkle
-                    with cinnamon or cocoa powder before serving.
+                    <strong>{t("Recipes.latte.instructions")}</strong>
                   </p>
                 </div>
               </div>
@@ -561,13 +429,13 @@ export default function NourishResilienceLanding() {
         <div className="bg-gradient-to-br from-pink-50 to-rose-100 container mx-auto rounded-2xl p-10 text-center shadow-xl">
             <div className="flex flex-col items-center justify-center gap-8 text-gray-800">
               <h3 className="text-3xl font-bold text-[#d81177]">
-                For Healthcare Professionals
+                {t("Professionals.title")}
               </h3>
               <div className="grid md:grid-cols-2 gap-10 md:gap-6 items-start w-full max-w-4xl">
                 {/* NFH Column */}
                 <div className="flex flex-col items-center justify-start text-center gap-4 h-full">
                   <p className="text-lg">
-                    To order for your clinic, please contact our brand partner NFH:
+                    {t("Professionals.nfhText")}
                   </p>
                   <a href="https://nfh.ca" target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
                     <Image
@@ -595,7 +463,7 @@ export default function NourishResilienceLanding() {
                 {/* Fullscript Column */}
                 <div className="flex flex-col items-center justify-between text-center gap-4 h-full md:border-l md:border-rose-200 md:pl-6">
                   <p className="text-lg">
-                    For patient prescriptions, find us on Fullscript:
+                    {t("Professionals.fullscriptText")}
                   </p>
                   <a href="#" target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
                     <Image
@@ -607,7 +475,7 @@ export default function NourishResilienceLanding() {
                     />
                   </a>
                   <p className="text-base font-medium text-gray-600">
-                    Available Fall 2025
+                    {t("Professionals.availableFall")}
                   </p>
                 </div>
               </div>
@@ -615,15 +483,13 @@ export default function NourishResilienceLanding() {
           </div>
       </section>
 
-      {/* <ShareYourStoryForm /> */}
-      
       {/* Bottom Banner */}
       <section className="py-6 bg-[#d81177] text-white">
         <div className="max-w-screen-xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-center text-base md:text-lg font-semibold uppercase tracking-wide gap-4 md:gap-6">
-            <span>Rebuild Your Strength</span>
-            <span>Reconnect with Your Vitality</span>
-            <span>Nourish your body</span>
+            <span>{t("Banner.text1")}</span>
+            <span>{t("Banner.text2")}</span>
+            <span>{t("Banner.text3")}</span>
           </div>
         </div>
       </section>
@@ -697,7 +563,7 @@ export default function NourishResilienceLanding() {
           </div>
         </div>
         <div className="container mx-auto mt-8 text-center text-xs text-gray-600 border-t border-rose-200 pt-6">
-          &copy; {new Date().getFullYear()} Vitazan.com. All rights reserved.
+          &copy; {new Date().getFullYear()} Vitazan.com. {t("Footer.rights")}
         </div>
       </footer>
     </div>

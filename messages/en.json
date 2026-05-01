@@ -1,0 +1,136 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "benefits": "Benefits",
+    "story": "Story",
+    "ingredients": "Ingredients",
+    "recipes": "Recipes"
+  },
+  "Hero": {
+    "title": "Nourish Resilience",
+    "comingSoon": "Coming Soon!",
+    "availableThrough": "Available through your healthcare practitioner",
+    "bottleAlt": "Nourish Resilience Bottle",
+    "futureStartsHere": "The Future of Recovery Nutrition Starts Here"
+  },
+  "Benefits": {
+    "title": "Who Can Benefit?",
+    "idealFor": "Nourish Resilience<trademarkSymbol></trademarkSymbol> is ideal for:",
+    "benefit1": "Women seeking comprehensive, nutrition-based support as part of their recovery journey",
+    "benefit2": "Individuals who prefer a nourishing, functional beverage over capsules or pills",
+    "benefit3": "Those in need of gentle, foundational support during periods of heightened stress, fatigue, or overwhelm",
+    "description": "Nourish Resilience<trademarkSymbol></trademarkSymbol> complements a Mediterranean-style diet and works synergistically with holistic practices like yoga, mindfulness, acupuncture, and strength training. It’s your trusted support for functional nutrition developed to assist women in their recovery journey following serious illness, including breast cancer. Ask your naturopathic doctor, integrative healthcare practitioner, or functional-medicine practitioner about how Nourish Resilience<trademarkSymbol></trademarkSymbol> can become a key part of your long-term wellness journey."
+  },
+  "Story": {
+    "title": "Dr. Khamba’s Journey",
+    "subtitle": "A personal story of resilience, recovery, and the creation of Nourish Resilience<trademarkSymbol></trademarkSymbol>",
+    "drName": "Dr. Baljit Khamba",
+    "drTitles": "ND, MPH, EdD",
+    "introText": "As a breast-cancer survivor of triple-negative, <i>BRCA1</i>-positive gene, I underwent chemotherapy, both a double mastectomy and bilateral oophorectomy in my early 40s. This experience was not only physically and emotionally transformative but also professionally catalytic. Throughout my recovery, I was determined to support my body using a blend of evidence-based naturopathic medicine and the traditional healing wisdom of my South Asian roots.",
+    "readMore": "Read More about Her Journey",
+    "readLess": "Read Less",
+    "expandedText1": "I began crafting daily blends incorporating many of the ingredients now found in Nourish Resilience<trademarkSymbol></trademarkSymbol>—including reishi, fermented ginger, black cumin seed, dandelion root, ashwagandha, and chai-inspired spices like cinnamon and cardamom. These nutrients and herbs supported me in managing postsurgical fatigue, hormonal fluctuations, detoxification, and the emotional and metabolic aftermath of cancer treatment.",
+    "expandedText2": "Nourish Resilience<trademarkSymbol></trademarkSymbol> emerged from this lived experience—not just as a product, but as a deeply intentional formulation designed to support recovery, resilience, and vitality in others. It reflects the science of nutritional therapeutics, the wisdom of ancestral medicine, and the realities of life after cancer. I’m proud to offer it as part of a broader commitment to helping women feel strong, whole, and nourished—from the cellular level outward.",
+    "quoteFooter": "Breast cancer survivor and thriver"
+  },
+  "WhatIs": {
+    "title": "What Is Nourish Resilience<trademarkSymbol></trademarkSymbol>?",
+    "description": "<b>Nourish Resilience<trademarkSymbol></trademarkSymbol></b> is a verifiably clean, plant-based, whole-food supplement designed to assist women in their recovery journey following serious illness, including breast cancer. This functional nutrition formula blends bioavailable vegan proteins, powerful antioxidants, medicinal mushrooms, fermented botanicals, cinnamon, and gut-supportive prebiotic—each selected as part of a holistic nutrition approach.",
+    "flavor": "With a comforting chai-inspired flavour featuring cardamom and cocoa, Nourish Resilience<trademarkSymbol></trademarkSymbol> can be enjoyed warm or iced as part of your daily self-care ritual.",
+    "qualityCommitment": "Vitazan Professional is committed to providing clean, laboratory-verified products. Our products are made in a certified cGMP facility and tested in an on-site independently managed ISO 17025–accredited laboratory. Every lot of Nourish Resilience<trademarkSymbol></trademarkSymbol> goes through a series of testing including identity, potency, oxidation, disintegration, purity, and much more."
+  },
+  "Ingredients": {
+    "title": "Powerful Ingredients for Healing",
+    "subtitle": "Each ingredient is carefully selected for its unique healing properties and synergistic benefits",
+    "organicHeader": "Organic Ingredients:",
+    "categories": {
+      "veganProtein": {
+        "title": "Vegan Protein",
+        "description": "Support muscle maintenance, repair body tissues, and build antibodies.",
+        "mungBean": "Mung Bean",
+        "almond": "Almond",
+        "pumpkinSeed": "Pumpkin Seed"
+      },
+      "fermentedBotanicals": {
+        "title": "Fermented Botanicals",
+        "description": "Enhanced absorption for digestive health.",
+        "ginger": "Ginger",
+        "blackCuminSeed": "Black Cumin Seed"
+      },
+      "medicinalMushrooms": {
+        "title": "Medicinal Mushrooms",
+        "description": "Strengthen immune recovery.",
+        "reishi": "Reishi",
+        "shiitake": "Shiitake",
+        "maitake": "Maitake"
+      },
+      "antioxidants": {
+        "title": "Antioxidants & Adaptogens",
+        "description": "Energize and cleanse.",
+        "matcha": "Matcha Green Tea",
+        "ashwagandha": "Ashwagandha"
+      },
+      "prebiotic": {
+        "title": "Prebiotic Fibre",
+        "description": "Supports gut microbiome and healthy digestion.",
+        "inulin": "Inulin",
+        "dandelionRoot": "Dandelion Root"
+      },
+      "spices": {
+        "title": "Spices",
+        "description": "Antioxidant benefits and comforting taste.",
+        "cinnamon": "Cinnamon",
+        "cardamom": "Cardamom",
+        "cocoa": "Cocoa",
+        "clove": "Clove"
+      }
+    }
+  },
+  "Certifications": {
+    "title": "Certified Excellence in Every Scoop",
+    "description": "All carefully selected ingredients are certified non‑GMO, manufactured in our certified cGMP facility, and tested in an ISO 17025–accredited laboratory."
+  },
+  "Recipes": {
+    "title": "Simple Ways to Nourish Daily",
+    "description": "Every step you take toward wellness matters. Nourish Resilience<trademarkSymbol></trademarkSymbol> brings you clean ingredients designed to strengthen your body and spirit. These simple, nourishing recipes fit effortlessly into your new wellness routine—helping you rise stronger, every day.",
+    "smoothie": {
+      "title": "Nourish Chai Smoothie",
+      "prepTime": "Prep time: 5 minutes",
+      "ingredientsLabel": "Ingredients:",
+      "ingredients": [
+        "1 scoop Nourish Resilience<trademarkSymbol></trademarkSymbol>",
+        "1 cup unsweetened coconut milk",
+        "½ frozen banana",
+        "¼ cup frozen berries",
+        "1 tablespoon ground flaxseed",
+        "½ teaspoon honey"
+      ],
+      "instructions": "Instructions: Blend until creamy. Serve chilled."
+    },
+    "latte": {
+      "title": "Warming Resilience Latte",
+      "prepTime": "Prep time: 8 minutes",
+      "ingredientsLabel": "Ingredients:",
+      "ingredients": [
+        "1 scoop Nourish Resilience<trademarkSymbol></trademarkSymbol>",
+        "1 cup heated oat milk or almond milk",
+        "½ teaspoon honey (optional)"
+      ],
+      "instructions": "Instructions: Stir or froth well. Sprinkle with cinnamon or cocoa powder before serving."
+    }
+  },
+  "Professionals": {
+    "title": "For Healthcare Practitioners",
+    "nfhText": "To order for your clinic, please contact our brand partner NFH:",
+    "fullscriptText": "For patient prescriptions, find us on Fullscript:",
+    "availableFall": "Available Fall 2025"
+  },
+  "Banner": {
+    "text1": "Rebuild Your Strength",
+    "text2": "Reconnect with Your Vitality",
+    "text3": "Nourish your body"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "benefits": "Bienfaits",
+    "story": "Histoire",
+    "ingredients": "Ingrédients",
+    "recipes": "Recettes"
+  },
+  "Hero": {
+    "title": "Résilience Vitale",
+    "comingSoon": "Bientôt disponible !",
+    "availableThrough": "Disponible par l’intermédiaire de votre praticien de soins de santé",
+    "bottleAlt": "Bouteille Résilience Vitale",
+    "futureStartsHere": "L’avenir de la nutrition pour la récupération commence ici"
+  },
+  "Benefits": {
+    "title": "Qui peut en bénéficier ?",
+    "idealFor": "Résilience Vitale<trademarkSymbol></trademarkSymbol> est idéal pour :",
+    "benefit1": "Les femmes à la recherche d’un soutien nutritionnel complet dans le cadre de leur parcours de récupération",
+    "benefit2": "Les personnes qui préfèrent une boisson fonctionnelle et nourrissante aux capsules ou aux comprimés",
+    "benefit3": "Celles qui ont besoin d’un soutien doux et fondamental pendant les périodes de stress intense, de fatigue, ou de surmenage",
+    "description": "Résilience Vitale<trademarkSymbol></trademarkSymbol> complète un régime de type méditerranéen et agit en synergie avec des pratiques holistiques telles que le yoga, la pleine conscience, l’acuponcture, et l’entrainement musculaire. C’est votre allié de confiance pour une nutrition fonctionnelle développée pour aider les femmes dans leur parcours de récupération à la suite d’une maladie grave, y compris le cancer du sein. Demandez à votre naturopathe, votre professionnel de la santé intégrative, ou votre praticien en médecine fonctionnelle sur la façon dont Résilience Vitale<trademarkSymbol></trademarkSymbol> peut devenir une partie essentielle de votre parcours de bienêtre à long terme."
+  },
+  "Story": {
+    "title": "Le parcours de la Dre Khamba",
+    "subtitle": "Une histoire personnelle de résilience, de récupération, et de la création de Résilience Vitale<trademarkSymbol></trademarkSymbol>",
+    "drName": "Dre Baljit Khamba",
+    "drTitles": "ND, MPH, EdD",
+    "introText": "En tant que survivante d’un cancer du sein triple négatif, porteuse du gène <i>BRCA1,</i> j’ai subi une chimiothérapie, une double mastectomie, et une oophorectomie bilatérale au début de la quarantaine. Cette expérience a été non seulement transformatrice sur les plans physique et émotionnel, mais aussi un catalyseur sur le plan professionnel. Tout au long de ma convalescence, j’étais déterminée à soutenir mon corps en utilisant un mélange de médecine naturopathique fondée sur des données probantes et la sagesse traditionnelle de mes racines sud-asiatiques.",
+    "readMore": "En savoir plus sur son parcours",
+    "readLess": "Lire moins",
+    "expandedText1": "J’ai commencé à élaborer des mélanges quotidiens intégrant bon nombre des ingrédients que l’on trouve aujourd’hui dans Résilience Vitale<trademarkSymbol></trademarkSymbol>, notamment le reishi, le gingembre fermenté, la graine de cumin noir, la racine de pissenlit, l’ashwagandha, et des épices inspirées du chaï comme la cannelle et la cardamome. Ces nutriments et ces herbes m’ont aidée à gérer la fatigue postchirurgicale, les fluctuations hormonales, la détoxification, et les conséquences émotionnelles et métaboliques du traitement du cancer.",
+    "expandedText2": "Résilience Vitale<trademarkSymbol></trademarkSymbol> est né de cette expérience vécue — non seulement comme un produit, mais comme une formulation profondément intentionnelle conçue pour soutenir la récupération, la résilience, et la vitalité chez les autres. Il reflète la science de la thérapeutique nutritionnelle, la sagesse de la médecine ancestrale, et les réalités de la vie après le cancer. Je suis fière de l’offrir dans le cadre d’un engagement plus large visant à aider les femmes à se sentir fortes, entières, et nourries — du niveau cellulaire vers l’extérieur.",
+    "quoteFooter": "Survivante et battante du cancer du sein"
+  },
+  "WhatIs": {
+    "title": "Qu’est-ce que Résilience Vitale<trademarkSymbol></trademarkSymbol>",
+    "description": "<b>Résilience Vitale<trademarkSymbol></trademarkSymbol></b> est un supplément d’aliments complets, végétalien, et d’une pureté vérifiable, conçu pour aider les femmes dans leur parcours de récupération à la suite d’une maladie grave, y compris le cancer du sein. Cette formule de nutrition fonctionnelle mélange des protéines végétaliennes biodisponibles, de puissants antioxydants, des champignons médicinaux, des plantes fermentées, de la cannelle, et un prébiotique de soutien intestinal — chacun sélectionné dans le cadre d’une approche nutritionnelle holistique.",
+    "flavor": "Avec une saveur réconfortante inspirée du chaï, mettant en vedette la cardamome et le cacao, Résilience Vitale<trademarkSymbol></trademarkSymbol> peut être dégusté chaud ou glacé dans le cadre de votre rituel quotidien de soins personnels.",
+    "qualityCommitment": "Vitazan Professional s’engage à fournir des produits purs et vérifiés en laboratoire. Nos produits sont fabriqués dans une installation certifiée BPFa et testés dans un laboratoire accrédité ISO 17025 géré de manière indépendante sur place. Chaque lot de Résilience Vitale<trademarkSymbol></trademarkSymbol> passe par une série de tests, notamment l’identité, la puissance, l’oxydation, la désintégration, la pureté, et bien plus encore."
+  },
+  "Ingredients": {
+    "title": "Des ingrédients puissants pour la guérison",
+    "subtitle": "Chaque ingrédient est soigneusement sélectionné pour ses propriétés curatives uniques et ses bienfaits synergiques",
+    "organicHeader": "Ingrédients biologiques :",
+    "categories": {
+      "veganProtein": {
+        "title": "Protéines végétaliennes",
+        "description": "Soutiennent le maintien des muscles, réparent les tissus corporels, et produisent des anticorps.",
+        "mungBean": "Haricot mungo",
+        "almond": "Amande",
+        "pumpkinSeed": "Graine de citrouille"
+      },
+      "fermentedBotanicals": {
+        "title": "Plantes fermentées",
+        "description": "Absorption améliorée pour la santé digestive.",
+        "ginger": "Gingembre",
+        "blackCuminSeed": "Graine de cumin noir"
+      },
+      "medicinalMushrooms": {
+        "title": "Champignons médicinaux",
+        "description": "Renforce la récupération immunitaire.",
+        "reishi": "Reishi",
+        "shiitake": "Shiitaké",
+        "maitake": "Maïtaké"
+      },
+      "antioxidants": {
+        "title": "Antioxydants et adaptogènes",
+        "description": "Dynamisent et nettoient.",
+        "matcha": "Thé vert matcha",
+        "ashwagandha": "Ashwagandha"
+      },
+      "prebiotic": {
+        "title": "Fibres prébiotiques",
+        "description": "Soutiennent le microbiome intestinal et une digestion saine.",
+        "inulin": "Inuline",
+        "dandelionRoot": "Racine de pissenlit"
+      },
+      "spices": {
+        "title": "Épices",
+        "description": "Bienfaits antioxydants et gout réconfortant.",
+        "cinnamon": "Cannelle",
+        "cardamom": "Cardamome",
+        "cocoa": "Cacao",
+        "clove": "Clou de girofle"
+      }
+    }
+  },
+  "Certifications": {
+    "title": "L’excellence certifiée dans chaque mesure",
+    "description": "Tous les ingrédients soigneusement sélectionnés sont certifiés sans OGM, mélangés dans notre installation certifiée BPFa, et testés dans un laboratoire accrédité ISO 17025."
+  },
+  "Recipes": {
+    "title": "Des moyens simples de se nourrir au quotidien",
+    "description": "Chaque pas que vous faites vers le bienêtre compte. Résilience Vitale<trademarkSymbol></trademarkSymbol> vous apporte des ingrédients purs conçus pour renforcer votre corps et votre esprit. Ces recettes simples et nourrissantes s’intègrent sans effort à votre nouvelle routine de bienêtre — vous aidant à vous relever plus forte, chaque jour.",
+    "smoothie": {
+      "title": "Smoothie chaï nourrissant",
+      "prepTime": "Temps de préparation : 5 minutes",
+      "ingredientsLabel": "Ingrédients :",
+      "ingredients": [
+        "1 dosette de Résilience Vitale<trademarkSymbol></trademarkSymbol>",
+        "1 tasse de lait de coco non sucré",
+        "½ banane congelée",
+        "¼ de tasse de baies congelées",
+        "1 cuillerée à soupe de graines de lin moulues",
+        "½ cuillerée à thé de miel"
+      ],
+      "instructions": "Instructions : Mélanger jusqu’à l’obtention d’une consistance crémeuse. Servir frais."
+    },
+    "latte": {
+      "title": "Latté résilience réconfortant",
+      "prepTime": "Temps de préparation : 8 minutes",
+      "ingredientsLabel": "Ingrédients :",
+      "ingredients": [
+        "1 dosette de Résilience Vitale<trademarkSymbol></trademarkSymbol>",
+        "1 tasse de lait d’avoine ou d’amande chauffé",
+        "½ cuillerée à thé de miel (facultatif)"
+      ],
+      "instructions": "Instructions : Remuer ou faire mousser. Saupoudrer de cannelle ou de poudre de cacao avant de servir."
+    }
+  },
+  "Professionals": {
+    "title": "Pour les praticiens de soins de santé",
+    "nfhText": "Pour commander pour votre clinique, veuillez contacter notre partenaire de marque NFH :",
+    "fullscriptText": "Pour les prescriptions des patients, trouvez-nous sur Fullscript :",
+    "availableFall": "Disponible à l’automne 2025"
+  },
+  "Banner": {
+    "text1": "Retrouvez votre force",
+    "text2": "Reconnectez-vous à votre vitalité",
+    "text3": "Nourrissez votre corps"
+  },
+  "Footer": {
+    "rights": "Tous droits réservés."
+  }
+}
