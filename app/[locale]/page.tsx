@@ -303,6 +303,65 @@ export default function NourishResilienceLanding() {
         </div>
       </section>
 
+      {/* Story Preview Section */}
+      <section className="py-20 bg-white border-t border-rose-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-[#8bc345] mb-4">
+                {t("Story.title")}
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                {t.rich("Story.subtitle", {
+                  trademarkSymbol: (chunks) => <>{chunks}{trademarkSymbol}</>,
+                })}
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="flex flex-col items-center justify-center">
+                <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full shadow-2xl overflow-hidden mb-4">
+                  <Image
+                    src="/baljit.webp"
+                    alt={t("Story.drName")}
+                    width={600}
+                    height={600}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-center">
+                  <p className="text-base font-semibold text-[#d81177] tracking-wide">
+                    {t("Story.drName")}
+                  </p>
+                  <p className="text-xs text-gray-700">
+                    {t("Story.drTitles")}
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-8 text-center lg:text-left">
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    {t.rich("Story.introText", {
+                      i: (chunks) => <i>{chunks}</i>,
+                    })}
+                  </p>
+                </div>
+                
+                <div className="pt-2">
+                  <Link
+                    href="/khamba"
+                    className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-[#d81177] rounded-full hover:bg-[#b00d60] transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  >
+                    {t("Story.readMore")}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Ingredients Section */}
       <section
         id="ingredients"
