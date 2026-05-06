@@ -116,8 +116,23 @@ export default function NourishResilienceLanding() {
             </Link>
             <div className="flex items-center space-x-6">
               <div className="hidden md:flex space-x-6">
+                <button
+                  onClick={() => scrollToSection("hero")}
+                  className={`text-base font-lg transition-colors hover:text-black ${
+                    activeSection === "hero"
+                      ? "text-black-700"
+                      : "text-gray-600"
+                  }`}
+                >
+                  {t("Navbar.home")}
+                </button>
+                <Link
+                  href="/khamba"
+                  className="text-base font-lg transition-colors hover:text-black text-gray-600"
+                >
+                  {t("Navbar.story")}
+                </Link>
                 {[
-                  { id: "hero", label: t("Navbar.home") },
                   { id: "ingredients", label: t("Navbar.ingredients") },
                   { id: "recipes", label: t("Navbar.recipes") },
                 ].map((item) => (
@@ -133,12 +148,6 @@ export default function NourishResilienceLanding() {
                     {item.label}
                   </button>
                 ))}
-                <Link
-                  href="/khamba"
-                  className="text-base font-lg transition-colors hover:text-black text-gray-600"
-                >
-                  {t("Navbar.story")}
-                </Link>
               </div>
               
               {/* Language Switcher */}
