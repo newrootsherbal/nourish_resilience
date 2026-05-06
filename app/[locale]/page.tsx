@@ -118,7 +118,6 @@ export default function NourishResilienceLanding() {
               <div className="hidden md:flex space-x-6">
                 {[
                   { id: "hero", label: t("Navbar.home") },
-                  { id: "benefits", label: t("Navbar.benefits") },
                   { id: "ingredients", label: t("Navbar.ingredients") },
                   { id: "recipes", label: t("Navbar.recipes") },
                 ].map((item) => (
