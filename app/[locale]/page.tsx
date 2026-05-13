@@ -232,7 +232,7 @@ export default function NourishResilienceLanding() {
           </div>
 
           {/* Right Column (Video) */}
-          <div className="w-full flex justify-center lg:justify-end mt-12 lg:mt-0 lg:pr-8">
+          {/* <div className="w-full flex justify-center lg:justify-end mt-12 lg:mt-0 lg:pr-8">
             <div style={{ aspectRatio: '9/16', width: '100%', maxWidth: '380px', margin: '0 auto', overflow: 'hidden', borderRadius: '8px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
               <iframe
                 src="https://player.vimeo.com/video/1191643005?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -242,7 +242,7 @@ export default function NourishResilienceLanding() {
                 allowFullScreen>
               </iframe>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
