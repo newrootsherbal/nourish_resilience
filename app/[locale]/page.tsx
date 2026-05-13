@@ -34,6 +34,13 @@ export default function NourishResilienceLanding() {
   const [bottleImage, setBottleImage] = useState(
     "/Canversion.webp"
   );
+  const [nfhLink, setNfhLink] = useState(
+    "https://nfh.ca/product/vitazan-nourish-resilience-functional-plant-based-nutrition-224-g/"
+  );
+  const [fullscriptLink, setFullscriptLink] = useState(
+    "https://fullscript.com/catalog/products/nourish-resilience?variant=U3ByZWU6OlByb2R1Y3QtMTA2MDUyNTI2Mg=="
+  );
+
   const [trademarkSymbol, setTrademarkSymbol] = useState<React.ReactNode>(
     locale === "fr" ? null : <sup>®</sup>
   );
@@ -44,6 +51,8 @@ export default function NourishResilienceLanding() {
     } else if (typeof window !== "undefined" && window.location.hostname === "nourish-resilience.com") {
       setBottleImage("/USversion.webp");
       setTrademarkSymbol("®");
+      setNfhLink("https://nfh.ca/product/vitazan-nourish-resilience-functional-plant-based-nutrition-224-g-2/");
+      setFullscriptLink("#");
     } else {
       setTrademarkSymbol(<sup>®</sup>);
     }
@@ -176,9 +185,14 @@ export default function NourishResilienceLanding() {
         />
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/5 via-black/30 to-black/5" />
 
-        <div className="relative z-10 flex w-full flex-col items-center justify-center px-4 pt-24 pb-20 text-center text-white">
-          <div className="flex animate-fade-in-up flex-col items-center space-y-8 md:space-y-14">
-            <div className="space-y-4">
+        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-4 pt-24 pb-20 grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-8 items-center">
+          {/* Left Column (Empty for symmetry) */}
+          <div className="hidden lg:block"></div>
+
+          {/* Center Column (Main Content) */}
+          <div className="flex flex-col items-center justify-center text-center text-white">
+            <div className="flex animate-fade-in-up flex-col items-center space-y-8 md:space-y-14">
+              <div className="space-y-4">
               <h1
                 className="text-5xl font-black tracking-tighter text-white drop-shadow-lg md:text-6xl lg:text-7xl pt-8"
                 style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.7)" }}
@@ -214,6 +228,20 @@ export default function NourishResilienceLanding() {
             >
               {t("Hero.futureStartsHere")}
             </p>
+            </div>
+          </div>
+
+          {/* Right Column (Video) */}
+          <div className="w-full flex justify-center lg:justify-end mt-12 lg:mt-0 lg:pr-8">
+            <div style={{ aspectRatio: '9/16', width: '100%', maxWidth: '380px', margin: '0 auto', overflow: 'hidden', borderRadius: '8px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
+              <iframe
+                src="https://player.vimeo.com/video/1191643005?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                style={{ width: '100%', height: '100%' }}
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                allowFullScreen>
+              </iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -509,7 +537,7 @@ export default function NourishResilienceLanding() {
                   <p className="text-lg">
                     {t("Professionals.nfhText")}
                   </p>
-                  <a href="https://nfh.ca" target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
+                  <a href={nfhLink} target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
                     <Image
                       src="/nfh.png"
                       alt="NFH Logo"
@@ -537,7 +565,7 @@ export default function NourishResilienceLanding() {
                   <p className="text-lg">
                     {t("Professionals.fullscriptText")}
                   </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
+                  <a href={fullscriptLink} target="_blank" rel="noopener noreferrer" className="my-2 transition-transform hover:scale-105">
                     <Image
                       src="/fullscript-logo.png"
                       alt="Fullscript Logo"
@@ -546,9 +574,7 @@ export default function NourishResilienceLanding() {
                       className="object-contain"
                     />
                   </a>
-                  <p className="text-base font-medium text-gray-600">
-                    {t("Professionals.availableFall")}
-                  </p>
+                  <p></p>
                 </div>
               </div>
             </div>
