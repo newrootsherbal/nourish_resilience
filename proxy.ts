@@ -1,9 +1,13 @@
 import createMiddleware from 'next-intl/middleware';
 import {routing} from './i18n/routing';
 
-export default createMiddleware(routing);
+const intlMiddleware = createMiddleware(routing);
+
+export function proxy(request) {
+  return intlMiddleware(request);
+}
 
 export const config = {
   // Skip all paths that should not be internationalized
-  matcher: ['/((?!api|_next|.*\\..*).*)']
+  matcher: ['/', '/((?!api|_next|.*\\..*).*)']
 };
